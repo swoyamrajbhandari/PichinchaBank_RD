@@ -15,7 +15,21 @@ Provide an overview of the sections and contents of the document
 2. **Business Requirements**  
 
    1. **Background**  
-   Summarize the rationale and context for the new product or for changes to be made to an existing one. 
+   Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [1]. The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns. 
+
+   Pichincha Bank’s international money transfer process utilizes a physical Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current system is inefficient for both bank employees and customers. The following steps further describe the current system:
+
+1. An ordering customer arrives at a Pichincha Bank location and waits for an available teller
+2. The customer completes a paper RTA form with information relating to the transfer source account, beneficiary    account, monetary amount, and SWIFT code
+3. A teller verifies this information and manually inputs the data into the SWIFT Alliance system
+4. A teller initiates a SWIFT transaction
+5. The beneficiary’s bank receives the transfer and verifies the information
+6. The funds are deposited into the beneficiary account approximately 7 days after initiation of the SWIFT          transaction
+
+   The process outlined above assumes no errors were made by either the customer completing the RTA form, or the bank teller inputting the data. If errors occur and are not resolved before initiation of the SWIFT transaction, it takes approximately 3 weeks to complete the transaction. 
+
+   In response to concerns about the efficiency of the current system, Pichincha Bank is seeking to enhance its international money transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
+ 
 
    2. **Business Opportunity**  
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
@@ -58,6 +72,8 @@ Provide an overview of the sections and contents of the document
 
    6. **References**  
    List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+
+[1]“Banco Pichincha,” Wikipedia, Jan. 28, 2024. https://es.wikipedia.org/wiki/Banco_Pichincha (accessed Feb. 02, 2024).
 
 ---
 
