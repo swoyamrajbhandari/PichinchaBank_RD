@@ -45,18 +45,39 @@ Provide an overview of the sections and contents of the document
    Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.
 
    2. **Operating Environment**  
-   Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
+CON-1. Hardware platform: The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Banca Movil app, the platform includes mobile devices. Meanwhile, ordering customers accessing the app through the website, utilize a web browser.
 
-   3. **Design and Implmentation Constraints**  
-   Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
+CON-2. Operating systems: The supported operating systems comprise iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, for ordering customers accessing the app through the website, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others.
 
-   4. **Assumptions and Dependencies**  
+CON-3. Software components or applications: The system is integrated into an environment where it must coexist with specific components and applications. The primary application is the Pichincha Banca Movil app, an existing app tailored for banking services. Additionally, the system interacts with the Swift Alliance program. 
+
+
+   3. **Design and Implmentation Constraints**
+
+Issues that will limit the options available to the developers:
+
+CON-4. Regulatory compliance: The development of the system is bound by strict regulatory compliance requirements. The development process must adhere to both local and international banking regulations, ensuring the system’s alignment with established standards. Furthermore, compliance with data protection laws, such as the General Data Protection Regulation (GDPR), is of paramount importance, particularly concerning the handling of financial information.
+
+CON-5. The designed system should conform and integrate seamlessly with the existing app.
+
+CON-6. The software should align with the current technology infrastructure and databases employed by the Pichincha Bank.
+
+CON-7. Language requirements: The software is mandated to support both English and Spanish languages. This linguistic flexibility is essential to cater to a diverse user base and enhance accessibility for customers who communicate in either language.
+
+CON-8. Parallel operations: The system should be capable of executing international transfer operations concurrently. This constraint emphasizes the need for efficient parallel processing, ensuring that multiple international transfer operations committed within the same time frame can be executed simultaneously. 
+
+CON-9. Security considerations: Security is a top priority, requiring robust measures to safeguard user data and financial transactions. The software must implement encryption protocols for secure data transmission, preventing unauthorized access. Additional security features include the introduction of the PIN for completing new forms related to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on forms contributes to the overall security and authentication of transactions.
+
+CON-10. Design conventions or programming standards: Given that the system involves adding it is crucial to adhere to established design conventions and programming standards. Importantly, the responsibility for maintaining the app post-delivery will rest with the current app maintainers.
+
+
+   5. **Assumptions and Dependencies**  
    List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
    
-   5. **Glossary of Terms**  
+   6. **Glossary of Terms**  
    Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
 
-   6. **References**  
+   7. **References**  
    List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 ---
