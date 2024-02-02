@@ -45,30 +45,51 @@ Provide an overview of the sections and contents of the document
    Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.
 
    2. **Operating Environment**  
-CON-1. Hardware platform: The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Banca Movil app, the platform includes mobile devices. Meanwhile, ordering customers accessing the app through the website, utilize a web browser.
+   
+   CON-1. Hardware platform: The operating environment for the system encompasses mobile devices and web browsers. For 
+   users accessing the Pinchincha Banca Movil app, the platform includes mobile devices. Meanwhile, ordering customers 
+   accessing the app through the website, utilize a web browser.
 
-CON-2. Operating systems: The supported operating systems comprise iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, for ordering customers accessing the app through the website, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others.
+   CON-2. Operating systems: The supported operating systems comprise iOS and Android. Specifically, the system is designed 
+   to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across 
+   various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the app through the 
+   website.
 
-CON-3. Software components or applications: The system is integrated into an environment where it must coexist with specific components and applications. The primary application is the Pichincha Banca Movil app, an existing app tailored for banking services. Additionally, the system interacts with the Swift Alliance program. 
+   CON-3. Software components or applications: The system is integrated into an environment where it must coexist with 
+   specific components and applications. The primary application is the Pichincha Banca Movil app, an existing app tailored 
+   for banking services. Additionally, the system interacts with the Swift Alliance program. 
 
 
    3. **Design and Implmentation Constraints**
 
-Issues that will limit the options available to the developers:
+   Issues that will limit the options available to the developers:
 
-CON-4. Regulatory compliance: The development of the system is bound by strict regulatory compliance requirements. The development process must adhere to both local and international banking regulations, ensuring the system’s alignment with established standards. Furthermore, compliance with data protection laws, such as the General Data Protection Regulation (GDPR), is of paramount importance, particularly concerning the handling of financial information.
+   CON-4. Regulatory compliance: The development of the system is bound by strict regulatory compliance requirements. The 
+   development process must adhere to both local and international banking regulations, ensuring the system’s alignment 
+   with established standards. Furthermore, compliance with data protection laws, such as the General Data Protection 
+   Regulation (GDPR), is of paramount importance, particularly concerning the handling of financial information.
 
-CON-5. The designed system should conform and integrate seamlessly with the existing app.
+   CON-5. The designed system should conform and integrate seamlessly with the existing app.
 
-CON-6. The software should align with the current technology infrastructure and databases employed by the Pichincha Bank.
+   CON-6. The software should align with the current technology infrastructure and databases employed by the Pichincha Bank.
 
-CON-7. Language requirements: The software is mandated to support both English and Spanish languages. This linguistic flexibility is essential to cater to a diverse user base and enhance accessibility for customers who communicate in either language.
+   CON-7. Language requirements: The software is mandated to support both English and Spanish languages. This linguistic 
+   flexibility is essential to cater to a diverse user base and enhance accessibility for customers who communicate in 
+   either language.
 
-CON-8. Parallel operations: The system should be capable of executing international transfer operations concurrently. This constraint emphasizes the need for efficient parallel processing, ensuring that multiple international transfer operations committed within the same time frame can be executed simultaneously. 
+   CON-8. Parallel operations: The system should be capable of executing international transfer operations concurrently. 
+   This constraint emphasizes the need for efficient parallel processing, ensuring that multiple international transfer 
+   operations committed within the same time frame can be executed simultaneously. 
 
-CON-9. Security considerations: Security is a top priority, requiring robust measures to safeguard user data and financial transactions. The software must implement encryption protocols for secure data transmission, preventing unauthorized access. Additional security features include the introduction of the PIN for completing new forms related to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on forms contributes to the overall security and authentication of transactions.
+   CON-9. Security considerations: Security is a top priority, requiring robust measures to safeguard user data and 
+   financial transactions. The software must implement encryption protocols for secure data transmission, preventing 
+   unauthorized access. Additional security features include the introduction of the PIN for completing new forms related 
+   to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on 
+   forms contributes to the overall security and authentication of transactions.
 
-CON-10. Design conventions or programming standards: Given that the system involves adding it is crucial to adhere to established design conventions and programming standards. Importantly, the responsibility for maintaining the app post-delivery will rest with the current app maintainers.
+   CON-10. Design conventions or programming standards: Given that the system involves adding it is crucial to adhere to 
+   established design conventions and programming standards. Importantly, the responsibility for maintaining the app post- 
+   delivery will rest with the current app maintainers.
 
 
    5. **Assumptions and Dependencies**  
