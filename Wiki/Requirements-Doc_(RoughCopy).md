@@ -18,7 +18,11 @@ Provide an overview of the sections and contents of the document
    Summarize the rationale and context for the new product or for changes to be made to an existing one. 
 
    2. **Business Opportunity**  
-   Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
+  The current financial transaction system for internationals is inefficient as it is affecting both customers and employees. 
+Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers have to spend time walking the clients through the physical forms and making sure that they have enough, correct information. 
+The long duration for the transaction to complete tends to cause customers dissatisfaction, frustration. As a result, it will have a detrimental impact on the organization’s reputation, profits and as well as employees’ performance because they have to deal with unhappy customers. 
+Our team proposes the implementation of a digital transaction platform feature as outlined in the Request for Proposal (RFP). This initiative aims to not only speed up the transaction process but also significantly improve accuracy, productivity. By reducing transaction time and minimizing eros, the new digital feature will elevate the overall client’s experience and satisfaction as well as fostering a positive environment for our employees.
+
 
    3. **Business Objectives**  
    Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
