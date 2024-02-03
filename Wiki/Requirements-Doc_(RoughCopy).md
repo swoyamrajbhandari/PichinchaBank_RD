@@ -21,10 +21,38 @@ Provide an overview of the sections and contents of the document
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
 
    3. **Business Objectives**  
-   Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
+   The business objectives of Pichincha Bank are designed to help improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through    various means: 
+
+   Improve staff productivity: Pichincha Bank aims to improve staff productivity through various means, such as eliminating the need for a customer to physically visit the bank to process an international transfer. This     objective can also be achieved by changing the current system that requires a paper RTA form to a digital transaction such as an email service. Furthermore, customers must meet with a teller upon entering the bank to     complete their transaction, eliminating this need can also help staff complete customer transactions faster and allow the staff to process more transactions in a shorter amount of time.
+
+   Reduce wait times: By reducing the time to process transactions, staff efficiency is improved and wait times are reduced. Improving staff knowledge of the overall transaction process may also help solve possible          queries, therefore improving wait times. Furthermore, the current system requires each customer wanting to process a transaction to manually fill out an RTA form with a teller. This can be problematic when the bank       has a high volume of customers as tellers may have long wait times and be overwhelmed with transaction requests. A solution to this problem involves customers filling out the RTA form and security remotely. 
+      
+   Customer and employee satisfaction: Currently, some customers are dissatisfied with parts of the overall process of international transfers. Unfortunately, customers may occasionally verbalize their complaints to         tellers, who are often unrelated to the issues whatsoever. To solve this problem, improving accessibility of the transactions through customizing the mobile app to help remove limitations such as slow processing times 
+   or long wait times. In doing so, customer satisfaction is improved, which will reduce complaints and in turn, improve employee satisfaction. 
+      
+   Reduction of successive trips due to lack of clarity in the project process: Another issue in the transaction process is related to a lack of clarity in the process of completing an international transfer. This may be 
+   related to things such as questions regarding legal, financial or security. To solve these issues, implementing a user interface within the mobile app allows customers to complete the required fields of the RTA form 
+   that is currently filled out at the bank with a teller. In doing so, customers can follow a straightforward procedure through instructions given on the app. Furthermore, customers who still have questions will be able 
+   to call or physically visit the bank to inquire about their problems separately if needed. 
 
    4. **Success Metrics**  
-   Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
+   The following success metrics are the indicators that allow stakeholders of Pichincha Bank to measure the overall success of the company: 
+
+   80% of international transfers to be completed digitally: International transfers are currently completed through a system that requires customers to physically visit the bank. This metric allows the company to gauge  
+   how increasing the amount of digital transfers to 80% would increase the efficiency of transactions through greater financial profits or customer satisfaction. Implementing this metric is achievable through methods 
+   such as reduction of wait times for customers processing transactions through tellers at the bank. 
+   
+   90% of international transfers through the app are completed on the first try: With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are 
+   delayed or may include errors that further delay the transaction. This metric can be implemented through methods such as dedicated staff or other external groups implementing software designed to assist customers with 
+   inquiries, such as a Q&A page or real-time online customer support. 
+   
+   2 million users, currently 1.5 million users: Internationally, Pichincha Bank has roughly 1.5 million users. Stakeholders aim to increase this number to roughly 2 million, which shall increase the rate of transactions 
+   and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore increase the total 
+   number of customers intending to process international transfers with Pichincha Bank.
+   
+   75% of users complete transactions through the app, currently 60%: With stakeholders intending to shift roughly 80% of transactions online, a goal of increased use of the mobile app to process transactions remotely is 
+   an objective that stakeholders will attempt to implement. This metric can be accomplished through methods such as technology staff or an external developer group implementing user interfaces or improved accessibility 
+   to the app components used by customers when processing transactions. 
 
    5. **Product Vision Statement**  
    Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
