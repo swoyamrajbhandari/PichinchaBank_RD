@@ -47,7 +47,7 @@ Provide an overview of the sections and contents of the document
    2. **Operating Environment**  
    
    CON-1. Hardware platform: The operating environment for the system encompasses mobile devices and web browsers. For 
-   users accessing the Pinchincha Banca mobile app, the platform includes mobile devices. Meanwhile, ordering customers 
+   users accessing the Pinchincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers 
    accessing the app through the website, utilize a web browser.
 
    CON-2. Operating systems: The supported operating systems comprise iOS and Android. Specifically, the system is designed 
@@ -56,7 +56,7 @@ Provide an overview of the sections and contents of the document
    website.
 
    CON-3. Software components or applications: The system is integrated into an environment where it must coexist with the 
-   existing Pichincha Banca web and mobile app. The primary application is the Pichincha Banca mobile app, an existing app 
+   existing Pichincha Bank web and mobile app. The primary application is the Pichincha Banca mobile app, an existing app 
    tailored for banking services. Additionally, the system interacts with the Swift Alliance program.  
 
 
@@ -87,7 +87,7 @@ Provide an overview of the sections and contents of the document
    to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on 
    forms contributes to the overall security and authentication of transactions.
 
-   CON-10. Design conventions or programming standards: Given that the system is an added component to the Pinchincha Banca 
+   CON-10. Design conventions or programming standards: Given that the system is an added component to the Pinchincha Bank 
    mobile app, it is crucial to adhere to the already established design conventions and programming standards. 
    Importantly, the responsibility for maintaining the app post-delivery will rest with the current app maintainers.
 
