@@ -21,19 +21,19 @@ Provide an overview of the sections and contents of the document
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
 
    3. **Business Objectives**  
-   The business objectives of Pichincha Bank are designed to help improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through    various means: 
+   The business objectives of Pichincha Bank are designed to help improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through    the following means: 
 
-   Improve staff productivity: Pichincha Bank aims to improve staff productivity through various means, such as eliminating the need for a customer to physically visit the bank to process an international transfer. This     objective can also be achieved by changing the current system that requires a paper RTA form to a digital transaction such as an email service. Furthermore, customers must meet with a teller upon entering the bank to     complete their transaction, eliminating this need can also help staff complete customer transactions faster and allow the staff to process more transactions in a shorter amount of time.
+   Improve staff productivity: By eliminating the need for customers to physically visit the bank to process an international transfer, teller resources can be better allocated to resolving customer inquiries that 
+   require an in-person visit. 
 
-   Reduce wait times: By reducing the time to process transactions, staff efficiency is improved and wait times are reduced. Improving staff knowledge of the overall transaction process may also help solve possible          queries, therefore improving wait times. Furthermore, the current system requires each customer wanting to process a transaction to manually fill out an RTA form with a teller. This can be problematic when the bank       has a high volume of customers as tellers may have long wait times and be overwhelmed with transaction requests. A solution to this problem involves customers filling out the RTA form and security remotely. 
+   Reduce wait times: Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the 
+   wait time for customers to meet with a teller. 
       
-   Customer and employee satisfaction: Currently, some customers are dissatisfied with parts of the overall process of international transfers. Unfortunately, customers may occasionally verbalize their complaints to         tellers, who are often unrelated to the issues whatsoever. To solve this problem, improving accessibility of the transactions through customizing the mobile app to help remove limitations such as slow processing times 
-   or long wait times. In doing so, customer satisfaction is improved, which will reduce complaints and in turn, improve employee satisfaction. 
+   Customer and employee satisfaction: Improving accessibility of processing an international transfer helps reduce processing time for a transactions request to approval system, which will reduce complaints and 
+   in turn improve employee and customer satisfaction. 
       
-   Reduction of successive trips due to lack of clarity in the project process: Another issue in the transaction process is related to a lack of clarity in the process of completing an international transfer. This may be 
-   related to things such as questions regarding legal, financial or security. To solve these issues, implementing a user interface within the mobile app allows customers to complete the required fields of the RTA form 
-   that is currently filled out at the bank with a teller. In doing so, customers can follow a straightforward procedure through instructions given on the app. Furthermore, customers who still have questions will be able 
-   to call or physically visit the bank to inquire about their problems separately if needed. 
+   Reduction of successive bank visits: Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce 
+   unnecessary visits.  
 
    4. **Success Metrics**  
    The following success metrics are the indicators that allow stakeholders of Pichincha Bank to measure the overall success of the company: 
@@ -46,9 +46,9 @@ Provide an overview of the sections and contents of the document
    delayed or may include errors that further delay the transaction. This metric can be implemented through methods such as dedicated staff or other external groups implementing software designed to assist customers with 
    inquiries, such as a Q&A page or real-time online customer support. 
    
-   2 million users, currently 1.5 million users: Internationally, Pichincha Bank has roughly 1.5 million users. Stakeholders aim to increase this number to roughly 2 million, which shall increase the rate of transactions 
-   and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore increase the total 
-   number of customers intending to process international transfers with Pichincha Bank.
+   Increase the number of customers of Pichincha Bank to 2 million: Internationally, Pichincha Bank has roughly 1.5 million users. Stakeholders aim to increase this number to roughly 2 million, which shall increase the 
+   rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore 
+   increase the total number of customers intending to process international transfers with Pichincha Bank.
    
    75% of users complete transactions through the app, currently 60%: With stakeholders intending to shift roughly 80% of transactions online, a goal of increased use of the mobile app to process transactions remotely is 
    an objective that stakeholders will attempt to implement. This metric can be accomplished through methods such as technology staff or an external developer group implementing user interfaces or improved accessibility 
