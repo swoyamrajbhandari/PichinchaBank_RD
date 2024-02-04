@@ -161,7 +161,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 > **Privileges:** Regular Users are able to initiate and manage international transfers, access and fill out the digital RTA Form, save beneficiary details for future transactions, and receive status notifications about their transfers.
 >
 > **Special Considerations:** While Regular Users have access to the full suite of transfer functionalities, their transactions are processed with standard priority, which may result in slightly longer processing times during peak periods compared to Business Users.
-> 
+
 > #### - Subclass 2: Business User -
 > 
 > **Characteristics:** Organizations or entities that require the system for business-related international transfers. This subclass includes small and medium enterprises, large corporations, and other financial entities. Business Users are expected to have a higher volume of transactions and a greater familiarity with international transfer processes.  
@@ -179,7 +179,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 > **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the Swift System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
 >
 > **Responsibilities:** Their primary responsibility includes managing the transfer workflow, from claim to completion or rejection, and providing support to customers as needed.
->
+
 > #### - Subclass 2: System Administrators -
 >
 > **Characteristics:** Technical staff responsible for the maintenance, security, and operational integrity of the international transfer system. This group has advanced technical expertise and comprehensive access to the system's backend.
