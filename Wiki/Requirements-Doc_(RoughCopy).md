@@ -56,7 +56,7 @@ Provide an overview of the sections and contents of the document
    website.
 
    CON-3. Software components or applications: The system is integrated into an environment where it must coexist with the 
-   existing Pichincha Bank web and mobile app. The primary application is the Pichincha Banca mobile app, an existing app 
+   existing Pichincha Bank web and mobile app. The primary application is the Pichincha Bank mobile app, an existing app 
    tailored for banking services. Additionally, the system interacts with the Swift Alliance program.  
 
 
