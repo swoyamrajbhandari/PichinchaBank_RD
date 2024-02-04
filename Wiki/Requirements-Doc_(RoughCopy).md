@@ -152,8 +152,8 @@ By clearly defining these limitations and exclusions, Pichincha Bank sets a real
 ## 4.1 User Classes and Characteristics  
 The Pichincha Bank international transfer system is designed to cater to a diverse range of users, differentiated by their interaction frequency, technical expertise, security needs, and the specific functionalities they utilize. Given the system's dual focus on facilitating international transfers for both individual customers and businesses, as well as enabling administrative oversight and management, we have identified two primary user classes: the Customer Class and the Administrative Class. Each of these classes is further subdivided to address distinct user needs and priorities.
 
-> ### Customer Class
->
+### Customer Class  
+
 > #### - Subclass 1: Regular User -
 > 
 > **Characteristics:** Individuals using the system for personal international money transfers. This group is characterized by a wide range of technical expertise, from novice to advanced users, and includes both infrequent and regular users.
@@ -170,8 +170,8 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 >  
 > **Special Considerations:** Business Users may require additional support for batch processing of transactions and might benefit from enhanced security measures and detailed transaction reporting for accounting purposes.  
 
-> ### Administrative Class
->
+### Administrative Class
+
 > #### - Subclass 1: Bank Tellers -
 >
 > **Characteristics:** Bank employees responsible for verifying and processing international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the Swift System.
