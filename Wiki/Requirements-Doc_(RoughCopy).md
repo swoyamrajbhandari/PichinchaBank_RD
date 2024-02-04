@@ -80,10 +80,36 @@ Provide an overview of the sections and contents of the document
 3. **Scope and Limitations**  
 
    1. **Major Features**  
-   Summarize the major features the product contains or the significant functions that it performs or lets the user perform. Details will be provided in Section 5, so only a high level summary is needed here. Organize the functions to make them understandable to any reader of the RD. Think about how users will use the features to ensure the list is complete. Also ensure that it does not include unnecessary features that sound interesting, but does not provide customer value.     
+   The implemented system needs to be an addition to the current bank app which will facilitate international transfers. There is a customer facing side of the app and an employee facing side which each require different features.
+
+      The major features for the customer facing side are:
+       * Digital RTA (“Request for Transfers Abroad”) Form: A digital form which prompts an ordering customer for the information required to make an international transfer. The digital form will request the same information as the current physical RTA form.
+       * Add New International Contact: Create a new contact will have the ordering customer fill out the digital RTA form for a new beneficiary and then add the new contact to the their contact list.
+       * Auto-Fill Form: Provide the ordering customer with the option to save RTA form data the first time they fill it out to be auto-filled for all future uses. Saved and auto filled information will be data specific to the ordering customer and not the beneficiary.
+       * Saved Contacts: Allow the ordering customer to view a list of every contact they have previously submitted the RTA form for. Each contact must have a contact page which states whether previous transfers were successfully completed, date of transaction, and transaction amount for that contact.
+       * Transfer to Saved Contact: Ordering customer is able to make an international transfer to one of the saved contacts without filling out the RTA form again. Transaction specific information including the transfer amount and reason must be collected.
+       * International Transfer Security Pin: A 4-digit pin must be entered upon each attempt to enter the International Transfer section of the bank app. The pin must be changed in the current app’s user settings page.
+       * Transfer Status Notifications: After a teller marks a transfer as either completed or rejected (see employee facing features for details), the ordering customer will receive a notification (via either email or SMS depending on preferred method selected in user settings). The notification must state success status, and for failed transfers must state next steps.
+       * Help Information: Help text is displayed containing more information about what is required to be entered for each data entry box on the digital RTA form.
+      
+      The major features for the employee facing side are:
+       * International Transfer Processing Portal: An interface in which a bank employee will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, and Completed.
+       * Claim a Transfer: A Teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in processing” category.
+       * Complete a Transfer: After an international transfer is successfully deposited to the beneficiary the teller processing that transfer will manually mark the transfer as complete. The software then sorts the transfer into the “completed” category.
+       * Reject Transfer: If there is an issue with the transfer which prevents it from being deposited the Teller will manually reject the transfer. The software then sorts the transfer into the “completed” category.
+       * Auto-Reject Transfer: Whenever a new transfer is requested the software will automatically check if there is an insufficient balance in the account for the transfer, then if there is insufficient balance label the transfer as rejected and sort it into “completed”. If there is sufficient balance the system will sort the transfer into the correct “unprocessed" category.
+       * Dealing with Rejected Transfers: If a customer contacts the bank to fix a rejected transfer, a teller will claim the transfer and the system will move it to “in processing”.
+         
 
    2. **Project Scope**  
-   Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies.
+   The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and employee interfaces need to be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
+
+      The final product will support the business goals described in Section 2.
+       * Improve staff productivity: The software will improve staff productivity by allowing customers to make international transfers without direct interaction with staff. As well the software “Help Information” feature will provide extra information to ordering customers. This will save the tellers time to spend on other important tasks.
+       * Reduce wait times: The software will eliminate wait times to fill out RTA forms for online international transfers by immediately providing online users with RTA forms. The in person wait time to fill out RTA forms will also be reduced as the majority of ordering customers will prefer the benefits filling out the form online provides. 
+       * Customer satisfaction: The software will contain numerous features designed to improve customer satisfaction. Ordering customers will be pleased by not needing to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online saving time and energy. The saved contacts feature the software provides will also save ordering customers the hassle of trying to send money to an international beneficiary repeatedly as it is now easily facilitated within the app reducing need for tellers to process the same information each time a transfer to the same beneficiary, shortening time till transaction is made.
+       * Employee satisfaction: Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, employees will not need to worry about the confusion of misreading customers’ handwriting.
+      
 
    3. **Limitations and Exclusions**  
 
