@@ -40,7 +40,7 @@ The following requirements document contains the complete set of requirements pe
 ## 2.1 Background 
 Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns through the implementation of a digital system.   
 
-Pichincha Bank’s international money transfer process utilizes a physical Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current system is inefficient for both bank employees and customers. The following steps further describe the current system:
+Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank employees and customers. The following steps further describe the current process:
 
    1. An ordering customer arrives at a Pichincha Bank location and waits for an available teller  
 
@@ -56,7 +56,7 @@ Pichincha Bank’s international money transfer process utilizes a physical Requ
 
 The process outlined above assumes no errors were made by either the customer completing the RTA form, or the bank teller inputting the data. If errors occur and are not resolved before initiation of the SWIFT transaction, it takes approximately 3 weeks to complete the transaction. 
 
-In response to concerns about the efficiency of the current system, Pichincha Bank is seeking to enhance its international money transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
+In response to concerns about the efficiency of the current process, Pichincha Bank is seeking to enhance its international fund transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
  
 ## 2.2 Business Opportunity  
 The current financial transaction system for international fund tranfers is inefficient and affects both customers and employees.  
@@ -64,7 +64,7 @@ The current financial transaction system for international fund tranfers is inef
 * Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers have to spend time walking the clients through the physical forms and making sure that they have enough, correct information. 
 * The long duration for the transaction to complete tends to cause customers dissatisfaction, frustration. As a result, it will have a detrimental impact on the organization’s reputation, profits and as well as employees’ performance because they have to deal with unhappy customers. 
 
-Our team proposes the implementation of a digital transaction. This initiative aims to not only speed up the transaction process but also significantly improve accuracy, productivity. By reducing transaction time and minimizing eros, the new digital feature will elevate the overall client’s experience and satisfaction as well as fostering a positive environment for our employees.
+Our team proposes the implementation of a digital transaction. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital feature will elevate the overall client’s experience and satisfaction as well as fostering a positive environment for our employees.
 
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to help improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
@@ -82,7 +82,7 @@ The following success metrics are the indicators that allow stakeholders of Pich
 
 * **80% of International Transfers to be Completed Digitally:** International transfers are currently completed through a system that requires customers to physically visit the bank. This metric allows the company to gauge how increasing the amount of digital transfers to 80% would increase the efficiency of transactions through greater financial profits or customer satisfaction. Implementing this metric is achievable through methods such as reduction of wait times for customers processing transactions through tellers at the bank. 
    
-* **90% Success Rate of International Transfers via App:** With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are delayed or may include errors that further delay the transaction. This metric can be implemented through methods such as dedicated staff or other external groups implementing software designed to assist customers with inquiries, such as a Q&A page or real-time online customer support. 
+* **90% Success Rate of International Transfers via App:** With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are delayed or may include errors that further delay the transaction. This metric can be validated through a reduction in the number of customer inquiries and request to fund transfer times.   
    
 * **Increase Customer Base to 2 million:** Internationally, Pichincha Bank has roughly 1.5 million users. Stakeholders aim to increase this number to roughly 2 million, which shall increase the rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore increase the total number of customers intending to process international transfers with Pichincha Bank.  
 
@@ -96,7 +96,7 @@ The implemented system needs to be an addition to the current bank app which wil
 
 The major features for the customer facing side are:  
 
-* **Digital RTA (“Request for Transfers Abroad”) Form:** A digital form which prompts an ordering customer for the information required to make an international transfer. The digital form will request the same information as the current physical RTA form.
+* **Digital RTA Form:** A digital form which prompts an ordering customer for the information required to make an international transfer. The digital form will request the same information as the current physical RTA form.
 * **Add New International Contact:** Create a new contact will have the ordering customer fill out the digital RTA form for a new beneficiary and then add the new contact to the their contact list.
 * **Auto-Fill Form:** Provide the ordering customer with the option to save RTA form data the first time they fill it out to be auto-filled for all future uses. Saved and auto filled information will be data specific to the ordering customer and not the beneficiary.
 * **Saved Contacts:** Allow the ordering customer to view a list of every contact they have previously submitted the RTA form for. Each contact must have a contact page which states whether previous transfers were successfully completed, date of transaction, and transaction amount for that contact.
@@ -125,7 +125,7 @@ The final product will support the business goals described in Section 2.
 * **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, employees will not need to worry about the confusion of misreading customers’ handwriting.    
 
 ## 3.3 Limitations and Exclusions  
-The Pichincha Bank international transfer project aims to enhance the efficiency and user-friendliness of cross-border transactions through its mobile and web applications. This initiative is driven by the need to improve customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations, including newly identified constraints based on the detailed project document, and the exclusions that shape the project's framework.
+The Pichincha Bank international transfer system aims to enhance the efficiency and user-friendliness of cross-border transactions through its mobile and web applications. This initiative is driven by the need to improve customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations based on the detailed project document and the exclusions that extend beyond the projects scope.
 
 ### Limitations  
 
@@ -193,7 +193,7 @@ By distinguishing between these user classes and their respective characteristic
 ## 4.2 Operating Environment  
 ||||
 |-|-|-|
-|CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers accessing the app through the website, utilize a web browser.|
+|CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers accessing the app through the website utilize a laptop or desktop computer.|
 |CON~2|Operating Systems|The supported operating systems comprise iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the app through the website.|
 |CON~3|Software Applications|The system is integrated into an environment where it must coexist with the existing Pichincha Bank web and mobile app. The primary application is the Pichincha Bank mobile app, an existing app tailored for banking services. Additionally, the system interacts with the Swift Alliance program.|
 
@@ -244,7 +244,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 
 ---
 
-# 5. System Features (Due Iteration 2 and beyond)  
+# 5.0 System Features (Due Iteration 2 and beyond)  
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
    1. **System Feature 1**  
