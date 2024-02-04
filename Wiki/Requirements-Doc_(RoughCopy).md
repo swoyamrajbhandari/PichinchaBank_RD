@@ -50,7 +50,7 @@ Provide an overview of the sections and contents of the document
    rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore 
    increase the total number of customers intending to process international transfers with Pichincha Bank.
    
-   75% of users complete transactions through the app, currently 60%: With stakeholders intending to shift roughly 80% of transactions online, a goal of increased use of the mobile app to process transactions remotely is 
+   75% of users complete transactions through the app: With stakeholders intending to shift roughly 80% of transactions online, a goal of increased use of the mobile app to process transactions remotely is 
    an objective that stakeholders will attempt to implement. This metric can be accomplished through methods such as technology staff or an external developer group implementing user interfaces or improved accessibility 
    to the app components used by customers when processing transactions. 
 
