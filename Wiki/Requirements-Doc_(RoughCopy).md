@@ -15,7 +15,7 @@ Provide an overview of the sections and contents of the document
 2. **Business Requirements**  
 
    1. **Background**  
-   Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [1]. The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns. 
+   Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [1]. The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns through the implementation of a digital system. 
 
    Pichincha Bank’s international money transfer process utilizes a physical Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current system is inefficient for both bank employees and customers. The following steps further describe the current system:
 
