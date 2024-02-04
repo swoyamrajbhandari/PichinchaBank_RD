@@ -47,7 +47,7 @@ Provide an overview of the sections and contents of the document
    2. **Operating Environment**  
    
    CON-1. Hardware platform: The operating environment for the system encompasses mobile devices and web browsers. For 
-   users accessing the Pinchincha Banca Movil app, the platform includes mobile devices. Meanwhile, ordering customers 
+   users accessing the Pinchincha Banca mobile app, the platform includes mobile devices. Meanwhile, ordering customers 
    accessing the app through the website, utilize a web browser.
 
    CON-2. Operating systems: The supported operating systems comprise iOS and Android. Specifically, the system is designed 
@@ -55,9 +55,9 @@ Provide an overview of the sections and contents of the document
    various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the app through the 
    website.
 
-   CON-3. Software components or applications: The system is integrated into an environment where it must coexist with 
-   specific components and applications. The primary application is the Pichincha Banca Movil app, an existing app tailored 
-   for banking services. Additionally, the system interacts with the Swift Alliance program. 
+   CON-3. Software components or applications: The system is integrated into an environment where it must coexist with the 
+   existing Pichincha Banca web and mobile app. The primary application is the Pichincha Banca mobile app, an existing app 
+   tailored for banking services. Additionally, the system interacts with the Swift Alliance program.  
 
 
    3. **Design and Implmentation Constraints**
@@ -87,10 +87,9 @@ Provide an overview of the sections and contents of the document
    to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on 
    forms contributes to the overall security and authentication of transactions.
 
-   CON-10. Design conventions or programming standards: Given that the system involves adding it is crucial to adhere to 
-   established design conventions and programming standards. Importantly, the responsibility for maintaining the app post- 
-   delivery will rest with the current app maintainers.
-
+   CON-10. Design conventions or programming standards: Given that the system is an added component to the Pinchincha Banca 
+   mobile app, it is crucial to adhere to the already established design conventions and programming standards. 
+   Importantly, the responsibility for maintaining the app post-delivery will rest with the current app maintainers.
 
    5. **Assumptions and Dependencies**  
    List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
