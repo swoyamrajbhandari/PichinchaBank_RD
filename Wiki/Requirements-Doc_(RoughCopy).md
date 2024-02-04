@@ -111,12 +111,73 @@ Provide an overview of the sections and contents of the document
        * Employee satisfaction: Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, employees will not need to worry about the confusion of misreading customers’ handwriting.
       
 
-   3. **Limitations and Exclusions**  
+   3. **Limitations and Exclusions**
+      The Pichincha Bank international transfer project aims to enhance the efficiency and user-friendliness of cross-border transactions through its mobile and web applications. This initiative is driven by the need to improve customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations, including newly identified constraints based on the detailed project document, and the exclusions that shape the project's framework.
+
+**Limitations:**
+
+**Delayed Interactions with Real-World Bank Tellers:** The project is limited by the inherent delays in interactions with bank tellers, which can extend the processing time for international transfers. This limitation is a consequence of the current reliance on manual verification and data entry processes.
+
+**Interactions with the Swift System:** The efficiency of international transfers is also limited by the interactions with the Swift System, which is an external dependency with its own processing times and operational constraints.
+
+**Integration with Existing Banking Systems:** The project must seamlessly integrate with Pichincha Bank's current banking systems and protocols, which may limit the flexibility in implementing certain features or require additional time for compatibility adjustments.
+
+**Technological Constraints:** The project is limited by the current technological infrastructure of Pichincha Bank, including hardware capabilities, software compatibility, and the operational capacity of the mobile and web platforms.
+
+**Dependency on External Services:** The reliance on third-party services such as Swift Alliance and Docusign introduces limitations related to their availability, reliability, and compatibility with the bank's systems.
+
+**Exclusions:**
+
+**Legality and Security:** Issues related to legality and security, while critical to the banking operations, are excluded from the project's direct scope. These areas are assumed to be addressed by other specialized teams within Pichincha Bank, ensuring compliance with relevant laws and regulations without burdening the project team with areas outside their expertise.
+
+**Customer Education on Financial Regulations:** Educating customers on the complexities of international financial regulations is outside the scope of this project. While the app aims to simplify the transfer process, the responsibility for understanding the legal implications of international transfers remains with the customers.
+
+By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving efficiency, customer satisfaction, and staff productivity within the defined constraints.
+
 
 4. **Context Description**  
 
    1. **User Classes and Characteristics**  
-   Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.
+  The Pichincha Bank international transfer system is designed to cater to a diverse range of users, differentiated by their interaction frequency, technical expertise, security needs, and the specific functionalities they utilize. Given the system's dual focus on facilitating international transfers for both individual customers and businesses, as well as enabling administrative oversight and management, we have identified two primary user classes: the Customer Class and the Administrative Class. Each of these classes is further subdivided to address distinct user needs and priorities.
+
+**Customer Class**
+
+**Subclass 1: Regular User**
+
+**Characteristics:** Individuals using the system for personal international money transfers. This group is characterized by a wide range of technical expertise, from novice to advanced users, and includes both infrequent and regular users.
+
+**Privileges:** Regular Users are able to initiate and manage international transfers, access and fill out the digital RTA Form, save beneficiary details for future transactions, and receive status notifications about their transfers.
+
+**Special Considerations:** While Regular Users have access to the full suite of transfer functionalities, their transactions are processed with standard priority, which may result in slightly longer processing times during peak periods compared to Business Users.
+
+**Subclass 2: Business User**
+
+**Characteristics:** Organizations or entities that require the system for business-related international transfers. This subclass includes small and medium enterprises, large corporations, and other financial entities. Business Users are expected to have a higher volume of transactions and a greater familiarity with international transfer processes.
+
+**Privileges:** In addition to the privileges available to Regular Users, Business Users are given priority processing to accommodate the higher volume and urgency often associated with business transactions. This ensures faster processing times and supports the operational needs of businesses.
+
+**Special Considerations:** Business Users may require additional support for batch processing of transactions and might benefit from enhanced security measures and detailed transaction reporting for accounting purposes.
+
+
+**Administrative Class**
+
+**Subclass 1: Bank Tellers**
+
+**Characteristics:** Bank employees responsible for verifying and processing international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the Swift System.
+
+**Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the Swift System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
+
+**Responsibilities:** Their primary responsibility includes managing the transfer workflow, from claim to completion or rejection, and providing support to customers as needed.
+
+**Subclass 2: System Administrators**
+
+**Characteristics:** Technical staff responsible for the maintenance, security, and operational integrity of the international transfer system. This group has advanced technical expertise and comprehensive access to the system's backend.
+
+**Privileges:** System Administrators have the highest level of access, including system configuration, user management, security protocol adjustments, and troubleshooting. They ensure the system's smooth operation and safeguard against technical issues or security threats.
+
+**Responsibilities:** Monitoring system performance, implementing updates, ensuring compliance with security standards, and addressing any technical issues that arise.
+
+By distinguishing between these user classes and their respective characteristics, Pichincha Bank can tailor the international transfer system to meet the varied needs of its users effectively, ensuring a seamless and secure experience for both customers and administrative personnel.
 
    2. **Operating Environment**  
    
