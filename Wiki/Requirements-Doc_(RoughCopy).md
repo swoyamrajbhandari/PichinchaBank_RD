@@ -133,13 +133,20 @@ Provide an overview of the sections and contents of the document
    mobile app, it is crucial to adhere to the already established design conventions and programming standards. 
    Importantly, the responsibility for maintaining the app post-delivery will rest with the current app maintainers.
 
-   5. **Assumptions and Dependencies**  
-   List any assumed factors (as opposed to known facts) that could affect the requirements stated in the RD. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project.
+   4. **Assumptions and Dependencies**  
+   The successful implementation of this project relies on several critical assumptions and dependencies. The following factors form the foundation upon which the project’s framework is built:
+      - User Authentication: We assume that the mechanisms for user authentication in Pichincha Bank's current application are robust and secure. This includes the assumption that the current security protocols are sufficient to protect sensitive financial transactions and personal data against potential cyber threats. Any changes or failures in this area could impact user trust and system integrity.
+      - Existing Technological Infrastructure: We rely on the current app and website’s ability to support the addition of new features without compromising performance. This includes assumptions about the scalability of the current system to handle an increase in user traffic and international transfer demands.
+      - Third Party Services: We depend on the stability and reliability of external platforms like SWIFT Alliance for processing transactions and Docusign for digital signatures. Any significant disruptions in these services could impact the functionality and reliability of the international transfer system.
+      - Legal Compliance: We assume that the addition of international transfers to the existing application will comply with current and future international regulations. Changes in banking regulations could require significant adjustments to the project scope or design. 
+      - User Adoption: We assume that users will readily transition to the new online method for international transfers.
+     
+      These assumptions should be regularly reviewed to ensure they remain valid throughout the project’s development.
    
-   6. **Glossary of Terms**  
+   5. **Glossary of Terms**  
    Define all the terms necessary to properly interpret the RD, including acronyms and abbreviations.
 
-   7. **References**  
+   6. **References**  
    List any other documents or Web addresses to which this RD refers. These may include user interface style guides, contracts, standards, system requirements specifications or use case documents. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
 [1]“Banco Pichincha,” Wikipedia, Jan. 28, 2024. https://es.wikipedia.org/wiki/Banco_Pichincha (accessed Feb. 02, 2024).
