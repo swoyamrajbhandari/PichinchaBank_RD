@@ -21,10 +21,38 @@ Provide an overview of the sections and contents of the document
    Describe the business problem that is being solved or the process being improved. Describe the needs of typical customers or of the target market. Present customer problems that the new product will address. 
 
    3. **Business Objectives**  
-   Summarize the important business benefits the product will provide in a quantitative and measurable way. Organizations generally undertake a project to solve a problem or exploit an opportunity. Business objectives define ways to measure achievement of business goals. 
+   The business objectives of Pichincha Bank are designed to help improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through    the following means: 
+
+   Improve staff productivity: By eliminating the need for customers to physically visit the bank to process an international transfer, teller resources can be better allocated to resolving customer inquiries that 
+   require an in-person visit. 
+
+   Reduce wait times: Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the 
+   wait time for customers to meet with a teller. 
+      
+   Customer and employee satisfaction: Improving accessibility of processing an international transfer helps reduce processing time for a transactions request to approval system, which will reduce complaints and 
+   in turn improve employee and customer satisfaction. 
+      
+   Reduction of successive bank visits: Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce 
+   unnecessary visits.  
 
    4. **Success Metrics**  
-   Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
+   The following success metrics are the indicators that allow stakeholders of Pichincha Bank to measure the overall success of the company: 
+
+   80% of international transfers to be completed digitally: International transfers are currently completed through a system that requires customers to physically visit the bank. This metric allows the company to gauge  
+   how increasing the amount of digital transfers to 80% would increase the efficiency of transactions through greater financial profits or customer satisfaction. Implementing this metric is achievable through methods 
+   such as reduction of wait times for customers processing transactions through tellers at the bank. 
+   
+   90% of international transfers through the app are completed on the first try: With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are 
+   delayed or may include errors that further delay the transaction. This metric can be implemented through methods such as dedicated staff or other external groups implementing software designed to assist customers with 
+   inquiries, such as a Q&A page or real-time online customer support. 
+   
+   Increase the number of customers of Pichincha Bank to 2 million: Internationally, Pichincha Bank has roughly 1.5 million users. Stakeholders aim to increase this number to roughly 2 million, which shall increase the 
+   rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore 
+   increase the total number of customers intending to process international transfers with Pichincha Bank.
+   
+   75% of users complete transactions through the app: With stakeholders intending to shift roughly 80% of transactions online, a goal of increased use of the mobile app to process transactions remotely is 
+   an objective that stakeholders will attempt to implement. This metric can be accomplished through methods such as technology staff or an external developer group implementing user interfaces or improved accessibility 
+   to the app components used by customers when processing transactions. 
 
    5. **Product Vision Statement**  
    Write a concise vision statement that summarizes the long-term purpose and intent of the product.   Describe the context and origin of the product being specified in this RD. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the RD defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful but not required.
