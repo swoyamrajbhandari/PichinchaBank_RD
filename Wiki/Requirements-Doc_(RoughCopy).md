@@ -52,10 +52,10 @@ Provide an overview of the sections and contents of the document
 
    4. **Assumptions and Dependencies**  
    The successful implementation of this project relies on several critical assumptions and dependencies. The following factors form the foundation upon which the project’s framework is built:
-      - User Authentication: We assume that the current mechanisms for user authentication are robust and secure. This includes the assumption that the current security protocols are sufficient to protect sensitive financial transactions and personal data against potential cyber threats. Any changes or failures in this area could impact user trust and system integrity.
+      - User Authentication: We assume that the mechanisms for user authentication in Pichincha Bank's current application are robust and secure. This includes the assumption that the current security protocols are sufficient to protect sensitive financial transactions and personal data against potential cyber threats. Any changes or failures in this area could impact user trust and system integrity.
       - Existing Technological Infrastructure: We rely on the current app and website’s ability to support the addition of new features without compromising performance. This includes assumptions about the scalability of the current system to handle an increase in user traffic and international transfer demands.
       - Third Party Services: We depend on the stability and reliability of external platforms like SWIFT Alliance for processing transactions and Docusign for digital signatures. Any significant disruptions in these services could impact the functionality and reliability of the international transfer system.
-      - Legal Compliance: We expect the system to continue to comply with international banking regulations. Changes in banking regulations could require significant adjustments to the project scope or design. 
+      - Legal Compliance: We assume that the addition of international transfers to the existing application will comply with current and future international regulations. Changes in banking regulations could require significant adjustments to the project scope or design. 
       - User Adoption: We assume that users will readily transition to the new online method for international transfers.
      
       These assumptions should be regularly reviewed to ensure they remain valid throughout the project’s development.
