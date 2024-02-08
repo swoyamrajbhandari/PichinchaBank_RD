@@ -227,6 +227,9 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Complete a Transfer|The marking of a transfer as finished by a teller after successfully depositing the funds into the beneficiary account.|
 |Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
+
+|Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
+
 |Employee Facing Side|The interface used by bank employees (tellers) to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 |Help Information|Text displayed within the app providing guidance on how to complete the digital RTA form and other related queries.|
 |Ordering Customer|The individual or entity initiating an international money transfer. This party is responsible for providing the necessary information and funds for the transfer.|
