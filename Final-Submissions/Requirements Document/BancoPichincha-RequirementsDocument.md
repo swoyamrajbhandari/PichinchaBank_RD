@@ -158,7 +158,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 > 
 > **Characteristics:** Individuals using the system for personal international money transfers. This group is characterized by a wide range of technical expertise, from novice to advanced users, and includes both infrequent and regular users.
 >
-> **Privileges:** Regular Users are able to initiate and manage international transfers, access and fill out the digital RTA Form, save beneficiary details for future transactions, and receive status notifications about their transfers.
+> **Privileges:** Regular Users are able to initiate and manage their international transfers, access and fill out the digital RTA Form, save beneficiary details for future transactions, and receive status notifications about their transfers.
 >
 > **Special Considerations:** While Regular Users have access to the full suite of transfer functionalities, their transactions are processed with standard priority, which may result in slightly longer processing times during peak periods compared to Business Users.
 
@@ -166,7 +166,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 > 
 > **Characteristics:** Organizations or entities that require the system for business-related international transfers. This subclass includes small and medium enterprises, large corporations, and other financial entities. Business Users are expected to have a higher volume of transactions and a greater familiarity with the international transfer processes.  
 >
-> **Privileges:** In addition to the privileges available to Regular Users, Business Users are given priority processing to accommodate the higher volume and urgency often associated with business transactions. This ensures faster processing times and supports the operational needs of businesses.  
+> **Privileges:** See Regular User priviledges.   
 >  
 > **Special Considerations:** Business Users may require additional support for batch processing of transactions and might benefit from detailed transaction reporting for accounting purposes.  
 
