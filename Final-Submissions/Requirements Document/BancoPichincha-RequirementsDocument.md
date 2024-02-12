@@ -164,7 +164,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 
 > #### - Subclass 2: Business User -
 > 
-> **Characteristics:** Organizations or entities that require the system for business-related international transfers. This subclass includes small and medium enterprises, large corporations, and other financial entities. Business Users are expected to have a higher volume of transactions and a greater familiarity with the international transfer processes.  
+> **Characteristics:** Organizations or entities that require the system for business-related international transfers. This subclass includes small and medium enterprises, large corporations, and other financial entities. Business Users are expected to have a higher volume of transactions and may have increased familiarity with the international transfer processes.  
 >
 > **Privileges:** See Regular User priviledges.   
 >  
