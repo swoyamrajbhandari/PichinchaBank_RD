@@ -168,7 +168,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 >
 > **Privileges:** In addition to the privileges available to Regular Users, Business Users are given priority processing to accommodate the higher volume and urgency often associated with business transactions. This ensures faster processing times and supports the operational needs of businesses.  
 >  
-> **Special Considerations:** Business Users may require additional support for batch processing of transactions and might benefit from enhanced security measures and detailed transaction reporting for accounting purposes.  
+> **Special Considerations:** Business Users may require additional support for batch processing of transactions and might benefit from detailed transaction reporting for accounting purposes.  
 
 ### Administrative Class
 
