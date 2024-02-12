@@ -174,11 +174,11 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 
 > #### - Subclass 1: Bank Tellers -
 >
-> **Characteristics:** Bank employees responsible for verifying and processing international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the Swift System.
+> **Characteristics:** Bank employees are responsible for verifying international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the SWIFT System.
 >
-> **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the Swift System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
+> **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the SWIFT System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
 >
-> **Responsibilities:** Their primary responsibility includes managing the transfer workflow, from claim to completion or rejection, and providing support to customers as needed.
+> **Responsibilities:** Their primary responsibility includes inputting customer data into the SWIFT system and providing support to customers as needed.
 
 > #### - Subclass 2: System Administrators -
 >
