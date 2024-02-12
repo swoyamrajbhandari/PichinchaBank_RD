@@ -1,4 +1,4 @@
-# Requirements Document - Banco Pichincha (January 30, 2024)
+# Requirements Document - Pichincha Bank (January 30, 2024)
 
 ## Revision History
 
