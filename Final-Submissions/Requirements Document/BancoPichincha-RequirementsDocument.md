@@ -40,7 +40,7 @@ The following requirements document contains the complete set of requirements pe
 ## 2.1 Background 
 Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns through the implementation of a digital system.   
 
-Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank employees and customers. The following steps further describe the current process:
+Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank tellers and customers. The following steps further describe the current process:
 
    1. An ordering customer arrives at a Pichincha Bank location and waits for an available teller  
 
@@ -59,12 +59,12 @@ The process outlined above assumes no errors were made by either the customer co
 In response to concerns about the efficiency of the current process, Pichincha Bank is seeking to enhance its international fund transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
  
 ## 2.2 Business Opportunity  
-The current financial transaction system for international fund tranfers is inefficient and affects both customers and employees.  
+The current financial transaction system for international fund tranfers is inefficient and affects both customers and bank tellers.  
 
 * Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers spend time walking clients through the physical forms and verifying that they contain the correct and appropriate information.
-* The long duration of the transaction causes customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, profits, and employees’ morale and performance as they regularly have to deal with unhappy customers. 
+* The long duration of the transaction causes customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, profits, and tellers’ morale and performance as they regularly have to deal with unhappy customers. 
 
-Our team proposes the implementation of a digital transaction. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall customer experience and satisfaction as well as foster a positive environment for employees.
+Our team proposes the implementation of a digital transaction. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall customer experience and satisfaction as well as foster a positive environment for bank tellers.
 
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
@@ -87,12 +87,12 @@ The following success metrics are indicators that allow Pichincha Bank stakehold
 * **Increase Customer Base to 2 million:** Internationally, Pichincha Bank has roughly 1.5 million members. Stakeholders aim to increase this number to approximately 2 million, which shall increase the rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore increase the total number of customers intending to process international transfers with Pichincha Bank.  
 
 ## 2.5 **Product Vision Statement**  
-The International Bank Transfer System will be integrated into the existing Pichincha Bank web and mobile applications and provides customers the ability to perform an international transfer without the need to meet with a bank employee in person. The system will provide customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing customers to provide and submit the required information to complete an international transfer remotely. The functionality of the system also extends to administrative users, providing a review and processing portal for a bank employee to process international transfer requests created by a customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer customer base to a Pichincha Bank application, thus freeing teller resources for tasks requiring in person support.
+The International Bank Transfer System will be integrated into the existing Pichincha Bank web and mobile applications and provides customers the ability to perform an international transfer without the need to meet with a bank teller in person. The system will provide customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing customers to provide and submit the required information to complete an international transfer remotely. The functionality of the system also extends to administrative users, providing a review and processing portal for a bank teller to process international transfer requests created by a customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer customer base to a Pichincha Bank application, thus freeing teller resources for tasks requiring in person support.
 
 # 3.0 Scope and Limitations  
 
 ## 3.1 Major Features  
-The implemented system must be an addition to the current bank app which will facilitate international transfers. There is a customer facing side of the app and an employee facing side which each require different features.
+The implemented system must be an addition to the current bank app which will facilitate international transfers. There is a customer facing side of the app and a teller facing side which each require different features.
 
 The major features of the customer facing side are:  
 
@@ -105,9 +105,9 @@ The major features of the customer facing side are:
 * **Transfer Status Notifications:** After a teller marks a transfer as either completed or rejected (see employee facing features for details), the ordering customer will receive a notification (via either email or SMS depending on preferred method selected in user settings). The notification must state success status, and next steps for failed transfers.
 * **Help Information:** Help text is displayed containing more information about what is required to be entered in each data entry box on the digital RTA form.
       
-The major features for the employee facing side are:  
+The major features for the teller facing side are:  
 
-* **International Transfer Processing Portal:** An interface in which a bank employee will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, and Completed.
+* **International Transfer Processing Portal:** An interface in which a bank teller will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, and Completed.
 * **Claim a Transfer:** A teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in processing” category.
 * **Complete a Transfer:** After an international transfer is successfully deposited to the beneficiary the teller processing that transfer will manually mark the transfer as complete. The software then sorts the transfer into the “completed” category.
 * **Reject Transfer:** If there is an issue with the transfer which prevents it from being deposited the teller will manually reject the transfer. The software then sorts the transfer into the “completed” category.
@@ -115,14 +115,14 @@ The major features for the employee facing side are:
 * **Dealing with Rejected Transfers:** If a customer contacts the bank to fix a rejected transfer, a teller will claim the transfer and the system will move it to “in processing”.
          
 ## 3.2 Project Scope  
-The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and employee interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
+The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
 
 The final product will support the business goals described in Section 2.  
 
 * **Improve Staff Productivity:** The software will improve staff productivity by allowing customers to make international transfers without direct interaction with staff. As well the software “Help Information” feature will provide extra information to ordering customers. This will save the tellers time to spend on other important tasks.
 * **Reduce Wait Times:** The software will eliminate wait times to fill out RTA forms for online international transfers by immediately providing online users with RTA forms. The in person wait time to fill out RTA forms will also be reduced as the majority of ordering customers will prefer the benefits filling out the form online provides. 
 * **Customer Satisfaction:** The software will contain numerous features designed to improve customer satisfaction. Ordering customers will be pleased by not needing to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online saving time and energy. The saved contacts feature the software provides will also save ordering customers the hassle of trying to send money to an international beneficiary repeatedly as it is now easily facilitated within the app reducing need for tellers to process the same information each time a transfer to the same beneficiary, shortening time until transaction is made.
-* **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, employees will not need to worry about the confusion of misreading customers’ handwriting.    
+* **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, tellers will not need to worry about the confusion of misreading customers’ handwriting.    
 
 ## 3.3 Limitations and Exclusions  
 The Pichincha Bank international transfer system aims to enhance the efficiency and user-friendliness of international transactions through its mobile and web applications. This initiative is driven by the need to improve customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations based on the detailed project document and the exclusions that extend beyond the project's scope.
@@ -174,7 +174,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 
 > #### - Subclass 1: Bank Tellers -
 >
-> **Characteristics:** Bank employees are responsible for verifying international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the SWIFT System.
+> **Characteristics:** Bank tellers are responsible for verifying international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the SWIFT System.
 >
 > **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the SWIFT System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
 >
@@ -226,7 +226,6 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
-|Employee Facing Side|The interface used by bank employees (tellers) to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 |Help Information|Text displayed within the app providing guidance on how to complete the digital RTA form and other related queries.|
 |Ordering Customer|The individual or entity initiating an international money transfer. This party is responsible for providing the necessary information and funds for the transfer.|
 |Pichincha Bank|A private banking institution based in Ecuador, offering a range of services including investments, account management, and money transfers.|
@@ -235,6 +234,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |SWIFT|(*Society for Worldwide Interbank Financial Telecommunication*) A global member-owned cooperative providing secure messaging services and interface software for financial transactions among its members.|
 |SWIFT Alliance System|The digital platform used by Pichincha Bank to process international money transfers through the SWIFT network.|
 |Teller|A customer facing bank employee that helps customer issues and requests in person.|  
+|Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 
 ## 4.6 References  
 |ID|Reference|
