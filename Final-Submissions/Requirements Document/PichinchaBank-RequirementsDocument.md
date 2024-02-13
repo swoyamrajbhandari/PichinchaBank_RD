@@ -191,6 +191,9 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 By distinguishing between these user classes and their respective characteristics, Pichincha Bank can tailor the international transfer system to meet the varied needs of its users effectively, ensuring a seamless and secure experience for both customers and administrative personnel.
 
 ## 4.2 Operating Environment  
+
+The following outlines the operating environment of the system, providing crucial insights into the hardware, software platforms, and applications with which the system must seamlessly integrate and function. Understanding these constraints and the operating environment is paramount for development teams as they navigate the design, development, and deployment phases of the project.
+
 ||||
 |-|-|-|
 |CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers accessing the application through the website utilize a laptop or desktop computer.|
