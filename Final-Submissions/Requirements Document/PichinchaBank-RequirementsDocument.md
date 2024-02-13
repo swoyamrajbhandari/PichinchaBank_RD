@@ -69,20 +69,20 @@ Our team proposes the implementation of a digital transaction. This initiative a
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
 
-* **Improve Staff Productivity:** By eliminating the need for customers to physically visit the bank to process an international transfer, teller resources can be better allocated to resolving customer inquiries that require an in-person visit. 
+* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, teller resources can be better allocated to resolving customer inquiries that require an in-person visit. 
 
-* **Reduce Wait Times:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a teller. 
+* **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a teller. 
       
-* **Customer and Employee Satisfaction:** Improving the accessibility and clarity of the international transfer system will reduce transaction processing time, and thus reduce complaints and improve employee and customer satisfaction. 
+* **Increase Customer and Employee Satisfaction by 50% in Eight Months:** Improving the accessibility and clarity of the international transfer system will reduce transaction processing time, and thus reduce complaints and improve employee and customer satisfaction. 
       
-* **Reduction of Successive Bank Visits:** Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce unnecessary visits.  
+* **Reduce Bank Visits Per Customer to One in a Year :** Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce unnecessary visits.  
 
 ## 2.4 Success Metrics  
 The following success metrics are indicators that allow Pichincha Bank stakeholders to measure the overall success of the implemented solution: 
 
 * **80% of International Transfers to be Completed Digitally:** International transfers are currently completed through a system that requires customers to physically visit the bank. Digital completion of 80% of international transfers would increase bank efficiency, financial profits and customer satisfaction. 
    
-* **90% Success Rate of International Transfers via App:** With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are delayed or may include errors that further delay the transaction. This metric can be validated through a reduction in the number of customer inquiries and request-to-fund transfer times.   
+* **90% Success Rate of International Transfers via App:** With customers running into issues through filling out the RTA form or accessing the required security codes, international transfers are delayed or may include errors that further delay the transaction. This metric can be validated through a reduction in the number of customer inquiries or international transfer times.   
    
 * **Increase Customer Base to 2 million:** Internationally, Pichincha Bank has roughly 1.5 million members. Stakeholders aim to increase this number to approximately 2 million, which shall increase the rate of transactions and further increase company profits. This metric can be attained through increased customer satisfaction, in doing so, customers may refer Pichincha Bank to their family and friends and therefore increase the total number of customers intending to process international transfers with Pichincha Bank.  
 
