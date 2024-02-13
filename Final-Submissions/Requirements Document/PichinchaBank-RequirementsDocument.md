@@ -13,24 +13,30 @@
 
 ## Table Of Contents  
 
-* 1.0 Overview  
-* 2.0 Business Requirements  
-   * 2.1 Background  
-   * 2.2 Business Opportunity  
-   * 2.3 Business Objectives  
-   * 2.4 Success Metrics  
-   * 2.5 Product Vision Statement  
-* 3.0 Scope and Limitations  
-   * 3.1 Major Features  
-   * 3.2 Project Scope  
-   * 3.3 Limitations and Exclusions  
-* 4.0 Context Description  
-   * 4.1 User Classes and Characteristics  
-   * 4.2 Operating Environment  
-   * 4.3 Design and Implementation Constraints  
-   * 4.4 Assumptions and Dependencies  
-   * 4.5 Glossary of Terms  
-   * 4.6 References
+* [1.0 Overview](#10-overview)  
+* [2.0 Business Requirements](#20-business-requirements)  
+   * [2.1 Background](#21-background)  
+   * [2.2 Business Opportunity](#22-business-opportunity)  
+   * [2.3 Business Objectives](#23-business-objectives)  
+   * [2.4 Success Metrics](#24-success-metrics)  
+   * [2.5 Product Vision Statement](#25-product-vision-statement)  
+* [3.0 Scope and Limitations](#30-scope-and-limitations)  
+   * [3.1 Major Features](#31-major-features)  
+   * [3.2 Project Scope](#32-project-scope)  
+   * [3.3 Limitations and Exclusions](#33-limitations-and-exclusions)  
+* [4.0 Context Description](#40-context-description)  
+   * [4.1 User Classes and Characteristics](#41-user-classes-and-characteristics)  
+   * [4.2 Operating Environment](#42-operating-environment)  
+   * [4.3 Design and Implementation Constraints](#43-design-and-implmentation-constraints)  
+   * [4.4 Assumptions and Dependencies](#44-assumptions-and-dependencies)  
+   * [4.5 Glossary of Terms](#45-glossary-of-terms)  
+   * [4.6 References](#46-references)
+* [5.0 System Features](#50-system-features)
+* [6.0 Data Requirements](#60-data-requirements)
+* [7.0 External Interface Requirements](#70-external-interface-requirements)
+* [8.0 Software Quality Attributes](#80-software-quality-attributes)
+* [9.0 Analysis Models](#90-analysis-models)
+* [10.0 Appendix](#100-appendix)
 
 # 1.0 Overview  
 The following requirements document contains the complete set of requirements pertaining to the development of a solution for Pichincha Banks inefficient paper method for performing international fund transfers.  
@@ -241,59 +247,73 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |--|---------|
 |[1]|“Banco Pichincha,” Wikipedia, Jan. 28, 2024. https://es.wikipedia.org/wiki/Banco_Pichincha (accessed Feb. 02, 2024).|
 
----
-
-# 5.0 System Features (Due Iteration 2 and beyond)  
+# 5.0 System Features  
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
-   1. **System Feature 1**  
-      State the feature name in just a few words.
+### 1. **System Feature 1**  
+State the feature name in just a few words.
 
-      1. **Description and Priority**  
-      Provide a short description of the feature and indicate whether it is high, medium, or low priority.
-  
-      2. **Functional Requirements**  
-      Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
-      Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature.
-      Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.
+> #### **Description and Priority**  
+> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+>    
+> #### **Functional Requirements**  
+> *Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
+> Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature.
+> Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.*
+>
+> REQ-1:
+> 
+> REQ-2:
+> 
+> #### **Use cases associated with the feature or functional requirement**  
+> This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-       REQ-1:
+### 2. **System Feature 2 (and so on)**  
+State the feature name in just a few words.
 
-       REQ-2:
+> #### **Description and Priority**  
+> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+>    
+> #### **Functional Requirements**  
+> 
+> REQ-1:
+> 
+> REQ-2:
+> 
+> #### **Use cases associated with the feature or functional requirement**  
+> 
 
-      3. **Use cases associated with the feature or functional requirement**  
-      This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
-
-   2. **System Feature 2 (and so on)**  
-
-6. **Data Requirements**  
+# 6.0 Data Requirements   
       
-   1. **Logical data model**  
-   E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model. 
-   2. **Data dictionary**  
-   Composition of data strucutres, meaning, data type, length, format, and allowed values. 
-   3. **Reports**  
-   If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.
-   4. **Data acquisition, integrity, retention, and diposal**  
-   If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.  
+1. **Logical data model**   
+E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model.  
 
-7. **External Interface Requirements**  
+2. **Data dictionary**  
+Composition of data strucutres, meaning, data type, length, format, and allowed values.  
 
-   1. **User Interfaces**  
-   Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
+3. **Reports**  
+If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.  
+
+4. **Data acquisition, integrity, retention, and diposal**  
+If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.  
+
+# 7.0 External Interface Requirements  
+
+1. **User Interfaces**  
+Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
       
-   2. **Hardware Interfaces**  
-   Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+2. **Hardware Interfaces**  
+Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
    
-   3. **Software Interfaces**  
-   Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+3. **Software Interfaces**  
+Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
        
-   4. **Communication Interfaces**  
-   Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+4. **Communication Interfaces**  
+Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
 
-8. **Software Quality Attributes**  
+# 8.0 Software Quality Attributes  
 Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
 
-9. **Analysis Models**  
+# 9.0 Analysis Models  
 
-10. **Appendix**
+# 10.0 Appendix
