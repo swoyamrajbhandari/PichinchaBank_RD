@@ -194,7 +194,7 @@ By distinguishing between these user classes and their respective characteristic
 ||||
 |-|-|-|
 |CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pinchincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers accessing the application through the website utilize a laptop or desktop computer.|
-|CON~2|Operating Systems|The supported operating systems comprise iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the application through the website.|
+|CON~2|Operating Environment |The supported operating environments include operating systems iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the application through the website.|
 |CON~3|Software Applications|The system is integrated into an environment where it must integrate with the existing Pichincha Bank web and mobile app. The primary application is the Pichincha Bank mobile app, an existing app tailored for banking services. Additionally, the system interacts with the SWIFT Alliance system.|
 
 ## 4.3 Design and Implmentation Constraints  
