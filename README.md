@@ -11,7 +11,7 @@ This repository contains the documents and information pertaining to the develop
 
 * Preliminary work, info  
 * Developer meeting minutes  
-* Team Google Drive Link
+* [Team Google Drive Link](https://drive.google.com/drive/folders/1pFuIunZ9VAsOZeIMY6RkIUq_KgqAB27e?usp=drive_link)
 
 ### Workflow  
 
