@@ -200,7 +200,7 @@ The following outlines the operating environment of the system, providing crucia
 |CON~2|Operating Environment |The supported operating environments include operating systems iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the application through the website.|
 |CON~3|Software Applications|The system is integrated into an environment where it must integrate with the existing Pichincha Bank web and mobile app. The primary application is the Pichincha Bank mobile app, an existing app tailored for banking services. Additionally, the system interacts with the SWIFT Alliance system.|
 
-## 4.3 Design and Implmentation Constraints  
+## 4.3 Design and Implementation Constraints  
 
 Design and implementation constraints delineate the parameters within which the development of the international transfer system for Pichincha Bank must operate. These constraints encompass various facets, ranging from integration with existing systems to multilingual support and security considerations. Understanding these constraints is pivotal for ensuring that the final product aligns with the bank's operational standards and regulatory requirements.
 
