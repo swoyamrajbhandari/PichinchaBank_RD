@@ -75,7 +75,7 @@ Our team proposes the implementation of a digital transaction. This initiative a
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
 
-* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, teller resources can be better allocated to resolving customer inquiries that require an in-person visit. 
+* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, teller's can better allocate their time to resolving customer inquiries that require an in-person visit. 
 
 * **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a teller. 
       
