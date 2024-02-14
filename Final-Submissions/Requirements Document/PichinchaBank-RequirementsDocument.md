@@ -257,19 +257,19 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
 ### 1. **System Feature 1**  
-State the feature name in just a few words.
+International money transfer request
 
 > #### **Description and Priority**  
-> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+> Customer should be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller should be able to claim a transfer to review and process a transfer through the SWIFT system with a SWIFT code. This system feature is high priority. 
 >    
 > #### **Functional Requirements**  
 > *Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
 > Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature.
 > Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.*
 >
-> REQ-1:
+> REQ-1: Customer must correctly fill out RTA form
 > 
-> REQ-2:
+> REQ-2: Teller must successfully input customer's data into SWIFT alliance system
 > 
 > #### **Use cases associated with the feature or functional requirement**  
 > This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
