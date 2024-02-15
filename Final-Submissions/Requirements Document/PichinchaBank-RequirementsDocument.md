@@ -256,26 +256,23 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 # 5.0 System Features  
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
-### 1. **System Feature 1**  
-**International money transfer request**
+### **International money transfer request**
 
-> #### **Description and Priority**  
-> Customer should be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller should be able to claim a transfer to review and process a transfer through the SWIFT system with a SWIFT code. This system feature is high priority. 
+> #### **Description**
+> Customer should be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller should be able to claim a transfer to review and process a transfer through the SWIFT system with a SWIFT code.
+>
+> **Priority**: High
 >    
 > #### **Functional Requirements**
 > |||
 > |-|-|
 > |REQ~1|Customer shall be able to specify the amount of money to transfer|
 > |REQ~2|Teller shall be able to input customer's data into the SWIFT alliance system|
+> |REQ~3|As a customer, I want to choose a contact that I can send money to|
+> |REQ~4|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
+> |REQ~5|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
 > 
-> #### **Use cases associated with the feature or functional requirement**
-> |**Use Case**|**User Story**|
-> |-|-|
-> |Choose contact to send money to|As a customer, I want to choose a contact that I can send money to|
-> |Input transfer amount and fluctuating data fields|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
-> |Input international transfer security pin|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
-
-### 2. **System Feature 2 (and so on)**  
+> ### 2. **System Feature 2 (and so on)**  
 State the feature name in just a few words.
 
 > #### **Description and Priority**  
