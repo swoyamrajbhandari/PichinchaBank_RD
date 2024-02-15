@@ -296,9 +296,9 @@ State the feature name in just a few words.
 >    
 > #### **Functional Requirements**  
 > 
-> REQ-1:
+> REQ-1: The system shall allow a customer to cancel a transfer.
 > 
-> REQ-2:
+> REQ-2: The system shall enable a teller to change transfer status.
 > 
 > #### **Use cases associated with the feature or functional requirement**  
 > 
