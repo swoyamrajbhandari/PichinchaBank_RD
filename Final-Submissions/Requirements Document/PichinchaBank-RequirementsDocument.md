@@ -272,7 +272,7 @@ This template illustrates organizing the functional requirements for the product
 > |REQ~4|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
 > |REQ~5|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
 > 
-> ### 2. **System Feature 2 (and so on)**  
+### 2. **System Feature 2 (and so on)**  
 State the feature name in just a few words.
 
 > #### **Description and Priority**  
