@@ -274,8 +274,9 @@ State the feature name in just a few words.
 > #### **Use cases associated with the feature or functional requirement**  
 > This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-### 2. **System Feature 2 (and so on)**  
-State the feature name in just a few words.
+### 2. **System Feature 2 **  
+> State the feature name in just a few words
+Manage contact 
 
 > #### **Description and Priority**  
 > Provide a short description of the feature and indicate whether it is high, medium, or low priority.
