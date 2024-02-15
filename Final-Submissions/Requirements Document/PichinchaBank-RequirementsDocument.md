@@ -34,6 +34,10 @@
 * [5.0 System Features](#50-system-features)
 * [6.0 Data Requirements](#60-data-requirements)
 * [7.0 External Interface Requirements](#70-external-interface-requirements)
+   * [7.1 User Interfaces](#71-user-interfaces)
+   * [7.2 Hardware Interfaces](#72-hardware-interfaces)
+   * [7.3 Software Interfaces](#73-software-interfaces)
+   * [7.4 Communication Interfaces](#74-communication-interfaces)
 * [8.0 Software Quality Attributes](#80-software-quality-attributes)
 * [9.0 Analysis Models](#90-analysis-models)
 * [10.0 Appendix](#100-appendix)
@@ -249,9 +253,18 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 
 ## 4.6 References  
+
+#### Web References  
+
 |ID|Reference|
 |--|---------|
-|[1]|“Banco Pichincha,” Wikipedia, Jan. 28, 2024. https://es.wikipedia.org/wiki/Banco_Pichincha (accessed Feb. 02, 2024).|
+|[1]|“Banco Pichincha,” Wikipedia, Jan. 28, 2024. https://es.wikipedia.org/wiki/Banco_Pichincha (accessed Feb. 02, 2024).|  
+
+#### Image References  
+
+|ID|Reference|
+|--|---------|
+|[2]|"Banco Pichincha Mobile App Page," App Advice, n.d. https://appadvice.com/game/app/pichincha-banca-movil/999191728 (accessed Feb. 14, 2024).|  
 
 # 5.0 System Features  
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
@@ -305,17 +318,50 @@ If possible, describe how data is acquired, retained, and later on disposed. Des
 
 # 7.0 External Interface Requirements  
 
-1. **User Interfaces**  
-Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.
+> Note the requirements for each interface section. Define requirements for features that **the system** will have (from the perspective of the system)  
+
+## 7.1 User Interfaces  
+
+![login page](./images/login_page.png)  
+
+![accounts page](./images/accounts_page.png)  
+
+![transfers page](./images/transfer_page.png)
+
+> ![mobile contacts](./images/mobile_app_add_contact.jpeg)  
+> [[2] "Banco Pichincha Mobile App Page"](https://appadvice.com/game/app/pichincha-banca-movil/999191728)
+
+The user interface for the international bank transfer system will coincide with the existing Pichincha Bank mobile and web applications. To maintain consistency throughout the application, a matching design language will be used to seamlessly integrate  
+
+|||
+|-|-|
+|EIR~1|*external interface requirement 2*|
+
+*Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.*
       
-2. **Hardware Interfaces**  
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+## 7.2 Hardware Interfaces  
+
+|||
+|-|-|
+|EIR~1|*external interface requirement 2*|
+
+*Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.*
    
-3. **Software Interfaces**  
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.
+## 7.3 Software Interfaces  
+
+|||
+|-|-|
+|EIR~1|*external interface requirement 2*|
+
+*Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.*
        
-4. **Communication Interfaces**  
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
+## 7.4 Communication Interfaces  
+
+|||
+|-|-|
+|EIR~1|*external interface requirement 2*|
+
+*Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.*
 
 # 8.0 Software Quality Attributes  
 Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
