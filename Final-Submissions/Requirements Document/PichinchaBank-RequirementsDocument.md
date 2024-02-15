@@ -271,6 +271,8 @@ This template illustrates organizing the functional requirements for the product
 > |REQ~3|As a customer, I want to choose a contact that I can send money to|
 > |REQ~4|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
 > |REQ~5|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
+> |REQ~6|Teller shall be able to reject a transfer request if the customer provides insufficient data|
+> |REQ~7|System shall be able to automatically reject a transfer request if the customer has insufficient funds|
 > 
 ### 2. **System Feature 2 (and so on)**  
 State the feature name in just a few words.
