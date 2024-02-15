@@ -287,6 +287,20 @@ State the feature name in just a few words.
 > REQ-2:
 > 
 > #### **Use cases associated with the feature or functional requirement**  
+
+
+### 3. **Manage Transfer Status**  
+
+> #### **Description and Priority**  
+> This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
+>    
+> #### **Functional Requirements**  
+> 
+> REQ-1:
+> 
+> REQ-2:
+> 
+> #### **Use cases associated with the feature or functional requirement**  
 > 
 
 # 6.0 Data Requirements   
