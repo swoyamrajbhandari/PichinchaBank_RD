@@ -257,26 +257,23 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
 ### 1. **System Feature 1**  
-International money transfer request
+**International money transfer request**
 
 > #### **Description and Priority**  
 > Customer should be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller should be able to claim a transfer to review and process a transfer through the SWIFT system with a SWIFT code. This system feature is high priority. 
 >    
-> #### **Functional Requirements**  
-> *Where applicable - Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute related use case(s). Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
-> Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature.
-> Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.*
->
-> REQ-1: Customer shall be able to specify the amount of money to transfer
-> 
-> REQ-2: Teller shall be able to input customer's data into the SWIFT alliance system
-> 
-> #### **Use cases associated with the feature or functional requirement**  
-> 
->
-> |**Use Case**|**Description**|
+> #### **Functional Requirements**
+> |||
 > |-|-|
-> |Choose contact to send money to|As a customer, I want to choose a contact that I can send money to so that I can pay for a product|
+> |REQ~1|Customer shall be able to specify the amount of money to transfer|
+> |REQ~2|Teller shall be able to input customer's data into the SWIFT alliance system|
+> 
+> #### **Use cases associated with the feature or functional requirement**
+> |**Use Case**|**User Story**|
+> |-|-|
+> |Choose contact to send money to|As a customer, I want to choose a contact that I can send money to|
+> |Input transfer amount and fluctuating data fields|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
+> |Input international transfer security pin|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
 
 ### 2. **System Feature 2 (and so on)**  
 State the feature name in just a few words.
