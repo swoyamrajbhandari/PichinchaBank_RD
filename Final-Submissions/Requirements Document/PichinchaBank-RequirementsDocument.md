@@ -267,12 +267,16 @@ International money transfer request
 > Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind. These could be requirements that the clients provided directly or were defined by the designer group as a result of rendering the feature.
 > Each requirement should also include information a(1) bout Backward Traceability (the rationale for the requirements and the source – RFP and which section in it, client meeting and which notes from that meeting, etc.. and (2) Forward Traceability (how the requirement can be verified by the users.*
 >
-> REQ-1: Customer must correctly fill out RTA form
+> REQ-1: Customer shall be able to specify the amount of money to transfer
 > 
-> REQ-2: Teller must successfully input customer's data into SWIFT alliance system
+> REQ-2: Teller shall be able to input customer's data into the SWIFT alliance system
 > 
 > #### **Use cases associated with the feature or functional requirement**  
-> This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
+> 
+>
+> |**Use Case**|**Description**|
+> |-|-|
+> |Choose contact to send money to|As a customer, I want to choose a contact that I can send money to so that I can pay for a product|
 
 ### 2. **System Feature 2 (and so on)**  
 State the feature name in just a few words.
