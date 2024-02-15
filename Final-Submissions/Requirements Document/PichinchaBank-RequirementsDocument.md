@@ -299,7 +299,9 @@ State the feature name in just a few words.
 > REQ-1: The system shall allow a customer to cancel a transfer.
 > 
 > REQ-2: The system shall enable a teller to change transfer status.
-> 
+>
+> REQ-3: As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.
+
 > #### **Use cases associated with the feature or functional requirement**  
 > 
 
