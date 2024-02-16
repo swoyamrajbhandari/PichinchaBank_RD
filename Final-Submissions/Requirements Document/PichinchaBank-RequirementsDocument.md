@@ -9,6 +9,10 @@
 | Cache Money Inc | Feb-04-24 | Merging team members independent sections into doc | 1.0.2 |
 | Cache Money Inc | Feb-04-24 | Formatting changes and document review | 1.1.0 |
 | Cache Money Inc | Feb-04-24 | Iteration 1 RD submission | 2.0.0 |  
+| Cache Money Inc | Feb-07-24 | Revisions and changes from client review | 2.0.1 |
+| Cache Money Inc | Feb-11-24 | Revisions and changes from client review | 2.0.2 |  
+
+
 
 
 ## Table Of Contents  
@@ -267,7 +271,9 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |[2]|"Banco Pichincha Mobile App Page," App Advice, n.d. https://appadvice.com/game/app/pichincha-banca-movil/999191728 (accessed Feb. 14, 2024).|  
 
 # 5.0 System Features  
-This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
+*This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.*
+
+**For ME: Use case description for "teller reviewing a transfer request"**
    
 ### 1. **System Feature 1**  
 State the feature name in just a few words.
@@ -316,52 +322,82 @@ If your system will generate reports, then describe the attributes of those repo
 4. **Data acquisition, integrity, retention, and diposal**  
 If possible, describe how data is acquired, retained, and later on disposed. Describe the requirements for protecting the integrity of the data.  
 
-# 7.0 External Interface Requirements  
-
-> Note the requirements for each interface section. Define requirements for features that **the system** will have (from the perspective of the system)  
+# 7.0 External Interface Requirements   
 
 ## 7.1 User Interfaces  
 
-![login page](./images/login_page.png)  
-
-![accounts page](./images/accounts_page.png)  
-
-![transfers page](./images/transfer_page.png)
-
-> ![mobile contacts](./images/mobile_app_add_contact.jpeg)  
-> [[2] "Banco Pichincha Mobile App Page"](https://appadvice.com/game/app/pichincha-banca-movil/999191728)
-
-The user interface for the international bank transfer system will coincide with the existing Pichincha Bank mobile and web applications. To maintain consistency throughout the application, a matching design language will be used to seamlessly integrate  
+The user interface for the International Bank Transfer System will coincide with the existing Pichincha Bank mobile and web applications. To maintain consistency throughout the application, a matching design language will be used to seamlessly integrate the new system with the existing applications.   
 
 |||
 |-|-|
-|EIR~1|*external interface requirement 2*|
+|EIR~1|The system shall use the same colour codes as the existing application|
+|EIR~2.1|The system shall provide a method for a customer to create a new International Transfer Request (ITR)|
+|EIR~2.2|The system shall provide a customer the ability to enter RTA form data|
+|EIR~2.3|The system shall provide a method for a customer to save the current state of the RTA form|
+|EIR~2.4|The system shall provide a method for a customer to open a saved RTA form|
+|EIR~3.1|The system shall provide a method for a customer to create a new International Transfer Contact (ITC)|
+|EIR~3.2|The system shall provide a method for a customer to edit an ITC|
+|EIR~3.3|The system shall provide a method for a customer to delete an ITC|
+|EIR~4.1|When an ITR is completed by a customer, the system shall provide a method for an administrator to accept the ITR for review|
+|EIR~4.2|The system shall provide a method for an administrator to accept an ITR|
+|EIR~4.3|The system shall provide a method for an administrator to reject an ITR|
+|EIR~5|The system shall produce an error when a customer inputs a dollar amount into the RTF form that is greater than the current balance of their chosen account to send money from|
 
-*Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed.*
+#### Existing Application Reference  
+
+Referenced below are images showing examples of the exisitng Pichincha Bank web and mobile applications. these images provide reference for the design language that should be used when implementing the International Bank Transfer System.  
+
+> ![accounts page](./images/accounts_page.png)  
+> *The **accounts page** of the Pichincha Bank web application* 
+
+> ![mobile contacts](./images/mobile_app_add_contact.jpeg)   
+> *The **contact page** of the Pichincha Bank mobile application*  
+> [*[2] "Banco Pichincha Mobile App Page"*](https://appadvice.com/game/app/pichincha-banca-movil/999191728)   
       
 ## 7.2 Hardware Interfaces  
 
+Due to the integration of the International Bank Transfer System with the existing Pichincha Bank web and mobile applications, the system must be compatible with the hardware devices with which the web and mobile applications are compatible.    
+
 |||
 |-|-|
-|EIR~1|*external interface requirement 2*|
+|EIR~6|The system shall be able to operate on multiple device types outlined in Table 1-1|
+|EIR~6.1|The system shall be able to operate on Windows devices|
+|EIR~6.2|The system shall be able to operate on Mac devices|
+|EIR~6.3|The system shall be able to operate on IOS mobile devices|  
+|EIR~6.4|The system shall be able to operate on Android mobile devices|  
 
-*Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.*
+> **Table 1-1** Requirements for device compatability of the International Bank Transfer System
+> |Device Compatability|Requirement|
+> |-|-|
+> |Windows|.1|
+> |Mac|.2|  
+> |IOS|.3|  
+> |Android|.4|   
    
 ## 7.3 Software Interfaces  
 
+The International Bank Transfer System will be integrated into the existing Pichincha Bank web and mobile applications. The new system must be able to interact seamlessly with the existing infrastructure. The SWIFT Alliance System is also a critical component in performing an international transfer. The system must also allow an administrative user to interact with the SWIFT system to process and complete a transfer request.  
+
 |||
 |-|-|
-|EIR~1|*external interface requirement 2*|
-
-*Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Identify data that will be shared across software components.*
+|EIR~7.1|The system shall be integrated into the existing Pichincha Bank web application|
+|EIR~7.2|The system shall be integrated into the existing Pichincha Bank mobile application|
+|EIR~8.1|The system shall give an administrator the ability to interact with the SWIFT Alliance System|
+|EIR~8.2|(**TBD**) The system shall give an administrator the ability to input *\<data-type\>* into the SWIFT Alliance System|
+|EIR~9|The system shall store International Transfer Contact data to the existing Pichincha Bank database|
+|EIR~10|The system shall store International Transfer Customer data to the existing Pichincha Bank database|
+|EIR~11.1|When a customer submits an RTA form, the system shall send an e-mail notification to the customer notifying them that the system has received their transfer request form|
+|EIR~11.2|When an administrator sets the status of an International Bank Transfer request to approved, the system shall send an e-mail notification to the customer notifying them that the transfer request has been approved|
+|EIR~11.3|When an administrator sets the status of an International Bank Transfer request to rejected, the system shall send an e-mail notification to the customer notifying them that the transfer request has been rejected|  
        
 ## 7.4 Communication Interfaces  
 
+The communication interfaces for the International Bank Transfer System must be able to commmunicate relavent information about the status of the transfer request to the requesting customer. This communication can be implemented via e-mail, SMS, or other means such that the customer is easily able to access relavent status about the transfer request. Due to the systems communication with the SWIFT Alliance System, the appropriate communication between the International Bank Transfer System and the SWIFT Alliance system must be used.  
+
 |||
 |-|-|
-|EIR~1|*external interface requirement 2*|
-
-*Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.*
+|EIR~12|The system must be able to send e-mail notifications to a customer|
+|EIR~13|(**TBD**) The system must communicate with the SWIFT Alliance System via \<communication-type\>|  
 
 # 8.0 Software Quality Attributes  
 Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
