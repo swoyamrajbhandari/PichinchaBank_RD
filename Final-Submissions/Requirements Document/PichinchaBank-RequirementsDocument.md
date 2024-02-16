@@ -233,8 +233,11 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |----|----------|
 |Auto-Reject Transfer|An automatic system function that rejects a transfer if there is an insufficient balance in the ordering customer's account to cover the transfer amount.|
 |Beneficiary|The account or bank receiving money from an international transfer. It is the ultimate destination of the funds sent by the ordering customer.|
+|C.C.|(*Carné de Ciudadanía*) National identity card used in Ecuador, serves as offical proof of identity.|
+|C.I.|(*Cédula de Identidad*) National identity card used in Ecuador, serves as offical proof of identity.|
 |Claim a Transfer|The action taken by a teller to indicate they are verifying the information for a transfer and will be processing it through the SWIFT system.|
 |Complete a Transfer|The marking of a transfer as finished by a teller after successfully depositing the funds into the beneficiary account.|
+|Contact| Beneficiary which the ordering customer has previously created an international transfer request for. |
 |Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
@@ -243,10 +246,12 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Pichincha Bank|A private banking institution based in Ecuador, offering a range of services including investments, account management, and money transfers.|
 |Reject Transfer|The action taken by a teller when a transfer cannot be processed due to issues with the information provided, leading to its cancellation.|
 |RTA Form|(*Request for Transfer Abroad form*) The request form used by Pichincha Bank to enact a transfer of funds internationally.|
+|RUC|(*Registro Único de Contribuyentes*) Unique identification number assigned to individuals and businesses for tax purposes in Ecuador.|
 |SWIFT|(*Society for Worldwide Interbank Financial Telecommunication*) A global member-owned cooperative providing secure messaging services and interface software for financial transactions among its members.|
 |SWIFT Alliance System|The digital platform used by Pichincha Bank to process international money transfers through the SWIFT network.|
 |Teller|A customer facing bank employee that helps customer issues and requests in person.|  
 |Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
+
 
 ## 4.6 References  
 |ID|Reference|
