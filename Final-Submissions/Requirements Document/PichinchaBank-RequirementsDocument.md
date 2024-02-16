@@ -294,8 +294,54 @@ State the feature name in just a few words.
 1. **Logical data model**   
 E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model.  
 
-2. **Data dictionary**  
-Composition of data strucutres, meaning, data type, length, format, and allowed values.  
+2. **Data dictionary**
+
+The data dictionary below defines the composition of data structures and their contents as they relate to the project.
+
+| Data Element | Description | Composition or Data Type | Length | Values |
+|---|---|---|---|---|
+| Accepted Declarations | If the ordering customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
+| Account Verification PIN | The PIN used to verify that the submitter of an international transfer request is the ordering customer. | Numeric characters | 4 |  |
+| Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
+| Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
+| Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 |  |
+| Beneficiary Bank City | City the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary Bank Country | Country the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary Bank Name | Name of the beneficiary bank. | Alphabetic characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary Bank RTA Form Section | The section of the digital RTA form containing information regarding the beneficiary bank. | Beneficiary Bank Name + Beneficiary Bank SWIFT Code + Beneficiary Bank Address + Beneficiary Bank Transit Number + Beneficiary Bank City + Beneficiary Bank Country |  |  |
+| Beneficiary Bank SWIFT Code | SWIFT code belonging to the beneficiary bank. | Alphanumeric characters | 11 |  |
+| Beneficiary Bank SWIFT Code | SWIFT code belonging to the ordering bank. | Alphanumeric characters | 11 |  |
+| Beneficiary Bank Transit Number | Transit Number of the beneficiary bank branch | Numeric characters | 5 |  |
+| Beneficiary City | City the beneficiary is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary Country | Country the beneficiary is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary Name | First and last name or company name of the beneficiary.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Beneficiary RTA Form Section | The section of the digital RTA form containing information regarding the beneficiary. | Beneficiary Name + Beneficiary Account Number + Beneficiary Address + Beneficiary City + Beneficiary Country |  |  |
+| Contact List | The list of all contacts an ordering customer has. | 1:n{International Contact Profile} |  |  |
+| Contact Transfer History | All previous requested international transfers from the ordering customer to a beneficiary. | 1:n{Form Completion Date} + 1:n{Transfer Value} + 1:n{Transaction Reason Code} + 1:n{Transfer Reference} +1:n{ International Transfer Status} |  |  |
+| Customer Profile | Ordering customer’s profile in the international transfer application. | Ordering Customer Name +Ordering Customer Identification + Ordering Customer Address + Ordering Customer Postal Code + Ordering Customer Phone Number + Ordering Customer Email + Account Verification PIN |  |  |
+| Employee ID | Identification number of a Pichincha Bank employee. | Numeric characters | 15 |  |
+| Employee Name | Name of a Pichincha Bank employee. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Form Completion Date | Date RTA form was submitted by ordering customer on. | Numeric Date | 10 | dd/mm/yyyy format in numbers |
+| International Contact Profile | Profile of a contact who has been a beneficiary to a international transfer from the ordering customer. | Beneficiary Name + Beneficiary Account Number + Beneficiary Address + Beneficiary City + Beneficiary Country + Beneficiary Bank Name + Beneficiary Bank SWIFT Code + Beneficiary Bank Address + Beneficiary Bank Transit Number + Beneficiary Bank City + Beneficiary Bank Country International contact + Contact Transfer History |  |  |
+| International Transfer Instance RTA Form Section | The section of the digital RTA form containing information regarding the international transfer instance. | Transfer Currency + Transfer Value + Transaction Code + Transaction Reason Code + Transfer Reference |  |  |
+| International Transfer Status | The status of an international transfer request. | Alphabetic characters, spaces, parentheses | 15 | Can be: “Unprocessed (new beneficiary)”, “Unprocessed (existing beneficiary)”, “In processing”, “Completed”, and “Rejected” |
+| Ordering Customer | Information regarding the ordering customer. | Ordering Customer Name + 1:n{Ordering Customer Account Number} |  |  |
+| Ordering Customer Account Number | Ordering customer’s account number to be debited. | Numeric characters  | 17 |  |
+| Ordering Customer Address | Address of the ordering customer. | Alphanumeric characters | 100 |  |
+| Ordering Customer Email | Email of the ordering customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
+| Ordering Customer Identification | Identification number from ordering customer’s  C.I., C.C., Passport, or RUC. | Numeric characters  | 11 |  |
+| Ordering Customer Name | First and last name or company name of the ordering customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| Ordering Customer Phone Number | Phone number of the ordering customer. | Numeric characters  | 15 |  |
+| Ordering Customer Postal Code | Postal Code of the ordering customer. | Alphanumeric characters | 6 |  |
+| Ordering Customer RTA Form Section | The section of the digital RTA form containing information regarding the ordering customer. | Ordering Customer Name +Ordering Customer Identification + Ordering Customer Address + Ordering Customer Postal Code + Ordering Customer Phone Number + Ordering Customer Email + Ordering Customer Account Number |  |  |
+| RTA Form | The digital form which contains all data necessary to make an international transfer. | Form Completion Date + Ordering Customer RTA Form Section + Beneficiary Bank RTA Form Section + Beneficiary RTA Form Section + International Transfer Instance RTA Form Section + Accepted Declarations |  |  |
+| Submitted International Transfer Request | The object containing all information related to an international transfer request which has been submitted by the ordering customer. Includes transfer status and teller assignee. | RTA Form + International Transfer Status + Teller |  |  |
+| SWIFT Alliance | A best assumption of information the SWIFT Alliance Application uses. | RTA Form + International Transfer Status + Ordering Bank SWIFT Code |  |  |
+| Teller | Information regarding a teller employed at Pichincha Bank. Including current assigned International Transfer Requests. | Employee ID + Employee Name + 1:n{International Transfer Request} |  |  |
+| Transaction Reason Code | Reason for international transfer code. | Numeric characters | 3 |  |
+| Transfer Currency | ISO 4217 currency code for transfer to be made in. | Alphabetic characters | 3 |  |
+| Transfer Reference | Message from the ordering customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
+| Transfer Value | Value to be transferred to beneficiary. | Numeric characters | 12 |  |
 
 3. **Reports**  
 If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.  
