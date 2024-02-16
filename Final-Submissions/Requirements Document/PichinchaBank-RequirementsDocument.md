@@ -300,7 +300,7 @@ The data dictionary below defines the composition of data structures and their c
 
 | Data Element | Description | Composition or Data Type | Length | Values |
 |---|---|---|---|---|
-| Accepted Declarations | If the ordering customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
+| <a name="Accepted_Declarations"></a> Accepted Declarations | If the ordering customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
 | Account Verification PIN | The PIN used to verify that the submitter of an international transfer request is the ordering customer. | Numeric characters | 4 |  |
 | Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
 | Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
@@ -334,7 +334,7 @@ The data dictionary below defines the composition of data structures and their c
 | Ordering Customer Phone Number | Phone number of the ordering customer. | Numeric characters  | 15 |  |
 | Ordering Customer Postal Code | Postal Code of the ordering customer. | Alphanumeric characters | 6 |  |
 | Ordering Customer RTA Form Section | The section of the digital RTA form containing information regarding the ordering customer. | Ordering Customer Name +Ordering Customer Identification + Ordering Customer Address + Ordering Customer Postal Code + Ordering Customer Phone Number + Ordering Customer Email + Ordering Customer Account Number |  |  |
-| RTA Form | The digital form which contains all data necessary to make an international transfer. | Form Completion Date + Ordering Customer RTA Form Section + Beneficiary Bank RTA Form Section + Beneficiary RTA Form Section + International Transfer Instance RTA Form Section + Accepted Declarations |  |  |
+| RTA Form | The digital form which contains all data necessary to make an international transfer. | Form Completion Date + Ordering Customer RTA Form Section + Beneficiary Bank RTA Form Section + Beneficiary RTA Form Section + International Transfer Instance RTA Form Section + [Accepted Declarations](#Accepted_Declarations) Accepted Declarations |  |  |
 | Submitted International Transfer Request | The object containing all information related to an international transfer request which has been submitted by the ordering customer. Includes transfer status and teller assignee. | RTA Form + International Transfer Status + Teller |  |  |
 | SWIFT Alliance | A best assumption of information the SWIFT Alliance Application uses. | RTA Form + International Transfer Status + Ordering Bank SWIFT Code |  |  |
 | Teller | Information regarding a teller employed at Pichincha Bank. Including current assigned International Transfer Requests. | Employee ID + Employee Name + 1:n{International Transfer Request} |  |  |
