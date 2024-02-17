@@ -271,9 +271,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |[2]|"Banco Pichincha Mobile App Page," App Advice, n.d. https://appadvice.com/game/app/pichincha-banca-movil/999191728 (accessed Feb. 14, 2024).|  
 
 # 5.0 System Features  
-*This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.*
-
-**For ME: Use case description for "teller reviewing a transfer request"**
+*This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.*  
    
 ### 1. **System Feature 1**  
 State the feature name in just a few words.
@@ -306,7 +304,28 @@ State the feature name in just a few words.
 > REQ-2:
 > 
 > #### **Use cases associated with the feature or functional requirement**  
-> 
+>  
+
+**For ME: Use case description for "teller reviewing a transfer request"**  
+
+|||
+|-|-|
+|ID and Name:|UC-1 Review of an international transfer request by a teller|
+|Created By:|Brayden $\ \ \ \ \ $ Date Created : $\ \ $ Feb-16-2024|
+|Primary Actor:|Teller $\ \ \ \ \ \ \ \ \ $ Secondary Actors: $\ \ $ Customer|
+|Description:|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
+|Trigger:|Teller selects a submitted international transfer request|
+|Preconditions:|PRE-1. A customer has submitted an international transfer request <br> PRE-2. An authorized administrative user is accessing the system|
+|Postconditions:|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request|
+|Normal Flow:|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request <br> 2. System displays transfer request for teller to review <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1) <br> 4. Teller selects the accept option to complete the transfer request <br> 5. System changes the state of the transfer request to accepted|
+|Alternative Flow:|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review <br> 2. Teller finds an issue with the transfer request <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0) <br> 4. Teller selects the reject option <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1) <br> 6. System changes the state of the transfer request to rejected|
+|Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
+|Priority:|high|
+|Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
+|Business Rules:||
+|Other Information:||
+|Assumptions:||
+
 
 # 6.0 Data Requirements   
       
