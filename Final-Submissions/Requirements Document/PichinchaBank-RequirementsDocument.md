@@ -360,7 +360,7 @@ Describe the requirements associated with any communications functions required 
 - **Software Updates and Upgrades:** The system should support easy updates and upgrades to incorporate new features, address security vulnerabilities, and ensure compatibility with evolving international banking standards and technologies.
 - **Customer Support Integration:** Features should include built-in support mechanisms, such as FAQ sections, help desks, or chatbots within the banking app, to directly address user queries, reducing the need for in-person bank visits and enhancing overall supportability.
 
-** 8.19 Testability**
+**8.19 Testability**
 
 - **Automated Testing Frameworks:** Implementing automated testing frameworks that can simulate a range of scenarios, from single transactions to peak load operations, ensuring the system behaves as expected without failures.
 - **Modular Testing:** Given the system's modular approach (e.g., digital RTA form, international transfer processing portal), each component should be designed to be independently testable. This allows for more efficient identification and resolution of issues.
