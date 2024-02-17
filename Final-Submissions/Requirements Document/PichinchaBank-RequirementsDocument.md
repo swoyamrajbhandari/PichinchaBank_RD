@@ -256,7 +256,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 # 5.0 System Features  
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
    
-### **International money transfer request**
+### **1. International money transfer request**
 
 > #### **Description**
 > Customer shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
