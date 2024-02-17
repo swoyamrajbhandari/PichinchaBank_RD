@@ -287,7 +287,37 @@ State the feature name in just a few words.
 > REQ-2:
 > 
 > #### **Use cases associated with the feature or functional requirement**  
+>
+
+### 3. **System Feature 3**  
+State the feature name in just a few words.
+
+> #### **Description and Priority**  
+> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
+>    
+> #### **Functional Requirements**  
 > 
+> REQ-1:
+> 
+> REQ-2:
+> 
+> #### **Use cases associated with the feature or functional requirement**  
+
+### 4. **Customer Profile**  
+
+> #### **Description and Priority**  
+> The customer profile allows the customer to manage their personal information related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as changing the verification PIN. This feature is low priority.
+>    
+> #### **Functional Requirements**  
+> 
+> REQ-1: The customer shall be able to add their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number to debit under their international transfer profile.
+> 
+> REQ-2: The customer shall be able to edit their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number to debit under their international transfer profile.
+>
+> REQ-3: The customer shall be able to edit their verification PIN under their international transfer profile.
+> 
+> #### **Use cases associated with the feature or functional requirement**  
+>
 
 # 6.0 Data Requirements   
       
