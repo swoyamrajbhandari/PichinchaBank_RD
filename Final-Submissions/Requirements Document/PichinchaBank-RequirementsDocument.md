@@ -295,6 +295,7 @@ State the feature name in just a few words.
 
 
 The diagram below depicts the interactions between major International Bank Transfer System entities. The main entities of the system include Ordering Customer, Customer Profile, International Contact Profile, Submitted International Transfer Request, RTA Form, Teller, Account Verification PIN, and SWIFT Alliance. The relationships and cardinalities between entities demonstrates the nature of interactions between the various actors or data objects of the system. As a note, although SWIFT Alliance is an external third-party system, it has been included as an entity in the diagram as it is a crucial aspect of the international transfer process and interacts with International Bank Transfer System actors and data.  
+
 ![Entity Relationship Diagram (2)](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/110196682/b8c6bb05-3bf7-476a-b88f-664f65204c1c)
 
 2. **Data dictionary**  
