@@ -107,7 +107,8 @@ The major features of the customer facing side are:
 * **Auto-Fill Form:** Provide the ordering customer with the option to save RTA form data the first time they fill it out to be auto-filled for all future uses. Saved and auto filled information will be data specific to the ordering customer and not the beneficiary.
 * **Saved Contacts:** Allow the ordering customer to view a list of contacts they have previously submitted the RTA form for. Each contact must have a contact page which states whether previous transfers were successfully completed, date of transaction, and transaction amount for that contact.
 * **Transfer to Saved Contact:** Ordering customer is able to make an international transfer to one of the saved contacts without filling out the RTA form again. Transaction specific information including the transfer amount and reason must be collected.
-* **International Transfer Security PIN:** A 4-digit PIN must be entered upon each attempt to enter the International Transfer section of the bank app. The PIN must be changed in the current app’s user settings page when the customer wants to change the PIN.
+* **International Transfer Verification PIN:** A 4-digit PIN must be entered upon each attempt to submit the RTA form for an international transfer request. The PIN must be changed in the user profile, when the customer wants to change the PIN.
+* **User Profile:** An interface in which the ordering customer may access the data stored about them for international transfers and make changes to it. The specific items which must be editable within this section are the verification PIN and the [Ordering Customer RTA Form Information](#Ordering_Customer_RTA_Form_Section).
 * **Transfer Status Notifications:** After a teller marks a transfer as either completed or rejected (see employee facing features for details), the ordering customer will receive a notification (via either email or SMS depending on preferred method selected in user settings). The notification must state success status, and next steps for failed transfers.
 * **Help Information:** Help text is displayed containing more information about what is required to be entered in each data entry box on the digital RTA form.
       
@@ -233,8 +234,11 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |----|----------|
 |Auto-Reject Transfer|An automatic system function that rejects a transfer if there is an insufficient balance in the ordering customer's account to cover the transfer amount.|
 |Beneficiary|The account or bank receiving money from an international transfer. It is the ultimate destination of the funds sent by the ordering customer.|
+|C.C.|(*Carné de Ciudadanía*) National identity card used in Ecuador, serves as offical proof of identity.|
+|C.I.|(*Cédula de Identidad*) National identity card used in Ecuador, serves as offical proof of identity.|
 |Claim a Transfer|The action taken by a teller to indicate they are verifying the information for a transfer and will be processing it through the SWIFT system.|
 |Complete a Transfer|The marking of a transfer as finished by a teller after successfully depositing the funds into the beneficiary account.|
+|Contact| Beneficiary which the ordering customer has previously created an international transfer request for. |
 |Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
@@ -243,10 +247,12 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Pichincha Bank|A private banking institution based in Ecuador, offering a range of services including investments, account management, and money transfers.|
 |Reject Transfer|The action taken by a teller when a transfer cannot be processed due to issues with the information provided, leading to its cancellation.|
 |RTA Form|(*Request for Transfer Abroad form*) The request form used by Pichincha Bank to enact a transfer of funds internationally.|
+|RUC|(*Registro Único de Contribuyentes*) Unique identification number assigned to individuals and businesses for tax purposes in Ecuador.|
 |SWIFT|(*Society for Worldwide Interbank Financial Telecommunication*) A global member-owned cooperative providing secure messaging services and interface software for financial transactions among its members.|
 |SWIFT Alliance System|The digital platform used by Pichincha Bank to process international money transfers through the SWIFT network.|
 |Teller|A customer facing bank employee that helps customer issues and requests in person.|  
 |Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
+
 
 ## 4.6 References  
 |ID|Reference|
@@ -303,8 +309,54 @@ This template illustrates organizing the functional requirements for the product
 1. **Logical data model**   
 E.g., entity-relationship diagrams and UML class diagrams. You may provide a data model for the business operations or the data that the system modifies. Not the same thing as a database design data model.  
 
-2. **Data dictionary**  
-Composition of data strucutres, meaning, data type, length, format, and allowed values.  
+2. **Data dictionary**
+
+The data dictionary below defines the composition of data structures and their contents as they relate to the project.
+
+| Data Element | Description | Composition or Data Type | Length | Values |
+|---|---|---|---|---|
+| <a name="Accepted_Declarations"></a> Accepted Declarations | If the ordering customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
+| <a name="Account_Verification_PIN"></a> Account Verification PIN| The PIN used to verify that the submitter of an international transfer request is the ordering customer. | Numeric characters | 4 |  |
+| <a name="Beneficiary_Account_Number"></a>Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
+| <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
+| <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 |  |
+| <a name="Beneficiary_Bank_City"></a>Beneficiary Bank City | City the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Bank_Country"></a>Beneficiary Bank Country | Country the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Bank_Name"></a>Beneficiary Bank Name | Name of the beneficiary bank. | Alphabetic characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Bank_RTA_Form_Section"></a>Beneficiary Bank RTA Form Section | The section of the digital RTA form containing information regarding the beneficiary bank. | [Beneficiary Bank Name](#Beneficiary_Bank_Name) <br>+ [Beneficiary Bank SWIFT Code](#Beneficiary_Bank_SWIFT_Code) <br>+ [Beneficiary Bank Address](#Beneficiary_Bank_Address) <br>+ [Beneficiary Bank Transit Number](#Beneficiary_Bank_Transit_Number) <br>+ [Beneficiary Bank City](#Beneficiary_Bank_City) <br>+ [Beneficiary Bank Country](#Beneficiary_Bank_Country) |  |  |
+| <a name="Beneficiary_Bank_SWIFT_Code"></a>Beneficiary Bank SWIFT Code | SWIFT code belonging to the beneficiary bank. | Alphanumeric characters | 11 |  |
+| <a name="Beneficiary_Bank_Transit_Number"></a>Beneficiary Bank Transit Number | Transit Number of the beneficiary bank branch | Numeric characters | 5 |  |
+| <a name="Beneficiary_City"></a>Beneficiary City | City the beneficiary is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Country"></a>Beneficiary Country | Country the beneficiary is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Name"></a>Beneficiary Name | First and last name or company name of the beneficiary.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_RTA_Form_Section"></a>Beneficiary RTA Form Section | The section of the digital RTA form containing information regarding the beneficiary. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) |  |  |
+| <a name="Contact_List"></a>Contact List | The list of all contacts an ordering customer has. | 1:n{[International Contact Profile](#International_Contact_Profile)} |  |  |
+| <a name="Contact_Transfer_History"></a>Contact Transfer History | All previous requested international transfers from the ordering customer to a beneficiary. | 1:n{[Form Completion Date](#Form_Completion_Date)} <br>+ 1:n{[Transfer Value](#Transfer_Value)} <br>+ 1:n{[Transaction Reason Code](#Transaction_Reason_Code)} <br>+ 1:n{[Transfer Reference](#Transfer_Reference)} <br>+ 1:n{ [International Transfer Status](#International_Transfer_Status)} |  |  |
+| <a name="Customer_Profile"></a>Customer Profile | Ordering customer’s profile in the international transfer application. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ [Ordering Customer Identification](#Ordering_Customer_Identification) <br>+ [Ordering Customer Address](#Ordering_Customer_Address) <br>+ [Ordering Customer Postal Code](#Ordering_Customer_Postal_Code) <br>+ [Ordering Customer Phone Number](#Ordering_Customer_Phone_Number) <br>+ [Ordering Customer Email](#Ordering_Customer_Email) <br>+ [Account Verification PIN](#Account_Verification_PIN) |  |  |
+| <a name="Employee_ID"></a>Employee ID | Identification number of a Pichincha Bank employee. | Numeric characters | 15 |  |
+| <a name="Employee_Name"></a>Employee Name | Name of a Pichincha Bank employee. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Form_Completion_Date"></a>Form Completion Date | Date RTA form was submitted by ordering customer on. | Numeric Date | 10 | dd/mm/yyyy format in numbers |
+| <a name="International_Contact_Profile"></a>International Contact Profile | Profile of a contact who has been a beneficiary to a international transfer from the ordering customer. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) <br>+ [Beneficiary Bank Name](#Beneficiary_Bank_Name) <br>+ [Beneficiary Bank SWIFT Code](#Beneficiary_Bank_SWIFT_Code) <br>+ [Beneficiary Bank Address](#Beneficiary_Bank_Address) <br>+ [Beneficiary Bank Transit Number](#Beneficiary_Bank_Transit_Number) <br>+ [Beneficiary Bank City](#Beneficiary_Bank_City) <br>+ [Beneficiary Bank Country](#Beneficiary_Bank_Country) <br>+ [Contact Transfer History](#Contact_Transfer_History) |  |  |
+| <a name="International_Transfer_Instance_RTA_Form_Section"></a>International Transfer Instance RTA Form Section | The section of the digital RTA form containing data regarding a specific international transfer request. | [Transfer Currency](#Transfer_Currency) <br>+ [Transfer Value](#Transfer_Value) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transfer Reference](#Transfer_Reference) |  |  |
+| <a name="International_Transfer_Status"></a>International Transfer Status | The status of an international transfer request. | Alphabetic characters, spaces, parentheses | 15 | Can be: “Unprocessed (new beneficiary)”, “Unprocessed (existing beneficiary)”, “In processing”, “Completed”, and “Rejected” |
+| <a name="Ordering_Bank_SWIFT_Code"></a>Ordering Bank SWIFT Code | SWIFT code belonging to the ordering bank. | Alphanumeric characters | 11 |  |
+| <a name="Ordering_Customer"></a>Ordering Customer | Information regarding the ordering customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ 1:n{[Ordering Customer Account Number](#Ordering_Customer_Account_Number)} |  |  |
+| <a name="Ordering_Customer_Account_Number"></a>Ordering Customer Account Number | Ordering customer’s account number to be debited. | Numeric characters  | 17 |  |
+| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the ordering customer. | Alphanumeric characters | 100 |  |
+| <a name="Ordering_Customer_Email"></a>Ordering Customer Email | Email of the ordering customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
+| <a name="Ordering_Customer_Identification"></a>Ordering Customer Identification | Identification number from ordering customer’s  C.I., C.C., Passport, or RUC. | Numeric characters  | 11 |  |
+| <a name="Ordering_Customer_Name"></a>Ordering Customer Name | First and last name or company name of the ordering customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Ordering_Customer_Phone_Number"></a>Ordering Customer Phone Number | Phone number of the ordering customer. | Numeric characters  | 15 |  |
+| <a name="Ordering_Customer_Postal_Code"></a>Ordering Customer Postal Code | Postal Code of the ordering customer. | Alphanumeric characters | 6 |  |
+| <a name="Ordering_Customer_RTA_Form_Section"></a>Ordering Customer RTA Form Section | The section of the digital RTA form containing information regarding the ordering customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ [Ordering Customer Identification](#Ordering_Customer_Identification) <br>+ [Ordering Customer Address](#Ordering_Customer_Address) <br>+ [Ordering Customer Postal Code](#Ordering_Customer_Postal_Code) <br>+ [Ordering Customer Phone Number](#Ordering_Customer_Phone_Number) <br>+ [Ordering Customer Email](#Ordering_Customer_Email) <br>+ [Ordering Customer Account Number](#Ordering_Customer_Account_Number) |  |  |
+| <a name="RTA_Form"></a>RTA Form | The digital form which contains all data necessary to make an international transfer. | [Form Completion Date](#Form_Completion_Date) <br>+ [Ordering Customer RTA Form Section](#Ordering_Customer_RTA_Form_Section) <br>+ [Beneficiary Bank RTA Form Section](#Beneficiary_Bank_RTA_Form_Section) <br>+ [Beneficiary RTA Form Section](#Beneficiary_RTA_Form_Section) <br>+ [International Transfer Instance RTA Form Section](#International_Transfer_Instance_RTA_Form_Section) <br>+ [Accepted Declarations](#Accepted_Declarations) |  |  |
+| <a name="Submitted_International_Transfer_Request"></a>Submitted International Transfer Request | The object containing all information related to an international transfer request which has been submitted by the ordering customer. Includes transfer status and teller assignee. | [RTA Form](#RTA_Form) <br>+ [International Transfer Status](#International_Transfer_Status) <br>+ [Teller](#Teller) |  |  |
+| <a name="SWIFT_Alliance"></a>SWIFT Alliance | A best assumption of information the SWIFT Alliance Application uses. | [RTA Form](#RTA_Form) <br>+ [International Transfer Status](#International_Transfer_Status) <br>+ [Ordering Bank SWIFT Code](#Ordering_Bank_SWIFT_Code) |  |  |
+| <a name="Teller"></a>Teller | Information regarding a teller employed at Pichincha Bank. Including current assigned International Transfer Requests. | [Employee ID](#Employee_ID) <br>+ [Employee Name](#Employee_Name) <br>+ 1:n{[Submitted International Transfer Request](#Submitted_International_Transfer_Request)} |  |  |
+| <a name="Transaction_Reason_Code"></a>Transaction Reason Code | Reason for international transfer code. | Numeric characters | 3 |  |
+| <a name="Transfer_Currency"></a>Transfer Currency | ISO 4217 currency code for transfer to be made in. | Alphabetic characters | 3 |  |
+| <a name="Transfer_Reference"></a>Transfer Reference | Message from the ordering customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
+| <a name="Transfer_Value"></a>Transfer Value | Value to be transferred to beneficiary. | Numeric characters | 12 |  |
 
 3. **Reports**  
 If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.  
@@ -329,6 +381,8 @@ Describe the requirements associated with any communications functions required 
 # 8.0 Software Quality Attributes  
 Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
 
-# 9.0 Analysis Models  
-
+# 9.0 Analysis Models
+The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.
+![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)  
+*Use Case Diagram for Pichincha Bank International Transfer System* 
 # 10.0 Appendix
