@@ -274,22 +274,27 @@ State the feature name in just a few words.
 > #### **Use cases associated with the feature or functional requirement**  
 > This is the use case specification. For each Use Case, list the dialog elements in the use case that elaborates or is related to this feature or one of its functional requirements, i.e. sequences of user actions and system responses that stimulate the behavior defined for this feature/functional requirement.
 
-### 2. **System Feature 2 **  
-> State the feature name in just a few words
+### 2. **Manage Contacts**  
 
-Manage contact 
-
-> #### **Description and Priority**  
-> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
->    
+> ### **Description**  
+> This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a customer, they shall be able to transfer money to specified contacts.
+>
+> **Priority**: Medium
+> 
 > #### **Functional Requirements**  
-> 
-> REQ-1:
-> 
-> REQ-2:
-> 
-> #### **Use cases associated with the feature or functional requirement**  
-> 
+> |||
+> |-|-|
+> |REQ~1|The customer shall be able to create a new contact.|
+> |REQ~2|The customer shall be able to sort their contacts alphabetically or by date added.|
+> |REQ~3|The  customer shall be able to search for a contact from their contact list.|
+> |REQ~4|The customer shall be able to view the contact details of a contact.| 
+> |REQ~5|The customer shall be able to edit or modify a contact.|
+> |REQ~6|The customer shall be able to delete a contact.|
+> |REQ~7|The customer shall be able to transfer money to a contact.|
+> |REQ~8|The customer shall be able to customize notification preferences to email or SMS for each saved contact.|
+> |REQ~9|The customer shall be able to specify transfer methods for each saved contact.|
+> |REQ~10|The customer shall be able to view the transfer history of a contact.|
+> |REQ~11|The customer shall be able to view the transfer status of a contact.|
 
 # 6.0 Data Requirements   
       
