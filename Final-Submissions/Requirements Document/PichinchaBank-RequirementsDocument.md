@@ -371,6 +371,8 @@ Describe the requirements associated with any communications functions required 
 # 8.0 Software Quality Attributes  
 Sepcify requirements that include performance, security, reusability, maintainability, usability, availability, interoperability, etc.
 
-# 9.0 Analysis Models  
-
+# 9.0 Analysis Models
+The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.
+![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)  
+*Use Case Diagram for Pichincha Bank International Transfer System* 
 # 10.0 Appendix
