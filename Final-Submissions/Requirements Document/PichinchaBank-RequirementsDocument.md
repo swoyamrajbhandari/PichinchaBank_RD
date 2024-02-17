@@ -318,55 +318,55 @@ Describe the connections between this product and other specific software compon
 Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on.
 
 # 8.0 Quality Attributes
-# 8.11 Performance
+**8.11 Performance**
 
 - **Response Time:** Transactions and user interactions within the mobile and web applications should be processed within 3 seconds to ensure a smooth user experience.
 - **System Efficiency:** The system must efficiently handle the expected load, particularly during peak hours, without compromising on performance, aiming to support the anticipated increase in international transfers by 15% within six months.
 
-# 8.12 Security
+ **8.12 Security**
 
 - **Data Protection:** All customer data, including financial information and personal identifiers, must be encrypted in transit and at rest using industry-standard encryption protocols.
 - **Access Control:** Implement secure authentication mechanisms for users and bank tellers, including the use of a 4-digit PIN for customers and secure login procedures for bank tellers, to ensure that access to sensitive functionalities is tightly controlled.
 - **Audit and Compliance:** The system must log all transactions and user activities to support auditing processes and ensure compliance with financial regulations and SWIFT guidelines.
 
-# 8.13 Reusability
+**8.13 Reusability**
 
 - **Modular Components:** Design the system with reusable modules, particularly for the digital RTA form and international contact management, to facilitate future enhancements or integrations.
 - **API Integration:** Ensure the system's architecture supports integration with existing banking systems and can be easily adapted for future banking services or third-party services.
 
-# 8.14 Maintainability
+**8.14 Maintainability**
 
 - **Code Quality and Documentation:** Adhere to best coding practices and maintain thorough documentation, especially for the integration with SWIFT Alliance and the mobile and web banking platforms, to facilitate easy updates and maintenance.
 - **System Updates:** Develop a structured process for regularly updating the application, including security patches and functionality improvements, with minimal disruption to bank operations.
 
-# 8.15 Usability
+**8.15 Usability**
 
 - **User Interface Design:** The customer and teller interfaces must be intuitive and user-friendly, supporting a seamless transition from paper-based to digital transactions. This includes clear instructions for filling out the digital RTA form and managing international contacts.
 - **Help Features:** Incorporate comprehensive help features and FAQs to assist users in navigating the system and to reduce the need for in-person bank visits.
 
-# 8.16 Availability
+**8.16 Availability**
 
 - **System Uptime:** Aim for a system uptime of 99.9% to ensure that international transfer functionalities are available to customers and bank staff as needed, reflecting the bank's commitment to improving customer and employee satisfaction.
 - **Backup and Recovery:** Implement robust data backup and disaster recovery protocols to ensure data integrity and system availability, minimizing the impact of system failures.
 
-# 8.17 Interoperability
+**8.17 Interoperability**
 
 - **Integration with Existing Systems:** The digital solution must integrate seamlessly with Pichincha Bank's existing mobile and web banking platforms, as well as the SWIFT Alliance system, without requiring significant changes to those systems.
 - **External Systems Compatibility:** Ensure the system's compatibility with external banking and financial systems, maintaining flexibility for future banking standards and technologies.
 
-# 8.18 Supportability
+**8.18 Supportability**
 
 - **Ease of Operation and Maintenance:** The digital system should be designed with a clear and concise operational manual, ensuring bank staff can easily support day-to-day operations, including handling customer inquiries, processing transfers, and addressing any issues that may arise.
 - **Software Updates and Upgrades:** The system should support easy updates and upgrades to incorporate new features, address security vulnerabilities, and ensure compatibility with evolving international banking standards and technologies.
 - **Customer Support Integration:** Features should include built-in support mechanisms, such as FAQ sections, help desks, or chatbots within the banking app, to directly address user queries, reducing the need for in-person bank visits and enhancing overall supportability.
 
-# 8.19 Testability
+** 8.19 Testability**
 
 - **Automated Testing Frameworks:** Implementing automated testing frameworks that can simulate a range of scenarios, from single transactions to peak load operations, ensuring the system behaves as expected without failures.
 - **Modular Testing:** Given the system's modular approach (e.g., digital RTA form, international transfer processing portal), each component should be designed to be independently testable. This allows for more efficient identification and resolution of issues.
 - **User Acceptance Testing (UAT):** Involving actual users (both bank customers and tellers) in the testing process to ensure the system meets real-world usability, performance, and security expectations.
 
-# 8.20 Scalability
+**8.20 Scalability**
 
 - **Handling Increased Transaction Volumes:** The system must be able to scale up to handle increases in international transfer requests without degradation in performance, ensuring transactions are processed efficiently even during peak periods.
 - **Flexible Infrastructure:** Utilize cloud services or other scalable infrastructure solutions that allow for dynamic scaling of resources in response to demand fluctuations, ensuring the system remains responsive and reliable.
