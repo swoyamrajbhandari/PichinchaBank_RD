@@ -12,7 +12,7 @@
 | **Alternative Flows:** | 4.1 Invalid Contact Information <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts User to correct the information. <br> 3. User updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
 | **Exceptions:** | 4.1.1 System Cannot Validate Contact <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. User decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
 | **Priority:** | Medium |
-| **Frequency of Use:** | Varies depending on the number of new contacts a user needs to add; estimated 20 times per week. |
+| **Frequency of Use:** | Varies depending on the number of new contacts a user needs to add; estimated at an average of 5 times per week per user. |
 | **Business Rules:** | |
 | **Other Information:** | The system should allow for easy input and editing of contact details, with the ability to import from or export to external address books. |
 | **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation. <br> - The Contact Database is robust and capable of handling concurrent interactions from multiple users. |
