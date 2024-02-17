@@ -292,9 +292,9 @@ This template illustrates organizing the functional requirements for the product
 > |REQ~4|The customer shall be able to view the contact details of a contact.| 
 > |REQ~5|The customer shall be able to edit or modify a contact.|
 > |REQ~6|The customer shall be able to delete a contact.|
-> |REQ~7|As a customer, I want to transfer money to a contact.|
-> |REQ~8|As a customer, I want to customize notification preferences to email or SMS for each saved contact.|
-> |REQ~9|As a customer, I want to specify transfer methods for each saved contact.|
+> |REQ~7|The customer shall be able to transfer money to a contact.|
+> |REQ~8|As a customer, I want to set a notification preference for a contact so that I can receive either an email or an SMS on receiving money.|
+> |REQ~9|As a customer, I want to set a transfer method for a contact so that I can specify how I want to transfer money to them.|
 > |REQ~10|The customer shall be able to view the transfer history of a contact.|
 > |REQ~11|The customer shall be able to view the transfer status of a contact.|
 
