@@ -259,7 +259,7 @@ This template illustrates organizing the functional requirements for the product
 ### **International money transfer request**
 
 > #### **Description**
-> Customer should be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller should be able to claim a transfer to review and process a transfer through the SWIFT system with a SWIFT code.
+> Customer shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Teller shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
 >
 > **Priority**: High
 >    
