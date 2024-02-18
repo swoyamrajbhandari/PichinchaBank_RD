@@ -326,17 +326,34 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > #### **Functional Requirements**  
 > |||
 > |-|-|
-> |REQ~1|The customer shall be able to create a new contact.|
-> |REQ~2|The customer shall be able to sort their contacts alphabetically or by date added.|
-> |REQ~3|The  customer shall be able to search for a contact from their contact list.|
-> |REQ~4|The customer shall be able to view the contact details of a contact.| 
-> |REQ~5|The customer shall be able to edit or modify a contact.|
-> |REQ~6|The customer shall be able to delete a contact.|
-> |REQ~7|The customer shall be able to transfer money to a contact.|
-> |REQ~8|As a customer, I want to set a notification preference for a contact so that I can receive either an email or an SMS on receiving money.|
-> |REQ~9|As a customer, I want to set a transfer method for a contact so that I can specify how I want to transfer money to them.|
-> |REQ~10|The customer shall be able to view the transfer history of a contact.|
-> |REQ~11|The customer shall be able to view the transfer status of a contact.|
+> |REQ~9|The customer shall be able to create a new contact.|
+> |REQ~10|The customer shall be able to sort their contacts alphabetically or by date added.|
+> |REQ~11|The  customer shall be able to search for a contact from their contact list.|
+> |REQ~12|The customer shall be able to view the contact details of a contact.| 
+> |REQ~13|The customer shall be able to edit or modify a contact.|
+> |REQ~14|The customer shall be able to delete a contact.|
+> |REQ~15|The customer shall be able to transfer money to a contact.|
+> |REQ~16|As a customer, I want to set a notification preference for a contact so that I can receive either an email or an SMS on receiving money.|
+> |REQ~17|As a customer, I want to set a transfer method for a contact so that I can specify how I want to transfer money to them.|
+> |REQ~18|The customer shall be able to view the transfer history of a contact.|
+> |REQ~19|The customer shall be able to view the transfer status of a contact.|
+
+### 3. **Manage Transfer Status**  
+
+> #### **Description**  
+> This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
+>
+> **Priority**: Medium
+> 
+> #### **Functional Requirements**
+> |||
+> |-|-|
+> |REQ~20|The system shall allow a customer to cancel a transfer.|
+> |REQ~21|The system shall enable a teller to change transfer status.|
+> |REQ~22|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
+> |REQ~23|As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.|
+> |REQ~24|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|
+> 
 
 # 6.0 Data Requirements   
       
