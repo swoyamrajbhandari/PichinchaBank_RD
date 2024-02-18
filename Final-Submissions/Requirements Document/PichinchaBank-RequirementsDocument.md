@@ -287,7 +287,6 @@ State the feature name in just a few words.
 > REQ-2:
 > 
 > #### **Use cases associated with the feature or functional requirement**  
->
 
 ### 4. **Customer Profile**  
 
