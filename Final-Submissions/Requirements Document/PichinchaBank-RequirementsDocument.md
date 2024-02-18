@@ -456,7 +456,7 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Transaction_Reason_Code"></a>Transaction Reason Code | Reason for international transfer code. | Numeric characters | 3 |  |
 | <a name="Transfer_Currency"></a>Transfer Currency | ISO 4217 currency code for transfer to be made in. | Alphabetic characters | 3 |  |
 | <a name="Transfer_Reference"></a>Transfer Reference | Message from the ordering customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
-| <a name="Transfer_Value"></a>Transfer Value | Value to be transferred to beneficiary. | Numeric characters | 12 |  |
+| <a name="Transfer_Value"></a>Transfer Value | Monetary value to be transferred to beneficiary. | Numeric characters | 12 |  |
 
 ## 6.3 Reports  
 
