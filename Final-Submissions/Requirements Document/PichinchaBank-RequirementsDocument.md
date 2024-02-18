@@ -361,8 +361,9 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~20|The system shall allow a customer to cancel a transfer.|
 > |REQ~21|The system shall enable a teller to change transfer status.|
 > |REQ~22|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
-> |REQ~23|As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.|
-> |REQ~24|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|  
+> |REQ~23|As a teller, I want to be able to change the transfer request to be completed, so I can keep track of the progress.|
+> |REQ~24|As a teller, I want to be able to change the transfer request to be rejected, so I can notify a client.|
+> |REQ~25|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|  
 
 #### Use Case Description  
 
@@ -395,10 +396,10 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > #### **Functional Requirements**  
 > |||
 > |-|-|
-> |REQ~25|The customer shall be able to add their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number to debit for international transfers.|
-> |REQ~26|The customer shall be able to edit their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number for international transfers.|
-> |REQ~27|The customer shall be able to change their international transfer verification PIN.|
-> |REQ~28|As a customer, I want to save my personal information for international transfers so that I do not have to re-enter the information each time.|
+> |REQ~26|The customer shall be able to add their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number to debit for international transfers.|
+> |REQ~27|The customer shall be able to edit their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number for international transfers.|
+> |REQ~28|The customer shall be able to change their international transfer verification PIN.|
+> |REQ~29|As a customer, I want to save my personal information for international transfers so that I do not have to re-enter the information each time.|
 
 # 6.0 Data Requirements   
       
