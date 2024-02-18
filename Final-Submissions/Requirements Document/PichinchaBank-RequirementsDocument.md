@@ -304,7 +304,6 @@ State the feature name in just a few words.
 > |REQ~3|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
 > |REQ~4|As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.|
 > |REQ~5|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|
-> #### **Use cases associated with the feature or functional requirement**  
 > 
 
 # 6.0 Data Requirements   
