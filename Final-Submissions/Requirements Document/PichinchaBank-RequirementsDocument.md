@@ -37,6 +37,7 @@
    * [5.1 International Money Transfer Request (Feature)](#1-international-money-transfer-request)
    * [5.2 Manage Contacts (Feature)](#2-manage-contacts)
    * [5.3 Manage Transfer Status (Feature)](#3-manage-transfer-status)
+   * [5.4 Customer Profile (Feature)](#4-customer-profile)
 * [6.0 Data Requirements](#60-data-requirements)
    * [6.1 Logical Data Model](#61-logical-data-model)
    * [6.2 Data Dictionary](#62-data-dictionary)
@@ -384,7 +385,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Other Information:|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case|
 |Assumptions:|- The International Transfer Request has not already been rejected by the system itself|  
 
-### 4. **Customer Profile**  
+### 4. Customer Profile  
 
 > #### **Description**  
 > This feature allows the customer to manage their personal information related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
