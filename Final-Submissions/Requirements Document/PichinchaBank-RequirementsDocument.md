@@ -375,9 +375,8 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
 |Priority:|high|
 |Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
-|Business Rules:||
-|Other Information:||
-|Assumptions:||  
+|Other Information:|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case|
+|Assumptions:|- The International Transfer Request has not already been rejected by the system itself|  
 
 # 6.0 Data Requirements   
       
