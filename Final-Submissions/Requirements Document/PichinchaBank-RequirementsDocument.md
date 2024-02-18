@@ -289,20 +289,6 @@ State the feature name in just a few words.
 > #### **Use cases associated with the feature or functional requirement**  
 >
 
-### 3. **System Feature 3**  
-State the feature name in just a few words.
-
-> #### **Description and Priority**  
-> Provide a short description of the feature and indicate whether it is high, medium, or low priority.
->    
-> #### **Functional Requirements**  
-> 
-> REQ-1:
-> 
-> REQ-2:
-> 
-> #### **Use cases associated with the feature or functional requirement**  
-
 ### 4. **Customer Profile**  
 
 > #### **Description and Priority**  
