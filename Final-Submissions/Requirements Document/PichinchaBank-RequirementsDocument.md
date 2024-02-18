@@ -11,9 +11,7 @@
 | Cache Money Inc | Feb-04-24 | Iteration 1 RD submission | 2.0.0 |  
 | Cache Money Inc | Feb-07-24 | Revisions and changes from client review | 2.0.1 |
 | Cache Money Inc | Feb-11-24 | Revisions and changes from client review | 2.0.2 |  
-
-
-
+| Cache Money Inc | Feb-17-24 | Addition of iteration 2 sections | 2.1.0 |  
 
 ## Table Of Contents  
 
@@ -36,7 +34,14 @@
    * [4.5 Glossary of Terms](#45-glossary-of-terms)  
    * [4.6 References](#46-references)
 * [5.0 System Features](#50-system-features)
+   * [5.1 International Money Transfer Request (Feature)](#1-international-money-transfer-request)
+   * [5.2 Manage Contacts (Feature)](#2-manage-contacts)
+   * [5.3 Manage Transfer Status (Feature)](#3-manage-transfer-status)
 * [6.0 Data Requirements](#60-data-requirements)
+   * [6.1 Logical Data Model](#61-logical-data-model)
+   * [6.2 Data Dictionary](#62-data-dictionary)
+   * [6.3 Reports](#63-reports)
+   * [6.4 Data acquisition, integrity, retention, and diposal](#64-data-acquisition-integrity-retention-and-diposal)
 * [7.0 External Interface Requirements](#70-external-interface-requirements)
    * [7.1 User Interfaces](#71-user-interfaces)
    * [7.2 Hardware Interfaces](#72-hardware-interfaces)
@@ -279,7 +284,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 # 5.0 System Features  
 *This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.*  
    
-### **1. International money transfer request**
+### 1. International money transfer request
 
 > #### **Description**
 > This feature allows customers to request an international transfer and allows tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
@@ -298,9 +303,9 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~7|System shall automatically reject a transfer request if the customer has insufficient funds|
 > |REQ~8|Customer shall be able to review the status of their transfer request| 
 
-### 2. **Manage Contacts**  
+### 2. Manage Contacts  
 
-> ### **Description**  
+> #### **Description**  
 > This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a customer, they shall be able to transfer money to specified contacts.
 >
 > **Priority**: Medium
@@ -341,7 +346,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 | **Other Information:** | The system should allow for easy input and editing of contact details, with the ability to import from or export to external address books. |
 | **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation. <br> - The Contact Database is robust and capable of handling concurrent interactions from multiple users. |  
 
-### 3. **Manage Transfer Status**  
+### 3. Manage Transfer Status  
 
 > #### **Description**  
 > This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
@@ -376,9 +381,8 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
 |Priority:|high|
 |Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
-|Business Rules:||
-|Other Information:||
-|Assumptions:||  
+|Other Information:|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case|
+|Assumptions:|- The International Transfer Request has not already been rejected by the system itself|  
 
 ### 4. **Customer Profile**  
 
@@ -397,15 +401,14 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 
 # 6.0 Data Requirements   
       
-1. **Logical data model**
-
+## 6.1 Logical data model  
 
 The diagram below depicts the interactions between major International Bank Transfer System entities. The main entities of the system include Ordering Customer, Customer Profile, International Contact Profile, Submitted International Transfer Request, RTA Form, Teller, Account Verification PIN, and SWIFT Alliance. The relationships and cardinalities between entities demonstrates the nature of interactions between the various actors or data objects of the system. As a note, although SWIFT Alliance is an external third-party system, it has been included as an entity in the diagram as it is a crucial aspect of the international transfer process and interacts with International Bank Transfer System actors and data.  
 
 ![Entity Relationship Diagram (2)](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/110196682/b8c6bb05-3bf7-476a-b88f-664f65204c1c)
 *Entity Relationship Diagram of International Bank Transfer System*
 
-2. **Data dictionary**
+## 6.2 Data dictionary  
 
 The data dictionary below defines the composition of data structures and their contents as they relate to the project.
 
@@ -454,10 +457,11 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Transfer_Reference"></a>Transfer Reference | Message from the ordering customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
 | <a name="Transfer_Value"></a>Transfer Value | Value to be transferred to beneficiary. | Numeric characters | 12 |  |
 
-3. **Reports**  
-If your system will generate reports, then describe the attributes of those reports. You can detail the layout of the report.  
+## 6.3 Reports  
 
-4. **Data acquisition, integrity, retention, and diposal**
+The International Bank Transfer System does not generate reports as a part of it's functionality.    
+
+## 6.4 Data acquisition, integrity, retention, and diposal
 
 **Data Acquisition:** The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and when a customer creates a new international contact. 
 
