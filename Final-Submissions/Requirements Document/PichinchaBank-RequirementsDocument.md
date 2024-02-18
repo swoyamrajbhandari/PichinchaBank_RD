@@ -387,6 +387,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 The diagram below depicts the interactions between major International Bank Transfer System entities. The main entities of the system include Ordering Customer, Customer Profile, International Contact Profile, Submitted International Transfer Request, RTA Form, Teller, Account Verification PIN, and SWIFT Alliance. The relationships and cardinalities between entities demonstrates the nature of interactions between the various actors or data objects of the system. As a note, although SWIFT Alliance is an external third-party system, it has been included as an entity in the diagram as it is a crucial aspect of the international transfer process and interacts with International Bank Transfer System actors and data.  
 
 ![Entity Relationship Diagram (2)](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/110196682/b8c6bb05-3bf7-476a-b88f-664f65204c1c)
+*Entity Relationship Diagram of International Bank Transfer System*
 
 2. **Data dictionary**
 
@@ -442,7 +443,7 @@ If your system will generate reports, then describe the attributes of those repo
 
 4. **Data acquisition, integrity, retention, and diposal**
 
-**Data Acquisition:** The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and/or when a customer creates a new international contact. 
+**Data Acquisition:** The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and when a customer creates a new international contact. 
 
 **Data Integrity:** A Teller reviews and verifies the data provided by a customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the customer has insufficient funds for the transfer.
 
