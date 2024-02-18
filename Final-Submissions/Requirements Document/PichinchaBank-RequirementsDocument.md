@@ -298,24 +298,6 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~7|System shall automatically reject a transfer request if the customer has insufficient funds|
 > |REQ~8|Customer shall be able to review the status of their transfer request| 
 
-|||
-|-|-|
-|ID and Name:|UC-1 Review of an international transfer request by a teller|
-|Created By:|Brayden $\ \ \ \ \ $ Date Created : $\ \ $ Feb-16-2024|
-|Primary Actor:|Teller $\ \ \ \ \ \ \ \ \ $ Secondary Actors: $\ \ $ Customer|
-|Description:|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
-|Trigger:|Teller selects a submitted international transfer request|
-|Preconditions:|PRE-1. A customer has submitted an international transfer request <br> PRE-2. An authorized administrative user is accessing the system|
-|Postconditions:|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request|
-|Normal Flow:|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request <br> 2. System displays transfer request for teller to review <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1) <br> 4. Teller selects the accept option to complete the transfer request <br> 5. System changes the state of the transfer request to accepted|
-|Alternative Flow:|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review <br> 2. Teller finds an issue with the transfer request <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0) <br> 4. Teller selects the reject option <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1) <br> 6. System changes the state of the transfer request to rejected|
-|Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
-|Priority:|high|
-|Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
-|Business Rules:||
-|Other Information:||
-|Assumptions:||
-
 ### 2. **Manage Contacts**  
 
 > ### **Description**  
@@ -338,6 +320,27 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~18|The customer shall be able to view the transfer history of a contact.|
 > |REQ~19|The customer shall be able to view the transfer status of a contact.|
 
+#### Use Case Description  
+
+| **ID and Name:** | UC-2 Create a Contact |
+|------------------|-----------------------|
+| **Created By:**  | Matt                |
+| **Date Created:**| 10/10/24              |
+| **Primary Actor:** | User                |
+| **Secondary Actors:** | Contact Database, User Interface |
+| **Description:** | The User initiates the process to create a new contact by entering personal details, such as name, address, phone number, and email. The system validates the entered information and stores it in the Contact Database. The User can then use this contact information for various operations like sending messages, making calls, or sharing documents. |
+| **Trigger:** | User selects the option to create a new contact in the application. |
+| **Preconditions:** | PRE-1. User is logged into the system. <br> PRE-2. User has permission to add new contacts. <br> PRE-3. Contact Database is accessible. |
+| **Postconditions:** | POST-1. A new contact is created in the Contact Database. <br> POST-2. User can access and interact with the new contact information. |
+| **Normal Flow:** | 1. User selects the option to create a new contact. <br> 2. System presents a form for entering contact details. <br> 3. User fills in the contact's name, address, phone number, and email. <br> 4. System validates the entered information for format and completeness. <br> 5. User confirms the creation of the new contact. <br> 6. System stores the new contact information in the Contact Database. <br> 7. System acknowledges the successful creation of the contact to the User. |
+| **Alternative Flows:** | 4.1 Invalid Contact Information <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts User to correct the information. <br> 3. User updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
+| **Exceptions:** | 4.1.1 System Cannot Validate Contact <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. User decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
+| **Priority:** | Medium |
+| **Frequency of Use:** | Varies depending on the number of new contacts a user needs to add; estimated at an average of 5 times per week per user. |
+| **Business Rules:** | |
+| **Other Information:** | The system should allow for easy input and editing of contact details, with the ability to import from or export to external address books. |
+| **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation. <br> - The Contact Database is robust and capable of handling concurrent interactions from multiple users. |  
+
 ### 3. **Manage Transfer Status**  
 
 > #### **Description**  
@@ -352,8 +355,29 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~21|The system shall enable a teller to change transfer status.|
 > |REQ~22|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
 > |REQ~23|As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.|
-> |REQ~24|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|
-> 
+> |REQ~24|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|  
+
+#### Use Case Description  
+
+|||
+|-|-|
+|ID and Name:|UC-1 Review of an international transfer request by a teller|
+|Created By:|Brayden|
+|Date Created:|Feb-16-2024|
+|Primary Actor:|Teller|
+|Secondary Actors:| Customer|
+|Description:|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
+|Trigger:|Teller selects a submitted international transfer request|
+|Preconditions:|PRE-1. A customer has submitted an international transfer request <br> PRE-2. An authorized administrative user is accessing the system|
+|Postconditions:|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request|
+|Normal Flow:|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request <br> 2. System displays transfer request for teller to review <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1) <br> 4. Teller selects the accept option to complete the transfer request <br> 5. System changes the state of the transfer request to accepted|
+|Alternative Flow:|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review <br> 2. Teller finds an issue with the transfer request <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0) <br> 4. Teller selects the reject option <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1) <br> 6. System changes the state of the transfer request to rejected|
+|Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
+|Priority:|high|
+|Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
+|Business Rules:||
+|Other Information:||
+|Assumptions:||  
 
 # 6.0 Data Requirements   
       
