@@ -293,15 +293,17 @@ State the feature name in just a few words.
 
 > #### **Description and Priority**  
 > This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
->    
-> #### **Functional Requirements**  
-> 
-> REQ-1: The system shall allow a customer to cancel a transfer.
-> 
-> REQ-2: The system shall enable a teller to change transfer status.
 >
-> REQ-3: As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.
-
+> **Priority**: Medium
+> 
+> #### **Functional Requirements**
+> |||
+> |-|-|
+> |REQ~1|The system shall allow a customer to cancel a transfer.|
+> |REQ~2|The system shall enable a teller to change transfer status.|
+> |REQ~3|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
+> |REQ~4|As a teller, I want to be able to change the transfer request to be completed, rejected, so they can keep track of the progress.|
+> |REQ~5|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|
 > #### **Use cases associated with the feature or functional requirement**  
 > 
 
