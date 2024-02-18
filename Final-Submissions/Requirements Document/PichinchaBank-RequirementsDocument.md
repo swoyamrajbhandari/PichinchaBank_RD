@@ -550,59 +550,61 @@ The communication interfaces for the International Bank Transfer System must be 
 |EIR~13|(**TBD**) The system must communicate with the SWIFT Alliance System via \<communication-type\>|  
 
 # 8.0 Quality Attributes
-**8.11 Performance**
+## 8.11 Performance
 
-- **Response Time:** Transactions and user interactions within the mobile and web applications should be processed within 3 seconds to ensure a smooth user experience.
-- **System Efficiency:** The system must efficiently handle the expected load, particularly during peak hours, without compromising on performance, aiming to support the anticipated increase in international transfers by 15% within six months.
+- **QA-1:** The system shall respond to all user interactions within 3 seconds under typical load conditions.
+- **QA-2:** The system shall process all transactions within 3 seconds under typical load conditions.
+- **QA-3:** The system shall maintain response times of 3 seconds or less for transactions and user interactions, even during peak usage periods, to accommodate a 15% increase in transaction volume within six months.
 
- **8.12 Security**
+## 8.12 Security
 
-- **Data Protection:** All customer data, including financial information and personal identifiers, must be encrypted in transit and at rest using industry-standard encryption protocols.
-- **Access Control:** Implement secure authentication mechanisms for users and bank tellers, including the use of a 4-digit PIN for customers and secure login procedures for bank tellers, to ensure that access to sensitive functionalities is tightly controlled.
-- **Audit and Compliance:** The system must log all transactions and user activities to support auditing processes and ensure compliance with financial regulations and SWIFT guidelines.
+- **QA-4:** The system shall encrypt customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.
+- **QA-5:** The system shall require customers to authenticate using a 4-digit PIN, and bank tellers must use multi-factor authentication for system access.
+- **QA-6:** The system shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.
 
-**8.13 Reusability**
+## 8.13 Reusability
 
-- **Modular Components:** Design the system with reusable modules, particularly for the digital RTA form and international contact management, to facilitate future enhancements or integrations.
-- **API Integration:** Ensure the system's architecture supports integration with existing banking systems and can be easily adapted for future banking services or third-party services.
+- **QA-7:** The system's architecture shall include modular components for the digital RTA form and international contact management, which can be reused or replaced independently without affecting the overall system.
+- **QA-8:** The system shall provide APIs for seamless integration with existing banking systems and third-party services, documented clearly for developer use.
 
-**8.14 Maintainability**
+## 8.14 Maintainability
 
-- **Code Quality and Documentation:** Adhere to best coding practices and maintain thorough documentation, especially for the integration with SWIFT Alliance and the mobile and web banking platforms, to facilitate easy updates and maintenance.
-- **System Updates:** Develop a structured process for regularly updating the application, including security patches and functionality improvements, with minimal disruption to bank operations.
+- **QA-9:** The system's source code shall adhere to the specified coding standard (e.g., ISO/IEC 25010:2011), and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.
+- **QA-10:** The system shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.
 
-**8.15 Usability**
+## 8.15 Usability
 
-- **User Interface Design:** The customer and teller interfaces must be intuitive and user-friendly, supporting a seamless transition from paper-based to digital transactions. This includes clear instructions for filling out the digital RTA form and managing international contacts.
-- **Help Features:** Incorporate comprehensive help features and FAQs to assist users in navigating the system and to reduce the need for in-person bank visits.
+- **QA-11:** The system shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring customers can easily understand how to complete the form online.
+- **QA-12:** The system shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.
 
-**8.16 Availability**
+## 8.16 Availability
 
-- **System Uptime:** Aim for a system uptime of 99.9% to ensure that international transfer functionalities are available to customers and bank staff as needed, reflecting the bank's commitment to improving customer and employee satisfaction.
-- **Backup and Recovery:** Implement robust data backup and disaster recovery protocols to ensure data integrity and system availability, minimizing the impact of system failures.
+- **QA-13:** The system shall maintain an operational uptime of 99.9% annually, excluding scheduled maintenance windows, to ensure constant availability for international transfers.
+- **QA-14:** The system shall have a disaster recovery plan that includes hourly data backups and a maximum recovery time objective (RTO) of 4 hours.
 
-**8.17 Interoperability**
+## 8.17 Interoperability
 
-- **Integration with Existing Systems:** The digital solution must integrate seamlessly with Pichincha Bank's existing mobile and web banking platforms, as well as the SWIFT Alliance system, without requiring significant changes to those systems.
-- **External Systems Compatibility:** Ensure the system's compatibility with external banking and financial systems, maintaining flexibility for future banking standards and technologies.
+- **QA-15:** The system shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.
+- **QA-16:** The system shall support data exchange with external banking and financial systems in a format compliant with ISO 20022 standards to ensure future compatibility.
 
-**8.18 Supportability**
+## 8.18 Supportability
 
-- **Ease of Operation and Maintenance:** The digital system should be designed with a clear and concise operational manual, ensuring bank staff can easily support day-to-day operations, including handling customer inquiries, processing transfers, and addressing any issues that may arise.
-- **Software Updates and Upgrades:** The system should support easy updates and upgrades to incorporate new features, address security vulnerabilities, and ensure compatibility with evolving international banking standards and technologies.
-- **Customer Support Integration:** Features should include built-in support mechanisms, such as FAQ sections, help desks, or chatbots within the banking app, to directly address user queries, reducing the need for in-person bank visits and enhancing overall supportability.
+- **QA-17:** The system shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.
+- **QA-18:** The system shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.
+- **QA-19:** The system shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.
 
-**8.19 Testability**
+## 8.19 Testability
 
-- **Automated Testing Frameworks:** Implementing automated testing frameworks that can simulate a range of scenarios, from single transactions to peak load operations, ensuring the system behaves as expected without failures.
-- **Modular Testing:** Given the system's modular approach (e.g., digital RTA form, international transfer processing portal), each component should be designed to be independently testable. This allows for more efficient identification and resolution of issues.
-- **User Acceptance Testing (UAT):** Involving actual users (both bank customers and tellers) in the testing process to ensure the system meets real-world usability, performance, and security expectations.
+- **QA-20:** The system shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.
+- **QA-21:** Each module of the system, such as the digital RTA form and the international transfer processing portal, shall be independently testable to facilitate quick issue identification and resolution.
+- **QA-22:** The system shall undergo User Acceptance Testing (UAT) with participation from actual users (customers and bank tellers) to validate the system against real-world requirements and expectations.
 
-**8.20 Scalability**
+## 8.2 Scalability
 
-- **Handling Increased Transaction Volumes:** The system must be able to scale up to handle increases in international transfer requests without degradation in performance, ensuring transactions are processed efficiently even during peak periods.
-- **Flexible Infrastructure:** Utilize cloud services or other scalable infrastructure solutions that allow for dynamic scaling of resources in response to demand fluctuations, ensuring the system remains responsive and reliable.
-- **Future Expansion:** Design the system with the future in mind, allowing for easy integration of new features, support for additional international banking standards, and expansion to serve more customers as Pichincha Bank grows.
+- **QA-23:** The system shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.
+- **QA-24:** The system shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.
+- **QA-25:** The system design shall allow for the integration of new banking services and expansion to additional markets without significant redesign or downtime.
+
 
 
 # 9.0 Analysis Models
