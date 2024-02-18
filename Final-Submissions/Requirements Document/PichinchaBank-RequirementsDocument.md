@@ -48,7 +48,7 @@
    * [7.2 Hardware Interfaces](#72-hardware-interfaces)
    * [7.3 Software Interfaces](#73-software-interfaces)
    * [7.4 Communication Interfaces](#74-communication-interfaces)
-* [8.0 Software Quality Attributes](#80-software-quality-attributes)
+* [8.0 Software Quality Attributes](#80-quality-attributes)
 * [9.0 Analysis Models](#90-analysis-models)
 * [10.0 Appendix](#100-appendix)
 
