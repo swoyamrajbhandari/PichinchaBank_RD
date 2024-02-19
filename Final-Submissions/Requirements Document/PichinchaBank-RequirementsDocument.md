@@ -298,9 +298,9 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > |REQ~1|The customer shall be able to specify the amount of money to transfer|
 > |REQ~2|The teller shall be able to input customer's data into the SWIFT alliance system|
 > |REQ~3|As a customer, I want to choose a contact that I can send money to|
-> |REQ~4|As a customer, I want to specify the amount to transfer and provide data where needed to process a transfer|
+> |REQ~4|The customer shall provide data where needed to process a transfer|
 > |REQ~5|As a customer, I want to input the international transfer verification pin so I can access the RTA form|
-> |REQ~6|The teller shall be able to reject a transfer request if the customer provides insufficient data|
+> |REQ~6|As a teller, I want be able to reject a transfer request if the customer provides insufficient data|
 > |REQ~7|The system shall automatically reject a transfer request if the customer has insufficient funds|
 > |REQ~8|The customer shall be able to review the status of their transfer request| 
 
