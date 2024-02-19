@@ -39,7 +39,7 @@
    * [5.1 International Money Transfer Request (Feature)](#1-international-money-transfer-request)
    * [5.2 Manage Contacts (Feature)](#2-manage-contacts)
    * [5.3 Manage Transfer Status (Feature)](#3-manage-transfer-status)
-   * [5.4 Customer Profile (Feature)](#4-customer-profile)
+   * [5.4 Customer Profile (Feature)](#4-Customer-profile)
 * [6.0 Data Requirements](#60-data-requirements)
    * [6.1 Logical Data Model](#61-logical-data-model)
    * [6.2 Data Dictionary](#62-data-dictionary)
@@ -60,23 +60,23 @@ The following requirements document contains the complete set of requirements pe
 # 2.0 Business Requirements  
 
 ## 2.1 Background 
-Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and customer satisfaction concerns through the implementation of a digital system.   
+Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and Customer satisfaction concerns through the implementation of a digital system.   
 
 Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank tellers and customers. The following steps further describe the current process:
 
-   1. An ordering customer arrives at a Pichincha Bank location and waits for an available teller  
+   1. An ordering Customer arrives at a Pichincha Bank location and waits for an available Teller  
 
-   2. The customer completes a paper RTA form with information relating to the transfer source account, beneficiary account, monetary amount, and SWIFT code  
+   2. The Customer completes a paper RTA form with information relating to the transfer source account, beneficiary account, monetary amount, and SWIFT code  
 
-   3. A teller verifies this information and manually inputs the data into the SWIFT Alliance system  
+   3. A Teller verifies this information and manually inputs the data into the SWIFT Alliance system  
 
-   4. A teller initiates a SWIFT transaction  
+   4. A Teller initiates a SWIFT transaction  
 
    5. The beneficiary’s bank receives the transfer and verifies the information  
 
    6. The funds are deposited into the beneficiary account approximately 7 days after initiation of the SWIFT transaction  
 
-The process outlined above assumes no errors were made by either the customer completing the RTA form, or the bank teller inputting the data. If errors occur and are not resolved before initiation of the SWIFT transaction, it takes approximately 3 weeks for the error to be resolved. 
+The process outlined above assumes no errors were made by either the Customer completing the RTA form, or the bank Teller inputting the data. If errors occur and are not resolved before initiation of the SWIFT transaction, it takes approximately 3 weeks for the error to be resolved. 
 
 In response to concerns about the efficiency of the current process, Pichincha Bank is seeking to enhance its international fund transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
  
@@ -84,18 +84,18 @@ In response to concerns about the efficiency of the current process, Pichincha B
 The current financial transaction system for international fund tranfers is inefficient and affects both customers and bank tellers.  
 
 * Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers spend time walking clients through the physical forms and verifying that they contain the correct and appropriate information.
-* The long duration of the transaction causes customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, and profits.
+* The long duration of the transaction causes Customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, and profits.
   
-Our team proposes the implementation of a digital transaction system. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall customer experience and improve employee productivity.
+Our team proposes the implementation of a digital transaction system. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall Customer experience and improve employee productivity.
 
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
 
-* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, teller's can better allocate their time to resolving customer inquiries that require an in-person visit. 
+* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, Teller's can better allocate their time to resolving Customer inquiries that require an in-person visit. 
 
-* **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a teller. 
+* **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a Teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a Teller. 
       
-* **Increase Customer and Employee Satisfaction by 50% in Eight Months:** Improving the accessibility and clarity of the international transfer system will reduce transaction processing time, and thus reduce complaints and improve employee and customer satisfaction. 
+* **Increase Customer and Employee Satisfaction by 50% in Eight Months:** Improving the accessibility and clarity of the international transfer system will reduce transaction processing time, and thus reduce complaints and improve employee and Customer satisfaction. 
       
 * **Reduce Bank Visits Per Customer to One in a Year :** Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce unnecessary visits.  
 
@@ -106,49 +106,49 @@ The following success metrics are indicators that allow Pichincha Bank stakehold
    
 * **Reducing international transfer processing time by 30% in Four Months:** By reducing wait times by 30%, processing times of international transfers are reduced by 30% within four months.   
    
-* **Increase Customer Base by 20% in Eight Months:** Through increasing customer and employee satisfaction by 50%, the customer base of Pichincha Bank can be increased by 20% within eight months.    
+* **Increase Customer Base by 20% in Eight Months:** Through increasing Customer and employee satisfaction by 50%, the Customer base of Pichincha Bank can be increased by 20% within eight months.    
 
 ## 2.5 **Product Vision Statement**  
-The International Bank Transfer System provides customers the ability to perform international transfers via the existing Pichincha Bank web and mobile applications without the need to meet with a bank employee in person. The system will provide customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing customers to submit the required information to complete an international transfer remotely. The functionality of the system also extends to bank employees, providing a review and processing portal for handling international transfer requests created by a customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer customer base to a Pichincha Bank application, thus freeing teller resources for tasks requiring in person support.
+The International Bank Transfer System provides customers the ability to perform international transfers via the existing Pichincha Bank web and mobile applications without the need to meet with a bank employee in person. The system will provide customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing customers to submit the required information to complete an international transfer remotely. The functionality of the system also extends to bank employees, providing a review and processing portal for handling international transfer requests created by a Customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer Customer base to a Pichincha Bank application, thus freeing Teller resources for tasks requiring in person support.
 
 # 3.0 Scope and Limitations  
 
 ## 3.1 Major Features  
-The implemented system must be an addition to the current bank app which will facilitate international transfers. There is a customer facing side of the app and a teller facing side which each require different features.
+The implemented system must be an addition to the current bank app which will facilitate international transfers. There is a Customer facing side of the app and a Teller facing side which each require different features.
 
-The major features of the customer facing side are:  
+The major features of the Customer facing side are:  
 
-* **Digital RTA Form:** A digital form which prompts an ordering customer for the information required to make an international transfer. The digital form will request the same information as the current physical RTA form.
-* **Add New International Contact:** Create a new contact will have the ordering customer fill out the digital RTA form for a new beneficiary and then add the new contact to the their contact list.
-* **Auto-Fill Form:** Provide the ordering customer with the option to save RTA form data the first time they fill it out to be auto-filled for all future uses. Saved and auto filled information will be data specific to the ordering customer and not the beneficiary.
-* **Saved Contacts:** Allow the ordering customer to view a list of contacts they have previously submitted the RTA form for. Each contact must have a contact page which states whether previous transfers were successfully completed, date of transaction, and transaction amount for that contact.
-* **Transfer to Saved Contact:** Ordering customer is able to make an international transfer to one of the saved contacts without filling out the RTA form again. Transaction specific information including the transfer amount and reason must be collected.
-* **International Transfer Verification PIN:** A 4-digit PIN must be entered upon each attempt to submit the RTA form for an international transfer request. The PIN must be changed in the user profile, when the customer wants to change the PIN.
-* **User Profile:** An interface in which the ordering customer may access the data stored about them for international transfers and make changes to it. The specific items which must be editable within this section are the verification PIN and the [Ordering Customer RTA Form Information](#Ordering_Customer_RTA_Form_Section).
-* **Transfer Status Notifications:** After a teller marks a transfer as either completed or rejected (see employee facing features for details), the ordering customer will receive a notification (via either email or SMS depending on preferred method selected in user settings). The notification must state success status, and next steps for failed transfers.
+* **Digital RTA Form:** A digital form which prompts an ordering Customer for the information required to make an international transfer. The digital form will request the same information as the current physical RTA form.
+* **Add New International Contact:** Create a new contact will have the ordering Customer fill out the digital RTA form for a new beneficiary and then add the new contact to the their contact list.
+* **Auto-Fill Form:** Provide the ordering Customer with the option to save RTA form data the first time they fill it out to be auto-filled for all future uses. Saved and auto filled information will be data specific to the ordering Customer and not the beneficiary.
+* **Saved Contacts:** Allow the ordering Customer to view a list of contacts they have previously submitted the RTA form for. Each contact must have a contact page which states whether previous transfers were successfully completed, date of transaction, and transaction amount for that contact.
+* **Transfer to Saved Contact:** Ordering Customer is able to make an international transfer to one of the saved contacts without filling out the RTA form again. Transaction specific information including the transfer amount and reason must be collected.
+* **International Transfer Verification PIN:** A 4-digit PIN must be entered upon each attempt to submit the RTA form for an international transfer request. The PIN must be changed in the user profile, when the Customer wants to change the PIN.
+* **User Profile:** An interface in which the ordering Customer may access the data stored about them for international transfers and make changes to it. The specific items which must be editable within this section are the verification PIN and the [Ordering Customer RTA Form Information](#Ordering_Customer_RTA_Form_Section).
+* **Transfer Status Notifications:** After a Teller marks a transfer as either completed or rejected (see employee facing features for details), the ordering Customer will receive a notification (via either email or SMS depending on preferred method selected in user settings). The notification must state success status, and next steps for failed transfers.
 * **Help Information:** Help text is displayed containing more information about what is required to be entered in each data entry box on the digital RTA form.
       
-The major features for the teller facing side are:  
+The major features for the Teller facing side are:  
 
-* **International Transfer Processing Portal:** An interface in which a bank teller will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, Completed, and Rejected.
-* **Claim a Transfer:** A teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in processing” category.
-* **Complete a Transfer:** After an international transfer is successfully deposited to the beneficiary the teller processing that transfer will manually mark the transfer as complete. The software then sorts the transfer into the “completed” category.
-* **Reject Transfer:** If there is an issue with the transfer which prevents it from being deposited the teller will manually reject the transfer. The software then sorts the transfer into the “rejected” category.
+* **International Transfer Processing Portal:** An interface in which a bank Teller will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, Completed, and Rejected.
+* **Claim a Transfer:** A Teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in processing” category.
+* **Complete a Transfer:** After an international transfer is successfully deposited to the beneficiary the Teller processing that transfer will manually mark the transfer as complete. The software then sorts the transfer into the “completed” category.
+* **Reject Transfer:** If there is an issue with the transfer which prevents it from being deposited the Teller will manually reject the transfer. The software then sorts the transfer into the “rejected” category.
 * **Auto-Reject Transfer:** Whenever a new transfer is requested the software will automatically check if there is an insufficient balance in the account for the transfer, then if there is insufficient balance label the transfer as rejected and sort it into “rejected”. If there is sufficient balance the system will sort the transfer into the correct “unprocessed" category.
-* **Dealing with Rejected Transfers:** If a customer contacts the bank to fix a rejected transfer, a teller will claim the transfer and the system will move it to “in processing”.
+* **Dealing with Rejected Transfers:** If a Customer contacts the bank to fix a rejected transfer, a Teller will claim the transfer and the system will move it to “in processing”.
          
 ## 3.2 Project Scope  
-The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
+The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank Teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
 
 The final product will support the business goals described in Section 2.  
 
 * **Improve Staff Productivity:** The software will improve staff productivity by allowing customers to make international transfers without direct interaction with staff. The “Help Information” feature will provide additional helpful information to ordering customers. This will save the tellers' time to spend on other important tasks.
 * **Reduce Wait Times:** The software will eliminate wait times to fill out RTA forms for online international transfers by immediately providing online users with RTA forms. The in person wait time to fill out RTA forms will also be reduced as the majority of ordering customers will prefer the benefits that filling out the form online provides. 
-* **Customer Satisfaction:** The software will contain numerous features designed to improve customer satisfaction. Ordering customers will not need to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online, saving customers valuble time and effort. The saved contacts feature the software provides will provide ordering customers with a more seamless experience when sending money to an international beneficiary repeatedly. Within the new system, customers will be able to save international beneficiary information. This will reduce the time required to fill out the form and thus, shorten the time until the transaction is complete.
+* **Customer Satisfaction:** The software will contain numerous features designed to improve Customer satisfaction. Ordering customers will not need to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online, saving customers valuble time and effort. The saved contacts feature the software provides will provide ordering customers with a more seamless experience when sending money to an international beneficiary repeatedly. Within the new system, customers will be able to save international beneficiary information. This will reduce the time required to fill out the form and thus, shorten the time until the transaction is complete.
 * **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, tellers will not need to worry about the confusion of misreading customers’ handwriting.    
 
 ## 3.3 Limitations and Exclusions  
-The Pichincha Bank international transfer system aims to enhance the efficiency and user-friendliness of international transactions through its mobile and web applications. This initiative is driven by the need to improve customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations based on the detailed project document and the exclusions that extend beyond the project's scope.
+The Pichincha Bank international transfer system aims to enhance the efficiency and user-friendliness of international transactions through its mobile and web applications. This initiative is driven by the need to improve Customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations based on the detailed project document and the exclusions that extend beyond the project's scope.
 
 ### Limitations  
 
@@ -168,7 +168,7 @@ The Pichincha Bank international transfer system aims to enhance the efficiency 
 
 * **Customer Education on Financial Regulations:** Educating customers on the complexities of international financial regulations is outside the scope of this project. While the app aims to simplify the transfer process, the responsibility for understanding the legal implications of international transfers remains with the customers.
 
-By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving customer satisfaction, and staff productivity within the defined constraints.
+By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving Customer satisfaction, and staff productivity within the defined constraints.
 
 # 4.0 Context Description  
 
@@ -201,7 +201,7 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 >
 > **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the SWIFT System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
 >
-> **Responsibilities:** Their primary responsibility includes inputting customer data into the SWIFT system and providing support to customers as needed.
+> **Responsibilities:** Their primary responsibility includes inputting Customer data into the SWIFT system and providing support to customers as needed.
 
 By distinguishing between these user classes and their respective characteristics, Pichincha Bank can tailor the international transfer system to meet the varied needs of its users effectively, ensuring a seamless and secure experience for both customers and administrative personnel.
 
@@ -240,25 +240,25 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 ## 4.5 Glossary of Terms  
 |Term|Definition|
 |----|----------|
-|Auto-Reject Transfer|An automatic system function that rejects a transfer if there is an insufficient balance in the ordering customer's account to cover the transfer amount.|
-|Beneficiary|The account or bank receiving money from an international transfer. It is the ultimate destination of the funds sent by the ordering customer.|
+|Auto-Reject Transfer|An automatic system function that rejects a transfer if there is an insufficient balance in the ordering Customer's account to cover the transfer amount.|
+|Beneficiary|The account or bank receiving money from an international transfer. It is the ultimate destination of the funds sent by the ordering Customer.|
 |C.C.|(*Carné de Ciudadanía*) National identity card used in Ecuador, serves as offical proof of identity.|
 |C.I.|(*Cédula de Identidad*) National identity card used in Ecuador, serves as offical proof of identity.|
-|Claim a Transfer|The action taken by a teller to indicate they are verifying the information for a transfer and will be processing it through the SWIFT system.|
-|Complete a Transfer|The marking of a transfer as finished by a teller after successfully depositing the funds into the beneficiary account.|
-|Contact| Beneficiary which the ordering customer has previously created an international transfer request for. |
+|Claim a Transfer|The action taken by a Teller to indicate they are verifying the information for a transfer and will be processing it through the SWIFT system.|
+|Complete a Transfer|The marking of a transfer as finished by a Teller after successfully depositing the funds into the beneficiary account.|
+|Contact| Beneficiary which the ordering Customer has previously created an international transfer request for. |
 |Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
 |Help Information|Text displayed within the app providing guidance on how to complete the digital RTA form and other related queries.|
-|Ordering Customer|The individual or entity initiating an international money transfer. This party is responsible for providing the necessary information and funds for the transfer. Refering to customer.|
+|Ordering Customer|The individual or entity initiating an international money transfer. This party is responsible for providing the necessary information and funds for the transfer. Refering to Customer.|
 |Pichincha Bank|A private banking institution based in Ecuador, offering a range of services including investments, account management, and money transfers.|
-|Reject Transfer|The action taken by a teller when a transfer cannot be processed due to issues with the information provided, leading to its cancellation.|
+|Reject Transfer|The action taken by a Teller when a transfer cannot be processed due to issues with the information provided, leading to its cancellation.|
 |RTA Form|(*Request for Transfer Abroad form*) The request form used by Pichincha Bank to enact a transfer of funds internationally.|
 |RUC|(*Registro Único de Contribuyentes*) Unique identification number assigned to individuals and businesses for tax purposes in Ecuador.|
 |SWIFT|(*Society for Worldwide Interbank Financial Telecommunication*) A global member-owned cooperative providing secure messaging services and interface software for financial transactions among its members.|
 |SWIFT Alliance System|The digital platform used by Pichincha Bank to process international money transfers through the SWIFT network.|
-|Teller|A customer facing bank employee that helps customer issues and requests in person.|  
+|Teller|A Customer facing bank employee that helps Customer issues and requests in person.|  
 |Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 
 
@@ -302,7 +302,7 @@ This feature allows customers to request an international transfer and allows te
 ## 2. Manage Contacts  
 
 #### **Description**  
-This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a customer, they shall be able to transfer money to specified contacts.
+This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a Customer, they shall be able to transfer money to specified contacts.
 
 **Priority**: Medium
  
@@ -346,7 +346,7 @@ This feature allows customers to organize their contacts within the system. Cust
 ## 3. Manage Transfer Status  
 
 #### **Description**  
-This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
+This feature involves managing the status of the transfer. It allows a Customer to cancel the transfer, allows a bank Teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
 
 **Priority**: Medium
  
@@ -365,17 +365,17 @@ This feature involves managing the status of the transfer. It allows a customer 
 
 |||
 |-|-|
-|**ID and Name:**|UC-1 Review of an international transfer request by a teller|
+|**ID and Name:**|UC-1 Review of an international transfer request by a Teller|
 |**Created By:**|Brayden|
 |**Date Created:**|Feb-16-2024|
 |**Primary Actor:**|Teller|
 |**Secondary Actors:**| Customer|
-|**Description:**|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
+|**Description:**|The Teller selects an international transfer request submitted by a Customer for review. The system then provides the Teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
 |**Trigger:**|Teller selects a submitted international transfer request.|
-|**Preconditions:**|PRE-1. A customer has submitted an international transfer request. <br> PRE-2. An authorized administrative user is accessing the system.|
-|**Postconditions:**|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request.|
-|**Normal Flow:**|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request. <br> 2. System displays transfer request for teller to review. <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1). <br> 4. Teller selects the accept option to complete the transfer request. <br> 5. System changes the state of the transfer request to accepted.|
-|**Alternative Flow:**|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review. <br> 2. Teller finds an issue with the transfer request. <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0). <br> 4. Teller selects the reject option. <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1). <br> 6. System changes the state of the transfer request to rejected.|
+|**Preconditions:**|PRE-1. A Customer has submitted an international transfer request. <br> PRE-2. An authorized administrative user is accessing the system.|
+|**Postconditions:**|POST-1. A notification is sent to the requesting Customer specifying the completion status of the transfer request.|
+|**Normal Flow:**|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request. <br> 2. System displays transfer request for Teller to review. <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1). <br> 4. Teller selects the accept option to complete the transfer request. <br> 5. System changes the state of the transfer request to accepted.|
+|**Alternative Flow:**|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for Teller to review. <br> 2. Teller finds an issue with the transfer request. <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0). <br> 4. Teller selects the reject option. <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1). <br> 6. System changes the state of the transfer request to rejected.|
 |**Exceptions:**|**1.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered. <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a). <br> 3a. Teller enters a justification message. <br> 3b. System saves the justification message. <br> 3c. System continues previous flow. <br> 4a. System closes the transfer request. <br> 4b. System returns transfer request to list of open international transfer requests.|
 |**Priority:**|high|
 |**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of customers.|
@@ -385,7 +385,7 @@ This feature involves managing the status of the transfer. It allows a customer 
 ### 4. Customer Profile  
 
 #### **Description**  
-This feature allows the customer to manage their personal details related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
+This feature allows the Customer to manage their personal details related to international transfers. This information includes the ordering Customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
     
 **Priority**: Low
  
@@ -393,10 +393,10 @@ This feature allows the customer to manage their personal details related to int
 
 |||
 |-|-|
-|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their customer profile.|
-|FR~23|The Customer shall be able to edit the personal information stored to their customer profile.|
-|FR~24|The Customer shall be able to change their international transfer verification PIN through their customer profile.|
-|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|  
+|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.|
+|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.|
+|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.|
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
 
 # 6.0 Data Requirements   
       
@@ -413,8 +413,8 @@ The data dictionary below defines the composition of data structures and their c
 
 | Data Element | Description | Composition or Data Type | Length | Values |
 |---|---|---|---|---|
-| <a name="Accepted_Declarations"></a> Accepted Declarations | If the ordering customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
-| <a name="Account_Verification_PIN"></a> Account Verification PIN| The PIN used to verify that the submitter of an international transfer request is the ordering customer. | Numeric characters | 4 |  |
+| <a name="Accepted_Declarations"></a> Accepted Declarations | If the ordering Customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
+| <a name="Account_Verification_PIN"></a> Account Verification PIN| The PIN used to verify that the submitter of an international transfer request is the ordering Customer. | Numeric characters | 4 |  |
 | <a name="Beneficiary_Account_Number"></a>Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
 | <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
 | <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 |  |
@@ -428,32 +428,32 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Beneficiary_Country"></a>Beneficiary Country | Country the beneficiary is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Name"></a>Beneficiary Name | First and last name or company name of the beneficiary.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_RTA_Form_Section"></a>Beneficiary RTA Form Section | The section of the digital RTA form containing information regarding the beneficiary. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) |  |  |
-| <a name="Contact_List"></a>Contact List | The list of all contacts an ordering customer has. | 1:n{[International Contact Profile](#International_Contact_Profile)} |  |  |
-| <a name="Contact_Transfer_History"></a>Contact Transfer History | All previous requested international transfers from the ordering customer to a beneficiary. | 1:n{[Form Completion Date](#Form_Completion_Date)} <br>+ 1:n{[Transfer Value](#Transfer_Value)} <br>+ 1:n{[Transaction Reason Code](#Transaction_Reason_Code)} <br>+ 1:n{[Transfer Reference](#Transfer_Reference)} <br>+ 1:n{ [International Transfer Status](#International_Transfer_Status)} |  |  |
+| <a name="Contact_List"></a>Contact List | The list of all contacts an ordering Customer has. | 1:n{[International Contact Profile](#International_Contact_Profile)} |  |  |
+| <a name="Contact_Transfer_History"></a>Contact Transfer History | All previous requested international transfers from the ordering Customer to a beneficiary. | 1:n{[Form Completion Date](#Form_Completion_Date)} <br>+ 1:n{[Transfer Value](#Transfer_Value)} <br>+ 1:n{[Transaction Reason Code](#Transaction_Reason_Code)} <br>+ 1:n{[Transfer Reference](#Transfer_Reference)} <br>+ 1:n{ [International Transfer Status](#International_Transfer_Status)} |  |  |
 | <a name="Customer_Profile"></a>Customer Profile | Ordering customer’s profile in the international transfer application. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ [Ordering Customer Identification](#Ordering_Customer_Identification) <br>+ [Ordering Customer Address](#Ordering_Customer_Address) <br>+ [Ordering Customer Postal Code](#Ordering_Customer_Postal_Code) <br>+ [Ordering Customer Phone Number](#Ordering_Customer_Phone_Number) <br>+ [Ordering Customer Email](#Ordering_Customer_Email) <br>+ [Account Verification PIN](#Account_Verification_PIN) |  |  |
 | <a name="Employee_ID"></a>Employee ID | Identification number of a Pichincha Bank employee. | Numeric characters | 15 |  |
 | <a name="Employee_Name"></a>Employee Name | Name of a Pichincha Bank employee. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
-| <a name="Form_Completion_Date"></a>Form Completion Date | Date RTA form was submitted by ordering customer on. | Numeric Date | 10 | dd/mm/yyyy format in numbers |
-| <a name="International_Contact_Profile"></a>International Contact Profile | Profile of a contact who has been a beneficiary to a international transfer from the ordering customer. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) <br>+ [Beneficiary Bank Name](#Beneficiary_Bank_Name) <br>+ [Beneficiary Bank SWIFT Code](#Beneficiary_Bank_SWIFT_Code) <br>+ [Beneficiary Bank Address](#Beneficiary_Bank_Address) <br>+ [Beneficiary Bank Transit Number](#Beneficiary_Bank_Transit_Number) <br>+ [Beneficiary Bank City](#Beneficiary_Bank_City) <br>+ [Beneficiary Bank Country](#Beneficiary_Bank_Country) <br>+ [Contact Transfer History](#Contact_Transfer_History) |  |  |
+| <a name="Form_Completion_Date"></a>Form Completion Date | Date RTA form was submitted by ordering Customer on. | Numeric Date | 10 | dd/mm/yyyy format in numbers |
+| <a name="International_Contact_Profile"></a>International Contact Profile | Profile of a contact who has been a beneficiary to a international transfer from the ordering Customer. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) <br>+ [Beneficiary Bank Name](#Beneficiary_Bank_Name) <br>+ [Beneficiary Bank SWIFT Code](#Beneficiary_Bank_SWIFT_Code) <br>+ [Beneficiary Bank Address](#Beneficiary_Bank_Address) <br>+ [Beneficiary Bank Transit Number](#Beneficiary_Bank_Transit_Number) <br>+ [Beneficiary Bank City](#Beneficiary_Bank_City) <br>+ [Beneficiary Bank Country](#Beneficiary_Bank_Country) <br>+ [Contact Transfer History](#Contact_Transfer_History) |  |  |
 | <a name="International_Transfer_Instance_RTA_Form_Section"></a>International Transfer Instance RTA Form Section | The section of the digital RTA form containing data regarding a specific international transfer request. | [Transfer Currency](#Transfer_Currency) <br>+ [Transfer Value](#Transfer_Value) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transfer Reference](#Transfer_Reference) |  |  |
 | <a name="International_Transfer_Status"></a>International Transfer Status | The status of an international transfer request. | Alphabetic characters, spaces, parentheses | 15 | Can be: “Unprocessed (new beneficiary)”, “Unprocessed (existing beneficiary)”, “In processing”, “Completed”, and “Rejected” |
 | <a name="Ordering_Bank_SWIFT_Code"></a>Ordering Bank SWIFT Code | SWIFT code belonging to the ordering bank. | Alphanumeric characters | 11 |  |
-| <a name="Ordering_Customer"></a>Ordering Customer | Information regarding the ordering customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ 1:n{[Ordering Customer Account Number](#Ordering_Customer_Account_Number)} |  |  |
+| <a name="Ordering_Customer"></a>Ordering Customer | Information regarding the ordering Customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ 1:n{[Ordering Customer Account Number](#Ordering_Customer_Account_Number)} |  |  |
 | <a name="Ordering_Customer_Account_Number"></a>Ordering Customer Account Number | Ordering customer’s account number to be debited. | Numeric characters  | 17 |  |
-| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the ordering customer. | Alphanumeric characters | 100 |  |
-| <a name="Ordering_Customer_Email"></a>Ordering Customer Email | Email of the ordering customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
+| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the ordering Customer. | Alphanumeric characters | 100 |  |
+| <a name="Ordering_Customer_Email"></a>Ordering Customer Email | Email of the ordering Customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
 | <a name="Ordering_Customer_Identification"></a>Ordering Customer Identification | Identification number from ordering customer’s  C.I., C.C., Passport, or RUC. | Numeric characters  | 11 |  |
-| <a name="Ordering_Customer_Name"></a>Ordering Customer Name | First and last name or company name of the ordering customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
-| <a name="Ordering_Customer_Phone_Number"></a>Ordering Customer Phone Number | Phone number of the ordering customer. | Numeric characters  | 15 |  |
-| <a name="Ordering_Customer_Postal_Code"></a>Ordering Customer Postal Code | Postal Code of the ordering customer. | Alphanumeric characters | 6 |  |
-| <a name="Ordering_Customer_RTA_Form_Section"></a>Ordering Customer RTA Form Section | The section of the digital RTA form containing information regarding the ordering customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ [Ordering Customer Identification](#Ordering_Customer_Identification) <br>+ [Ordering Customer Address](#Ordering_Customer_Address) <br>+ [Ordering Customer Postal Code](#Ordering_Customer_Postal_Code) <br>+ [Ordering Customer Phone Number](#Ordering_Customer_Phone_Number) <br>+ [Ordering Customer Email](#Ordering_Customer_Email) <br>+ [Ordering Customer Account Number](#Ordering_Customer_Account_Number) |  |  |
+| <a name="Ordering_Customer_Name"></a>Ordering Customer Name | First and last name or company name of the ordering Customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Ordering_Customer_Phone_Number"></a>Ordering Customer Phone Number | Phone number of the ordering Customer. | Numeric characters  | 15 |  |
+| <a name="Ordering_Customer_Postal_Code"></a>Ordering Customer Postal Code | Postal Code of the ordering Customer. | Alphanumeric characters | 6 |  |
+| <a name="Ordering_Customer_RTA_Form_Section"></a>Ordering Customer RTA Form Section | The section of the digital RTA form containing information regarding the ordering Customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ [Ordering Customer Identification](#Ordering_Customer_Identification) <br>+ [Ordering Customer Address](#Ordering_Customer_Address) <br>+ [Ordering Customer Postal Code](#Ordering_Customer_Postal_Code) <br>+ [Ordering Customer Phone Number](#Ordering_Customer_Phone_Number) <br>+ [Ordering Customer Email](#Ordering_Customer_Email) <br>+ [Ordering Customer Account Number](#Ordering_Customer_Account_Number) |  |  |
 | <a name="RTA_Form"></a>RTA Form | The digital form which contains all data necessary to make an international transfer. | [Form Completion Date](#Form_Completion_Date) <br>+ [Ordering Customer RTA Form Section](#Ordering_Customer_RTA_Form_Section) <br>+ [Beneficiary Bank RTA Form Section](#Beneficiary_Bank_RTA_Form_Section) <br>+ [Beneficiary RTA Form Section](#Beneficiary_RTA_Form_Section) <br>+ [International Transfer Instance RTA Form Section](#International_Transfer_Instance_RTA_Form_Section) <br>+ [Accepted Declarations](#Accepted_Declarations) |  |  |
-| <a name="Submitted_International_Transfer_Request"></a>Submitted International Transfer Request | The object containing all information related to an international transfer request which has been submitted by the ordering customer. Includes transfer status and teller assignee. | [RTA Form](#RTA_Form) <br>+ [International Transfer Status](#International_Transfer_Status) <br>+ [Teller](#Teller) |  |  |
+| <a name="Submitted_International_Transfer_Request"></a>Submitted International Transfer Request | The object containing all information related to an international transfer request which has been submitted by the ordering Customer. Includes transfer status and Teller assignee. | [RTA Form](#RTA_Form) <br>+ [International Transfer Status](#International_Transfer_Status) <br>+ [Teller](#Teller) |  |  |
 | <a name="SWIFT_Alliance"></a>SWIFT Alliance | A best assumption of information the SWIFT Alliance Application uses. | [RTA Form](#RTA_Form) <br>+ [International Transfer Status](#International_Transfer_Status) <br>+ [Ordering Bank SWIFT Code](#Ordering_Bank_SWIFT_Code) |  |  |
-| <a name="Teller"></a>Teller | Information regarding a teller employed at Pichincha Bank. Including current assigned International Transfer Requests. | [Employee ID](#Employee_ID) <br>+ [Employee Name](#Employee_Name) <br>+ 1:n{[Submitted International Transfer Request](#Submitted_International_Transfer_Request)} |  |  |
+| <a name="Teller"></a>Teller | Information regarding a Teller employed at Pichincha Bank. Including current assigned International Transfer Requests. | [Employee ID](#Employee_ID) <br>+ [Employee Name](#Employee_Name) <br>+ 1:n{[Submitted International Transfer Request](#Submitted_International_Transfer_Request)} |  |  |
 | <a name="Transaction_Reason_Code"></a>Transaction Reason Code | Reason for international transfer code. | Numeric characters | 3 |  |
 | <a name="Transfer_Currency"></a>Transfer Currency | ISO 4217 currency code for transfer to be made in. | Alphabetic characters | 3 |  |
-| <a name="Transfer_Reference"></a>Transfer Reference | Message from the ordering customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
+| <a name="Transfer_Reference"></a>Transfer Reference | Message from the ordering Customer to the beneficiary describing reason for transfer and identifies source of transfer. | Alphanumeric characters and special symbols | 300 |  |
 | <a name="Transfer_Value"></a>Transfer Value | Monetary value to be transferred to beneficiary. | Numeric characters | 12 |  |
 
 ## 6.3 Reports  
@@ -463,13 +463,13 @@ The International Bank Transfer System does not generate reports as a part of it
 ## 6.4 Data acquisition, integrity, retention, and diposal
 
 #### Data Acquisition   
-The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and when a customer creates a new international contact. 
+The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a Customer completes an RTA Form and when a Customer creates a new international contact. 
 
 #### Data Integrity  
-A Teller reviews and verifies the data provided by a customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the customer has insufficient funds for the transfer.
+A Teller reviews and verifies the data provided by a Customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a Customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned Teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the Customer has insufficient funds for the transfer.
 
 #### Data Retention  
-Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a teller or the ordering customer. 
+Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a Teller or the ordering Customer. 
 
 #### Data Disposal  
 Data disposal is carried out in accordance with legal and regulatory requirements - the details of which are out of the scope of this project as indicated in Section 3.3 (Limitations and Exclusions). 
@@ -484,7 +484,7 @@ The user interface for the International Bank Transfer System will coincide with
 |-|-|
 |EIR~1|The System shall use the same colour codes as the existing application.|
 |EIR~2.1|The System shall provide a method for a Customer to create a new International Transfer Request (ITR).|
-|EIR~2.2|The System shall provide a customer the ability to enter RTA form data.|
+|EIR~2.2|The System shall provide a Customer the ability to enter RTA form data.|
 |EIR~2.3|The System shall provide a method for a Customer to save the current state of the RTA form.|
 |EIR~2.4|The System shall provide a method for a Customer to open a saved RTA form.|
 |EIR~3.1|The System shall provide a method for a Customer to create a new International Transfer Contact (ITC).|
@@ -544,11 +544,11 @@ The International Bank Transfer System will be integrated into the existing Pich
        
 ## 7.4 Communication Interfaces  
 
-The communication interfaces for the International Bank Transfer System must be able to commmunicate relavent information about the status of the transfer request to the requesting customer. This communication can be implemented via e-mail, SMS, or other means such that the customer is easily able to access relavent status about the transfer request. Due to the systems communication with the SWIFT Alliance System, the appropriate communication between the International Bank Transfer System and the SWIFT Alliance system must be used.  
+The communication interfaces for the International Bank Transfer System must be able to commmunicate relavent information about the status of the transfer request to the requesting Customer. This communication can be implemented via e-mail, SMS, or other means such that the Customer is easily able to access relavent status about the transfer request. Due to the systems communication with the SWIFT Alliance System, the appropriate communication between the International Bank Transfer System and the SWIFT Alliance system must be used.  
 
 |||
 |-|-|
-|EIR~12|The System must be able to send e-mail notifications to a customer.|
+|EIR~12|The System must be able to send e-mail notifications to a Customer.|
 |EIR~13|(**TBD**) The System must communicate with the SWIFT Alliance System via \<communication-type\>.|  
 
 # 8.0 Software Quality Attributes
@@ -558,7 +558,7 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~1|Performance|The System shall respond to all user interactions within 3 seconds under typical load conditions.|
 |QA~2||The System shall process all transactions within 3 seconds under typical load conditions.|
 |QA~3||Under peak load conditions, the System shall not exceed a 3-second response time for transactions and user interactions.|
-|QA~4|Security|The System shall encrypt customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
+|QA~4|Security|The System shall encrypt Customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
 |QA~5||The System shall require customers to authenticate using a 4-digit PIN.|
 |QA~6||The System shall require bank tellers to use multi-factor authentication for system access.|
 |QA~7||The System shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.|
