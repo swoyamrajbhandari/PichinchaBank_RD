@@ -552,58 +552,58 @@ The communication interfaces for the International Bank Transfer System must be 
 # 8.0 Quality Attributes
 
 
-#### Performance
+#### 8.10 Performance
 
 - **QA-1:** The system shall respond to all user interactions within 3 seconds under typical load conditions.
 - **QA-2:** The system shall process all transactions within 3 seconds under typical load conditions.
 - **QA-3:** Under peak load conditions, the system shall not exceed a 3-second response time for transactions and user interactions.
 
-#### Security
+#### 8.11 Security
 
 - **QA-4:** The system shall encrypt customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.
 - **QA-5:** The system shall require customers to authenticate using a 4-digit PIN.
 - **QA-6:** The system shall require bank tellers to use multi-factor authentication for system access.
 - **QA-7:** The system shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.
 
-#### Reusability
+#### 8.12 Reusability
 
 - **QA-8:** The system shall provide a modular implementation for the digital RTA form.
 - **QA-9:** The system shall provide a modular implementation for international contact management.
 - **QA-10:** The system shall provide APIs for seamless integration with existing banking systems and third-party services.
 - **QA-11:** The system APIs must provide documentation that is clear and detailed for developer use.
 
-#### Maintainability
+#### 8.13 Maintainability
 
 - **QA-12:** The system's source code shall adhere to [specify coding standard, e.g., ISO/IEC 25010:2011], and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.
 - **QA-13:** The system shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.
 
-#### Usability
+#### 8.14 Usability
 
 - **QA-14:** The system shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring customers can easily understand how to complete the form online.
 - **QA-15:** The system shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.
 
-#### Availability
+#### 8.15 Availability
 
 - **QA-16:** The system shall maintain an operational uptime of 99.9% annually to ensure constant availability for international transfers, aiming to minimize downtime during maintenance windows.
 
-#### Interoperability
+#### 8.16 Interoperability
 
 - **QA-17:** The system shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.
 - **QA-18:** The system shall support data exchange with external banking and financial systems in a format compliant with ISO 20022 standards to ensure future compatibility.
 
-#### Supportability
+#### 8.17 Supportability
 
 - **QA-19:** The system shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.
 - **QA-20:** The system shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.
 - **QA-21:** The system shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.
 
-#### Testability
+#### 8.18 Testability
 
 - **QA-22:** The system shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.
 - **QA-23:** The system shall be designed to allow components to be independently testable to facilitate quick issue identification and resolution.
 - **QA-24:** The system shall undergo User Acceptance Testing (UAT) with participation from all user classes to validate the system against real-world requirements and expectations.
 
-#### Scalability
+#### 8.19 Scalability
 
 - **QA-25:** The system shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.
 - **QA-26:** The system shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.
