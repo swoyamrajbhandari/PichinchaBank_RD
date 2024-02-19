@@ -389,17 +389,17 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 ### 4. Customer Profile  
 
 > #### **Description**  
-> This feature allows the customer to manage their personal information related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
+> This feature allows the customer to manage their personal details related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
 >    
 > **Priority**: Low
 > 
 > #### **Functional Requirements**  
 > |||
 > |-|-|
-> |REQ~26|The customer shall be able to add their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number to debit for international transfers.|
-> |REQ~27|The customer shall be able to edit their name, identification (CI, CC, Passport, RUC), address, phone number, email, and the account number for international transfers.|
-> |REQ~28|The customer shall be able to change their international transfer verification PIN.|
-> |REQ~29|As a customer, I want to save my personal information for international transfers so that I do not have to re-enter the information each time.|
+> |REQ~25|The customer shall be able to add their personal information as specified in the Customer Profile section of the data dictionary to their customer profile.|
+> |REQ~26|The customer shall be able to edit the personal information stored to their customer profile.|
+> |REQ~27|The customer shall be able to change their international transfer verification PIN through their customer profile.|
+> |REQ~28|As a customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
 
 # 6.0 Data Requirements   
       
