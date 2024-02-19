@@ -44,7 +44,7 @@
    * [6.1 Logical Data Model](#61-logical-data-model)
    * [6.2 Data Dictionary](#62-data-dictionary)
    * [6.3 Reports](#63-reports)
-   * [6.4 Data acquisition, integrity, retention, and diposal](#64-data-acquisition-integrity-retention-and-diposal)
+   * [6.4 Data Acquisition, Integrity, Retention, and Disposal](#64-data-acquisition-integrity-retention-and-disposal)
 * [7.0 External Interface Requirements](#70-external-interface-requirements)
    * [7.1 User Interfaces](#71-user-interfaces)
    * [7.2 Hardware Interfaces](#72-hardware-interfaces)
@@ -283,7 +283,7 @@ This section of the requirements document outlines the system features of the In
 ## 1. International Money Transfer Request
 
 #### **Description**
-This feature allows Customers to request an international transfer and allows Tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
+This feature allows a Customer to request an international transfer and a Teller to manage and process international transfer requests. A Customer shall be able to specify an amount of money to transfer to a contact with an Account Verification PIN. A Teller shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
 
 **Priority**: High
     
@@ -293,16 +293,16 @@ This feature allows Customers to request an international transfer and allows Te
 |-|-|
 |FR~1|The Customer shall be able to specify the amount of money to transfer.|
 |FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|
-|FR~3|As a Customer, I want to choose a contact to send an international transfer to.|
-|FR~4|The System shall provide a Customer with a digital method to complete a RTA form.|
-|FR~5|As a Customer, I want to input the international transfer verification pin so that I can access the RTA form.|
+|FR~3|As a Customer, I want to choose an international contact to transfer money to.|
+|FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.|
+|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|
 |FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|
 |FR~7|The Customer shall be able to review the status of their transfer request.| 
 
 ## 2. Manage Contacts  
 
 #### **Description**  
-This feature allows Customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a Customer, they shall be able to transfer money to specified contacts.
+This feature allows a Customer to organize their contacts within the system. A Customer shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a Customer, they shall be able to transfer money to specified contacts.
 
 **Priority**: Medium
  
@@ -329,24 +329,24 @@ This feature allows Customers to organize their contacts within the system. Cust
 | **ID and Name:** | UC-2 Create a Contact |
 | **Created By:**  | Matt                |
 | **Date Created:**| Feb-17-2024              |
-| **Primary Actor:** | User                |
-| **Secondary Actors:** | Contact Database, User Interface |
-| **Description:** | The User initiates the process to create a new contact by entering personal details, such as name, address, phone number, and email. The system validates the entered information and stores it in the Contact Database. The User can then use this contact information for various operations like sending messages, making calls, or sharing documents. |
-| **Trigger:** | User selects the option to create a new contact in the application. |
-| **Preconditions:** | PRE-1. User is logged into the system. <br> PRE-2. User has permission to add new contacts. <br> PRE-3. Contact Database is accessible. |
-| **Postconditions:** | POST-1. A new contact is created in the Contact Database. <br> POST-2. User can access and interact with the new contact information. |
-| **Normal Flow:** | **2.0 Valid Contact Information** <br> 1. User selects the option to create a new contact. <br> 2. System presents a form for entering contact details. <br> 3. User fills in the contact's name, address, phone number, and email. <br> 4. System validates the entered information for format and completeness. <br> 5. User confirms the creation of the new contact. <br> 6. System stores the new contact information in the Contact Database. <br> 7. System acknowledges the successful creation of the contact to the User. |
-| **Alternative Flows:** | **2.1 Invalid Contact Information** <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts User to correct the information. <br> 3. User updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
-| **Exceptions:** | **2.1.E1 System Cannot Validate Contact** <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. User decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
+| **Primary Actor:** | Customer                |
+| **Secondary Actors:** | System |
+| **Description:** | The Customer initiates the process to create a new contact by entering beneficiary personal details, such as name, address, phone number, and email (see section 6.2 Data Dictionary). The system validates the entered information and stores it in the Customer's saved international contacts. The Customer can then use this contact information to autofill sections of the RTA Form. |
+| **Trigger:** | Customer selects the option to create a new contact in the application. |
+| **Preconditions:** | PRE-1. Customer is logged into the system. <br> PRE-2. Customer has permission to add new contacts.  |
+| **Postconditions:** | POST-1. A new contact is created in the Customer's saved international contacts. <br> POST-2. Customer can access and interact with the new contact information. |
+| **Normal Flow:** | **2.0 Valid Contact Information** <br> 1. Customer selects the option to create a new contact. <br> 2. System presents a form for entering contact details. <br> 3. Customer fills in the contact's name, address, phone number, email, and banking information. <br> 4. System validates the entered information for format and completeness. <br> 5. Customer confirms the creation of the new contact. <br> 6. System stores the new contact information in the Customer's saved international contacts. <br> 7. System acknowledges the successful creation of the contact to the Customer. |
+| **Alternative Flows:** | **2.1 Invalid Contact Information** <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts Customer to correct the information. <br> 3. Customer updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
+| **Exceptions:** | **2.1.E1 System Cannot Validate Contact** <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. Customer decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
 | **Priority:** | Medium |
-| **Frequency of Use:** | Varies depending on the number of new contacts a user needs to add; estimated at an average of 5 times per week per user. |
+| **Frequency of Use:** | Varies depending on the number of new contacts a Customer needs to add; estimated at an average of 1 to 5 times per week per Customer. |
 | **Other Information:** | The system should allow for easy input and editing of contact details, with the ability to import from or export to external address books. |
-| **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation. <br> - The Contact Database is robust and capable of handling concurrent interactions from multiple users. |  
+| **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation.  |  
 
 ## 3. Manage Transfer Status  
 
 #### **Description**  
-This feature involves managing the status of the transfer. It allows a Customer to cancel the transfer, allows a bank Teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
+This feature involves managing the status of the transfer. It allows a Customer to cancel the transfer, allows a bank Teller to change the transfer status to completed or rejected, as well as the system functionality to reject the transfer if the Customer does not have sufficient funds. This feature falls into the medium priority level.
 
 **Priority**: Medium
  
@@ -385,7 +385,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 ### 4. Customer Profile  
 
 #### **Description**  
-This feature allows the Customer to manage their personal details related to international transfers. This information includes the ordering Customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
+This feature allows the Customer to manage their personal details related to international transfers. This information includes the Ordering Customer data found on the RTA Form, such as name, identification, address, phone number, email, and account number to debit, as well as the Verification PIN.
     
 **Priority**: Low
  
@@ -400,16 +400,16 @@ This feature allows the Customer to manage their personal details related to int
 
 # 6.0 Data Requirements   
       
-## 6.1 Logical data model  
+## 6.1 Logical Data Model  
 
 The diagram below depicts the interactions between major International Bank Transfer System entities. The main entities of the system include Ordering Customer, Customer Profile, International Contact Profile, Submitted International Transfer Request, RTA Form, Teller, Account Verification PIN, and SWIFT Alliance. The relationships and cardinalities between entities demonstrates the nature of interactions between the various actors or data objects of the system. As a note, although SWIFT Alliance is an external third-party system, it has been included as an entity in the diagram as it is a crucial aspect of the international transfer process and interacts with International Bank Transfer System actors and data.  
 
 > ![Entity Relationship Diagram (2)](./images/erd-diagram.jpg)  
 > *Entity Relationship Diagram of International Bank Transfer System*
 
-## 6.2 Data dictionary  
+## 6.2 Data Dictionary  
 
-The data dictionary below defines the composition of data structures and their contents as they relate to the project.
+The data dictionary below defines the composition of data structures and their contents as they relate to the International Bank Transfer System.
 
 | Data Element | Description | Composition or Data Type | Length | Values |
 |---|---|---|---|---|
@@ -460,16 +460,16 @@ The data dictionary below defines the composition of data structures and their c
 
 The International Bank Transfer System does not generate reports as a part of it's functionality.    
 
-## 6.4 Data acquisition, integrity, retention, and diposal
+## 6.4 Data Acquisition, Integrity, Retention, and Disposal
 
 #### Data Acquisition   
-The International Bank Transfer System acquires data directly from Customers when they submit an International Transfer Request. This data is collected when a Customer completes an RTA Form and when a Customer creates a new international contact. 
+The International Bank Transfer System acquires data directly from Customers when they submit an international transfer request. This data is collected when a Customer completes an RTA Form and when a Customer creates a new international contact. 
 
 #### Data Integrity  
-A Teller reviews and verifies the data provided by a Customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a Customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned Teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the Customer has insufficient funds for the transfer.
+A Teller reviews and verifies the data provided by a Customer through a submitted international transfer request before inputting the data into the SWIFT Alliance system for further processing. If a Customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned Teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the Customer has insufficient funds for the transfer.
 
 #### Data Retention  
-Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat Customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a Teller or the ordering Customer. 
+Data critical to the facilitation of future international transfer requests such as details from the Ordering Customer RTA Form section and international contacts are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat Customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a Teller or the Ordering Customer. 
 
 #### Data Disposal  
 Data disposal is carried out in accordance with legal and regulatory requirements - the details of which are out of the scope of this project as indicated in Section 3.3 (Limitations and Exclusions). 
@@ -568,7 +568,7 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~11||The System APIs must provide documentation that is clear and detailed for developer use.|
 |QA~12|Maintainability|The System's source code shall adhere to ISO 20022, and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.|
 |QA~13||The System shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.|
-|QA~14|Usability|The System shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring Customers can easily understand how to complete the form online.|
+|QA~14|Usability|The System shall present a digital RTA Form with clearly labeled sections and fields that match the paper form layout, ensuring Customers can easily understand how to complete the form online.|
 |QA~15||The System shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.|
 |QA~16|Availability|The System shall maintain an operational uptime of 99.9% annually to ensure constant availability for international transfers, aiming to minimize downtime during maintenance windows.|
 |QA~17|Interoperability|The System shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.|
