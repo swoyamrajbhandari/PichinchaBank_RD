@@ -154,7 +154,7 @@ The Pichincha Bank international transfer system aims to enhance the efficiency 
 
 * **Interactions with the SWIFT System:** The efficiency of international transfers is limited by the interactions with the SWIFT system, which is an external dependency with its own processing times and operational constraints.
 
-* **Integration with Existing Banking Systems:** The project must seamlessly integrate with Pichincha Bank's current banking systems and protocols, which may limit the flexibility in implementing certain features or require additional time for compatibility adjustments.
+* **Integration with Existing Banking Systems:** The project must integrate with Pichincha Bank's current banking systems and protocols, which may limit the flexibility in implementing certain features or require additional time for compatibility adjustments.
 
 * **Technological Constraints:** The project is limited by the current technological infrastructure of Pichincha Bank, including hardware capabilities, software compatibility, and the operational capacity of the mobile and web platforms.
 
@@ -166,7 +166,7 @@ The Pichincha Bank international transfer system aims to enhance the efficiency 
 
 * **Customer Education on Financial Regulations:** Educating customers on the complexities of international financial regulations is outside the scope of this project. While the app aims to simplify the transfer process, the responsibility for understanding the legal implications of international transfers remains with the customers.
 
-By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving efficiency, customer satisfaction, and staff productivity within the defined constraints.
+By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving customer satisfaction, and staff productivity within the defined constraints.
 
 # 4.0 Context Description  
 
