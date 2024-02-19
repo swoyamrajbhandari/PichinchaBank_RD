@@ -82,9 +82,9 @@ In response to concerns about the efficiency of the current process, Pichincha B
 The current financial transaction system for international fund tranfers is inefficient and affects both customers and bank tellers.  
 
 * Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers spend time walking clients through the physical forms and verifying that they contain the correct and appropriate information.
-* The long duration of the transaction causes customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, profits, and tellers’ morale and performance as they regularly have to deal with unhappy customers. 
-
-Our team proposes the implementation of a digital transaction system. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall customer experience and satisfaction as well as foster a positive environment for bank tellers.
+* The long duration of the transaction causes customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, and profits.
+  
+Our team proposes the implementation of a digital transaction system. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall customer experience and improve employee efficiency.
 
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
