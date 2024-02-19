@@ -12,6 +12,8 @@
 | Cache Money Inc | Feb-07-24 | Revisions and changes from client review | 2.0.1 |
 | Cache Money Inc | Feb-11-24 | Revisions and changes from client review | 2.0.2 |  
 | Cache Money Inc | Feb-17-24 | Addition of iteration 2 sections | 2.1.0 |  
+| Cache Money Inc | Feb-18-24 | Revisions and changes to iter 2 | 2.1.1 |  
+| Cache Money Inc | Feb-18-24 | Iteration 2 RD submission | 3.0.0 |  
 
 ## Table Of Contents  
 
@@ -48,7 +50,7 @@
    * [7.2 Hardware Interfaces](#72-hardware-interfaces)
    * [7.3 Software Interfaces](#73-software-interfaces)
    * [7.4 Communication Interfaces](#74-communication-interfaces)
-* [8.0 Software Quality Attributes](#80-quality-attributes)
+* [8.0 Software Quality Attributes](#80-software-quality-attributes)
 * [9.0 Analysis Models](#90-analysis-models)
 * [10.0 Appendix](#100-appendix)
 
@@ -275,108 +277,110 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |[2]|"Banco Pichincha Mobile App Page," App Advice, n.d. https://appadvice.com/game/app/pichincha-banca-movil/999191728 (accessed Feb. 14, 2024).|  
 
 # 5.0 System Features  
-*This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.*  
+
+This section of the requirements document outlines the system features of the International Bank Transfer System.    
    
-### 1. International money transfer request
+## 1. International Money Transfer Request
 
-> #### **Description**
-> This feature allows customers to request an international transfer and allows tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
->
-> **Priority**: High
->    
-> #### **Functional Requirements**
-> |||
-> |-|-|
-> |REQ~1|The customer shall be able to specify the amount of money to transfer.|
-> |REQ~2|The teller shall be able to input customers data into the SWIFT alliance system.|
-> |REQ~3|As a customer, I want to choose a contact that I can send money to.|
-> |REQ~4|The customer shall provide data where needed to process a transfer.|
-> |REQ~5|As a customer, I want to input the international transfer verification pin so I can access the RTA form.|
-> |REQ~6|As a teller, I want be able to reject a transfer request if the customer provides insufficient data.|
-> |REQ~7|The system shall automatically reject a transfer request if the customer has insufficient funds.|
-> |REQ~8|The customer shall be able to review the status of their transfer request.| 
+#### **Description**
+This feature allows customers to request an international transfer and allows tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
 
-### 2. Manage Contacts  
+**Priority**: High
+    
+#### **Functional Requirements**
 
-> #### **Description**  
-> This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a customer, they shall be able to transfer money to specified contacts.
->
-> **Priority**: Medium
-> 
-> #### **Functional Requirements**  
-> |||
-> |-|-|
-> |REQ~9|The customer shall be able to create a new contact.|
-> |REQ~10|The customer shall be able to sort their contacts alphabetically or by date added.|
-> |REQ~11|The  customer shall be able to search for a contact from their contact list.|
-> |REQ~12|The customer shall be able to view the contact details of a contact.| 
-> |REQ~13|The customer shall be able to edit or modify a contact.|
-> |REQ~14|The customer shall be able to delete a contact.|
-> |REQ~15|The customer shall be able to transfer money to a contact.|
-> |REQ~16|As a customer, I want to set a notification preference for a contact so that I can receive either an email or an SMS on receiving money.|
-> |REQ~17|As a customer, I want to set a transfer method for a contact so that I can specify how I want to transfer money to them.|
-> |REQ~18|The customer shall be able to view the transfer history of a contact.|
-> |REQ~19|The customer shall be able to view the transfer status of a contact.|
+|||
+|-|-|
+|FR~1|The Customer shall be able to specify the amount of money to transfer.|
+|FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|
+|FR~3|As a Customer, I want to choose a contact to send an international transfer to.|
+|FR~4|The System shall provide a Customer with a digital method to complete a RTA form.|
+|FR~5|As a Customer, I want to input the international transfer verification pin so that I can access the RTA form.|
+|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|
+|FR~7|The Customer shall be able to review the status of their transfer request.| 
+
+## 2. Manage Contacts  
+
+#### **Description**  
+This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a customer, they shall be able to transfer money to specified contacts.
+
+**Priority**: Medium
+ 
+#### **Functional Requirements**  
+
+|||
+|-|-|
+|FR~8|The Customer shall be able to create a new contact.|
+|FR~9.1|The Customer shall be able to sort their contacts by date added.|
+|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|
+|FR~10|The  Customer shall be able to search for a contact from their contact list.|
+|FR~11|The Customer shall be able to view the contact details of a contact.| 
+|FR~12|The Customer shall be able to edit a contact.|
+|FR~13|The Customer shall be able to delete a contact.|
+|FR~14|The Customer shall be able to transfer money to a contact.|
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|
+|FR~16|The Customer shall be able to view the transfer history of a contact.|
+|FR~17|The Customer shall be able to view the transfer status of a contact.|
 
 #### Use Case Description  
 
+|||
+|-|-|
 | **ID and Name:** | UC-2 Create a Contact |
-|------------------|-----------------------|
 | **Created By:**  | Matt                |
-| **Date Created:**| 10/10/24              |
+| **Date Created:**| Feb-17-2024              |
 | **Primary Actor:** | User                |
 | **Secondary Actors:** | Contact Database, User Interface |
 | **Description:** | The User initiates the process to create a new contact by entering personal details, such as name, address, phone number, and email. The system validates the entered information and stores it in the Contact Database. The User can then use this contact information for various operations like sending messages, making calls, or sharing documents. |
 | **Trigger:** | User selects the option to create a new contact in the application. |
 | **Preconditions:** | PRE-1. User is logged into the system. <br> PRE-2. User has permission to add new contacts. <br> PRE-3. Contact Database is accessible. |
 | **Postconditions:** | POST-1. A new contact is created in the Contact Database. <br> POST-2. User can access and interact with the new contact information. |
-| **Normal Flow:** | 1. User selects the option to create a new contact. <br> 2. System presents a form for entering contact details. <br> 3. User fills in the contact's name, address, phone number, and email. <br> 4. System validates the entered information for format and completeness. <br> 5. User confirms the creation of the new contact. <br> 6. System stores the new contact information in the Contact Database. <br> 7. System acknowledges the successful creation of the contact to the User. |
-| **Alternative Flows:** | 4.1 Invalid Contact Information <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts User to correct the information. <br> 3. User updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
-| **Exceptions:** | 4.1.1 System Cannot Validate Contact <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. User decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
+| **Normal Flow:** | **2.0 Valid Contact Information** <br> 1. User selects the option to create a new contact. <br> 2. System presents a form for entering contact details. <br> 3. User fills in the contact's name, address, phone number, and email. <br> 4. System validates the entered information for format and completeness. <br> 5. User confirms the creation of the new contact. <br> 6. System stores the new contact information in the Contact Database. <br> 7. System acknowledges the successful creation of the contact to the User. |
+| **Alternative Flows:** | **2.1 Invalid Contact Information** <br> 1. System detects invalid or incomplete contact details. <br> 2. System prompts User to correct the information. <br> 3. User updates the contact details and resubmits. <br> 4. Return to step 4 of Normal Flow. |
+| **Exceptions:** | **2.1.E1 System Cannot Validate Contact** <br> 1. System is unable to validate the contact information due to an internal error. <br> 2. System notifies the User of the error and suggests trying again later. <br> 3. User decides to either retry immediately or exit the creation process. <br> 4. If retrying, return to step 2 of Normal Flow; if exiting, system terminates the use case. |
 | **Priority:** | Medium |
 | **Frequency of Use:** | Varies depending on the number of new contacts a user needs to add; estimated at an average of 5 times per week per user. |
-| **Business Rules:** | |
 | **Other Information:** | The system should allow for easy input and editing of contact details, with the ability to import from or export to external address books. |
 | **Assumptions:** | - The system has a reliable and user-friendly interface for contact creation. <br> - The Contact Database is robust and capable of handling concurrent interactions from multiple users. |  
 
-### 3. Manage Transfer Status  
+## 3. Manage Transfer Status  
 
-> #### **Description**  
-> This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
->
-> **Priority**: Medium
-> 
+#### **Description**  
+This feature involves managing the status of the transfer. It allows a customer to cancel the transfer, allows a bank teller to change the transfer status to be completed or rejected as well as the system functionality to reject the transfer if there is not enough balance on a client’s account. This feature falls into the medium priority level.
 
-> #### **Functional Requirements**
-> |||
-> |-|-|
-> |REQ~20|The system shall allow a customer to cancel a transfer.|
-> |REQ~21|The system shall enable a teller to change transfer status.|
-> |REQ~22|The system shall be able to automatically reject a transfer in the event of insufficient funds within a customer account.|
-> |REQ~23|As a teller, I want to be able to change the transfer request to be completed, so I can keep track of the progress.|
-> |REQ~24|As a teller, I want to be able to change the transfer request to be rejected, so I can notify a client.|
-> |REQ~25|As a customer, I want to be able to cancel a transfer before it is sent, so I can recity any inaccurate information.|  
+**Priority**: Medium
+ 
+#### **Functional Requirements**  
+
+|||
+|-|-|
+|FR~18|The System shall allow a Customer to cancel a transfer.|
+|FR~19|The System shall enable a Teller to change the transfer request status.|
+|FR~19.1|A Teller shall be able to change the transfer request status to completed.|
+|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.|
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|  
 
 #### Use Case Description  
 
 |||
 |-|-|
-|ID and Name:|UC-1 Review of an international transfer request by a teller|
-|Created By:|Brayden|
-|Date Created:|Feb-16-2024|
-|Primary Actor:|Teller|
-|Secondary Actors:| Customer|
-|Description:|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
-|Trigger:|Teller selects a submitted international transfer request|
-|Preconditions:|PRE-1. A customer has submitted an international transfer request <br> PRE-2. An authorized administrative user is accessing the system|
-|Postconditions:|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request|
-|Normal Flow:|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request <br> 2. System displays transfer request for teller to review <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1) <br> 4. Teller selects the accept option to complete the transfer request <br> 5. System changes the state of the transfer request to accepted|
-|Alternative Flow:|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review <br> 2. Teller finds an issue with the transfer request <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0) <br> 4. Teller selects the reject option <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1) <br> 6. System changes the state of the transfer request to rejected|
-|Exceptions:|**4.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a) <br> 3a. Teller enters a justification message <br> 3b. System saves the justification message <br> 3c. System continues previous flow <br> 4a. System closes the transfer request <br> 4b. System returns transfer request to list of open international transfer requests|
-|Priority:|high|
-|Frequency of Use:|Approximately 10 to 100 times per week depending on the volume of customers|
-|Other Information:|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case|
-|Assumptions:|- The International Transfer Request has not already been rejected by the system itself|  
+|**ID and Name:**|UC-1 Review of an international transfer request by a teller|
+|**Created By:**|Brayden|
+|**Date Created:**|Feb-16-2024|
+|**Primary Actor:**|Teller|
+|**Secondary Actors:**| Customer|
+|**Description:**|The teller selects an international transfer request submitted by a customer for review. The system then provides the teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
+|**Trigger:**|Teller selects a submitted international transfer request.|
+|**Preconditions:**|PRE-1. A customer has submitted an international transfer request. <br> PRE-2. An authorized administrative user is accessing the system.|
+|**Postconditions:**|POST-1. A notification is sent to the requesting customer specifying the completion status of the transfer request.|
+|**Normal Flow:**|**1.0 Teller reviews a valid international transfer request** <br> 1. Teller selects an international transfer request. <br> 2. System displays transfer request for teller to review. <br> 3. System give Teller the option to accept the transfer request or reject the transfer request (see 1.1). <br> 4. Teller selects the accept option to complete the transfer request. <br> 5. System changes the state of the transfer request to accepted.|
+|**Alternative Flow:**|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for teller to review. <br> 2. Teller finds an issue with the transfer request. <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0). <br> 4. Teller selects the reject option. <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1). <br> 6. System changes the state of the transfer request to rejected.|
+|**Exceptions:**|**1.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered. <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a). <br> 3a. Teller enters a justification message. <br> 3b. System saves the justification message. <br> 3c. System continues previous flow. <br> 4a. System closes the transfer request. <br> 4b. System returns transfer request to list of open international transfer requests.|
+|**Priority:**|high|
+|**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of customers.|
+|**Other Information:**|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case.|
+|**Assumptions:**|- The International Transfer Request has not already been rejected by the system itself.|  
 
 ### 4. Customer Profile  
 
@@ -388,10 +392,10 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 > #### **Functional Requirements**  
 > |||
 > |-|-|
-> |REQ~25|The customer shall be able to add their personal information as specified in the Customer Profile section of the data dictionary to their customer profile.|
-> |REQ~26|The customer shall be able to edit the personal information stored to their customer profile.|
-> |REQ~27|The customer shall be able to change their international transfer verification PIN through their customer profile.|
-> |REQ~28|As a customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
+> |FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their customer profile.|
+> |FR~23|The Customer shall be able to edit the personal information stored to their customer profile.|
+> |FR~24|The Customer shall be able to change their international transfer verification PIN through their customer profile.|
+> |FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
 
 # 6.0 Data Requirements   
       
@@ -399,8 +403,8 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 
 The diagram below depicts the interactions between major International Bank Transfer System entities. The main entities of the system include Ordering Customer, Customer Profile, International Contact Profile, Submitted International Transfer Request, RTA Form, Teller, Account Verification PIN, and SWIFT Alliance. The relationships and cardinalities between entities demonstrates the nature of interactions between the various actors or data objects of the system. As a note, although SWIFT Alliance is an external third-party system, it has been included as an entity in the diagram as it is a crucial aspect of the international transfer process and interacts with International Bank Transfer System actors and data.  
 
-![Entity Relationship Diagram (2)](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/110196682/b8c6bb05-3bf7-476a-b88f-664f65204c1c)
-*Entity Relationship Diagram of International Bank Transfer System*
+> ![Entity Relationship Diagram (2)](./images/erd-diagram.jpg)  
+> *Entity Relationship Diagram of International Bank Transfer System*
 
 ## 6.2 Data dictionary  
 
@@ -457,13 +461,17 @@ The International Bank Transfer System does not generate reports as a part of it
 
 ## 6.4 Data acquisition, integrity, retention, and diposal
 
-**Data Acquisition:** The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and when a customer creates a new international contact. 
+#### Data Acquisition   
+The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a customer completes an RTA Form and when a customer creates a new international contact. 
 
-**Data Integrity:** A Teller reviews and verifies the data provided by a customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the customer has insufficient funds for the transfer.
+#### Data Integrity  
+A Teller reviews and verifies the data provided by a customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the customer has insufficient funds for the transfer.
 
-**Data Retention:** Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a teller or the ordering customer. 
+#### Data Retention  
+Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a teller or the ordering customer. 
 
-**Data Disposal:** Data disposal is carried out in accordance with legal and regulatory requirements - the details of which are out of the scope of this project as indicated in Section 3.3 (Limitations and Exclusions). 
+#### Data Disposal  
+Data disposal is carried out in accordance with legal and regulatory requirements - the details of which are out of the scope of this project as indicated in Section 3.3 (Limitations and Exclusions). 
 
 # 7.0 External Interface Requirements   
 
@@ -473,28 +481,28 @@ The user interface for the International Bank Transfer System will coincide with
 
 |||
 |-|-|
-|EIR~1|The system shall use the same colour codes as the existing application|
-|EIR~2.1|The system shall provide a method for a customer to create a new International Transfer Request (ITR)|
-|EIR~2.2|The system shall provide a customer the ability to enter RTA form data|
-|EIR~2.3|The system shall provide a method for a customer to save the current state of the RTA form|
-|EIR~2.4|The system shall provide a method for a customer to open a saved RTA form|
-|EIR~3.1|The system shall provide a method for a customer to create a new International Transfer Contact (ITC)|
-|EIR~3.2|The system shall provide a method for a customer to edit an ITC|
-|EIR~3.3|The system shall provide a method for a customer to delete an ITC|
-|EIR~4.1|When an ITR is completed by a customer, the system shall provide a method for an administrator to accept the ITR for review|
-|EIR~4.2|The system shall provide a method for an administrator to accept an ITR|
-|EIR~4.3|The system shall provide a method for an administrator to reject an ITR|
-|EIR~5|The system shall produce an error when a customer inputs a dollar amount into the RTF form that is greater than the current balance of their chosen account to send money from|
+|EIR~1|The System shall use the same colour codes as the existing application.|
+|EIR~2.1|The System shall provide a method for a Customer to create a new International Transfer Request (ITR).|
+|EIR~2.2|The System shall provide a customer the ability to enter RTA form data.|
+|EIR~2.3|The System shall provide a method for a Customer to save the current state of the RTA form.|
+|EIR~2.4|The System shall provide a method for a Customer to open a saved RTA form.|
+|EIR~3.1|The System shall provide a method for a Customer to create a new International Transfer Contact (ITC).|
+|EIR~3.2|The System shall provide a method for a Customer to edit an ITC.|
+|EIR~3.3|The System shall provide a method for a Customer to delete an ITC.|
+|EIR~4.1|When an ITR is completed by a Customer, the System shall provide a method for a Teller to accept the ITR for review.|
+|EIR~4.2|The System shall provide a method for a Teller to accept an ITR.|
+|EIR~4.3|The System shall provide a method for a Teller to reject an ITR.|
+|EIR~5|The System shall produce an error when a Customer inputs a dollar amount into the RTF form that is greater than the current balance of their chosen account to send money from.|
 
 #### Existing Application Reference  
 
 Referenced below are images showing examples of the exisitng Pichincha Bank web and mobile applications. these images provide reference for the design language that should be used when implementing the International Bank Transfer System.  
 
 > ![accounts page](./images/accounts_page.png)  
-> *The **accounts page** of the Pichincha Bank web application* 
+> *The accounts page of the existing Pichincha Bank web application* 
 
 > ![mobile contacts](./images/mobile_app_add_contact.jpeg)   
-> *The **contact page** of the Pichincha Bank mobile application*  
+> *The contact page of the existing Pichincha Bank mobile application*  
 > [*[2] "Banco Pichincha Mobile App Page"*](https://appadvice.com/game/app/pichincha-banca-movil/999191728)   
       
 ## 7.2 Hardware Interfaces  
@@ -503,11 +511,11 @@ Due to the integration of the International Bank Transfer System with the existi
 
 |||
 |-|-|
-|EIR~6|The system shall be able to operate on multiple device types outlined in Table 1-1|
-|EIR~6.1|The system shall be able to operate on Windows devices|
-|EIR~6.2|The system shall be able to operate on Mac devices|
-|EIR~6.3|The system shall be able to operate on IOS mobile devices|  
-|EIR~6.4|The system shall be able to operate on Android mobile devices|  
+|EIR~6|The System shall be able to operate on multiple device types outlined in Table 1-1.|
+|EIR~6.1|The System shall be able to operate on Windows devices.|
+|EIR~6.2|The System shall be able to operate on Mac devices.|
+|EIR~6.3|The System shall be able to operate on IOS mobile devices.|  
+|EIR~6.4|The System shall be able to operate on Android mobile devices.|  
 
 > **Table 1-1** Requirements for device compatability of the International Bank Transfer System
 > |Device Compatability|Requirement|
@@ -523,15 +531,15 @@ The International Bank Transfer System will be integrated into the existing Pich
 
 |||
 |-|-|
-|EIR~7.1|The system shall be integrated into the existing Pichincha Bank web application|
-|EIR~7.2|The system shall be integrated into the existing Pichincha Bank mobile application|
-|EIR~8.1|The system shall give an administrator the ability to interact with the SWIFT Alliance System|
-|EIR~8.2|(**TBD**) The system shall give an administrator the ability to input *\<data-type\>* into the SWIFT Alliance System|
-|EIR~9|The system shall store International Transfer Contact data to the existing Pichincha Bank database|
-|EIR~10|The system shall store International Transfer Customer data to the existing Pichincha Bank database|
-|EIR~11.1|When a customer submits an RTA form, the system shall send an e-mail notification to the customer notifying them that the system has received their transfer request form|
-|EIR~11.2|When an administrator sets the status of an International Bank Transfer request to approved, the system shall send an e-mail notification to the customer notifying them that the transfer request has been approved|
-|EIR~11.3|When an administrator sets the status of an International Bank Transfer request to rejected, the system shall send an e-mail notification to the customer notifying them that the transfer request has been rejected|  
+|EIR~7.1|The System shall be integrated into the existing Pichincha Bank web application.|
+|EIR~7.2|The System shall be integrated into the existing Pichincha Bank mobile application.|
+|EIR~8.1|The System shall give a Teller the ability to interact with the SWIFT Alliance System.|
+|EIR~8.2|(**TBD**) The System shall give a Teller the ability to input *\<data-type\>* into the SWIFT Alliance System.|
+|EIR~9|The System shall store International Transfer Contact data to the existing Pichincha Bank database.|
+|EIR~10|The System shall store International Transfer Customer data to the existing Pichincha Bank database.|
+|EIR~11.1|When a Customer submits an RTA form, the System shall send an e-mail notification to the Customer notifying them that the System has received their transfer request form.|
+|EIR~11.2|When a Teller sets the status of an International Bank Transfer request to approved, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been approved.|
+|EIR~11.3|When a Teller sets the status of an International Bank Transfer request to rejected, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been rejected.|  
        
 ## 7.4 Communication Interfaces  
 
@@ -539,73 +547,46 @@ The communication interfaces for the International Bank Transfer System must be 
 
 |||
 |-|-|
-|EIR~12|The system must be able to send e-mail notifications to a customer|
-|EIR~13|(**TBD**) The system must communicate with the SWIFT Alliance System via \<communication-type\>|  
+|EIR~12|The System must be able to send e-mail notifications to a customer.|
+|EIR~13|(**TBD**) The System must communicate with the SWIFT Alliance System via \<communication-type\>.|  
 
-# 8.0 Quality Attributes
+# 8.0 Software Quality Attributes
 
+||||
+|-|-|-|
+|QA~1|Performance|The System shall respond to all user interactions within 3 seconds under typical load conditions.|
+|QA~2||The System shall process all transactions within 3 seconds under typical load conditions.|
+|QA~3||Under peak load conditions, the System shall not exceed a 3-second response time for transactions and user interactions.|
+|QA~4|Security|The System shall encrypt customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
+|QA~5||The System shall require customers to authenticate using a 4-digit PIN.|
+|QA~6||The System shall require bank tellers to use multi-factor authentication for system access.|
+|QA~7||The System shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.|
+|QA~8|Reusability|The System shall provide a modular implementation for the digital RTA form.|
+|QA~9||The System shall provide a modular implementation for international contact management.|
+|QA~10||The System shall provide APIs for seamless integration with existing banking systems and third-party services.|
+|QA~11||The System APIs must provide documentation that is clear and detailed for developer use.|
+|QA~12|Maintainability|The System's source code shall adhere to ISO 20022, and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.|
+|QA~13||The System shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.|
+|QA~14|Usability|The System shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring customers can easily understand how to complete the form online.|
+|QA~15||The System shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.|
+|QA~16|Availability|The System shall maintain an operational uptime of 99.9% annually to ensure constant availability for international transfers, aiming to minimize downtime during maintenance windows.|
+|QA~17|Interoperability|The System shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.|
+|QA~18||The System shall support data exchange with external banking and financial systems in a format compliant with ISO 20022 standards to ensure future compatibility.|
+|QA~19|Supportability|The System shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.|
+|QA~20||The System shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.|
+|QA~21||The System shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.|
+|QA~22|Testability|The System shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.|
+|QA~23||The System shall be designed to allow components to be independently testable to facilitate quick issue identification and resolution.|
+|QA~24||The System shall undergo User Acceptance Testing (UAT) with participation from all user classes to validate the System against real-world requirements and expectations.|
+|QA~25|Scalability|The System shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.|
+|QA~26||The System shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.|
+|QA~27||The System design shall allow for the integration of new banking services and expansion to additional markets without significant redesign or downtime.|
 
-#### 8.10 Performance
+# 9.0 Analysis Models  
 
-- **QA-1:** The system shall respond to all user interactions within 3 seconds under typical load conditions.
-- **QA-2:** The system shall process all transactions within 3 seconds under typical load conditions.
-- **QA-3:** Under peak load conditions, the system shall not exceed a 3-second response time for transactions and user interactions.
+The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.  
 
-#### 8.11 Security
+> ![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)   
+> *Use Case Diagram for Pichincha Bank International Transfer System* 
 
-- **QA-4:** The system shall encrypt customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.
-- **QA-5:** The system shall require customers to authenticate using a 4-digit PIN.
-- **QA-6:** The system shall require bank tellers to use multi-factor authentication for system access.
-- **QA-7:** The system shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.
-
-#### 8.12 Reusability
-
-- **QA-8:** The system shall provide a modular implementation for the digital RTA form.
-- **QA-9:** The system shall provide a modular implementation for international contact management.
-- **QA-10:** The system shall provide APIs for seamless integration with existing banking systems and third-party services.
-- **QA-11:** The system APIs must provide documentation that is clear and detailed for developer use.
-
-#### 8.13 Maintainability
-
-- **QA-12:** The system's source code shall adhere to [specify coding standard, e.g., ISO/IEC 25010:2011], and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.
-- **QA-13:** The system shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.
-
-#### 8.14 Usability
-
-- **QA-14:** The system shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring customers can easily understand how to complete the form online.
-- **QA-15:** The system shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.
-
-#### 8.15 Availability
-
-- **QA-16:** The system shall maintain an operational uptime of 99.9% annually to ensure constant availability for international transfers, aiming to minimize downtime during maintenance windows.
-
-#### 8.16 Interoperability
-
-- **QA-17:** The system shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.
-- **QA-18:** The system shall support data exchange with external banking and financial systems in a format compliant with ISO 20022 standards to ensure future compatibility.
-
-#### 8.17 Supportability
-
-- **QA-19:** The system shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.
-- **QA-20:** The system shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.
-- **QA-21:** The system shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.
-
-#### 8.18 Testability
-
-- **QA-22:** The system shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.
-- **QA-23:** The system shall be designed to allow components to be independently testable to facilitate quick issue identification and resolution.
-- **QA-24:** The system shall undergo User Acceptance Testing (UAT) with participation from all user classes to validate the system against real-world requirements and expectations.
-
-#### 8.19 Scalability
-
-- **QA-25:** The system shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.
-- **QA-26:** The system shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.
-- **QA-27:** The system design shall allow for the integration of new banking services and expansion to additional markets without significant redesign or downtime.
-
-
-
-# 9.0 Analysis Models
-The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.
-![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)  
-*Use Case Diagram for Pichincha Bank International Transfer System* 
 # 10.0 Appendix
