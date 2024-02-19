@@ -366,12 +366,10 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |||
 |-|-|
 |**ID and Name:**|UC-1 Review of an international transfer request by a Teller|
-|**ID and Name:**|UC-1 Review of an international transfer request by a Teller|
 |**Created By:**|Brayden|
 |**Date Created:**|Feb-16-2024|
 |**Primary Actor:**|Teller|
 |**Secondary Actors:**| Customer|
-|**Description:**|The Teller selects an international transfer request submitted by a Customer for review. The system then provides the Teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
 |**Description:**|The Teller selects an international transfer request submitted by a Customer for review. The system then provides the Teller with the option to accept if the request has been completed properly or to reject if the request has been completed improperly.|
 |**Trigger:**|Teller selects a submitted international transfer request.|
 |**Preconditions:**|PRE-1. A Customer has submitted an international transfer request. <br> PRE-2. An authorized administrative user is accessing the system.|
@@ -384,7 +382,6 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |**Alternative Flow:**|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for Teller to review. <br> 2. Teller finds an issue with the transfer request. <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0). <br> 4. Teller selects the reject option. <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1). <br> 6. System changes the state of the transfer request to rejected.|
 |**Exceptions:**|**1.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered. <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a). <br> 3a. Teller enters a justification message. <br> 3b. System saves the justification message. <br> 3c. System continues previous flow. <br> 4a. System closes the transfer request. <br> 4b. System returns transfer request to list of open international transfer requests.|
 |**Priority:**|high|
-|**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of Customers.|
 |**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of Customers.|
 |**Other Information:**|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case.|
 |**Assumptions:**|- The International Transfer Request has not already been rejected by the system itself.|  
@@ -565,9 +562,6 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~1|Performance|The System shall respond to all user interactions within 3 seconds under typical load conditions.|
 |QA~2||The System shall process all transactions within 3 seconds under typical load conditions.|
 |QA~3||Under peak load conditions, the System shall not exceed a 3-second response time for transactions and user interactions.|
-|QA~4|Security|The System shall encrypt Customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
-|QA~5||The System shall require Customers to authenticate using a 4-digit PIN.|
-|QA~6||The System shall require bank Tellers to use multi-factor authentication for system access.|
 |QA~4|Security|The System shall encrypt Customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
 |QA~5||The System shall require Customers to authenticate using a 4-digit PIN.|
 |QA~6||The System shall require bank Tellers to use multi-factor authentication for system access.|
