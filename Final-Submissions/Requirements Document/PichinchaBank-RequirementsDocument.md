@@ -60,9 +60,9 @@ The following requirements document contains the complete set of requirements pe
 # 2.0 Business Requirements  
 
 ## 2.1 Background 
-Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and Customer satisfaction concerns through the implementation of a digital system.   
+Pichincha Bank is a private bank based in Ecuador with approximately 1.5 million Customers [[1]](https://es.wikipedia.org/wiki/Banco_Pichincha). The Bank offers a variety of online services to its members through its mobile and web banking portals. These services include online investing, bank certificates, credit and debit account management, and domestic money transfers. Pichincha Bank is looking to improve their international money transfer process due to staff productivity and Customer satisfaction concerns through the implementation of a digital system.   
 
-Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank tellers and customers. The following steps further describe the current process:
+Pichincha Bank’s international money transfer process utilizes a paper Request for Transfer Abroad form (RTA) and requires Tellers to manually input data from the completed RTA form into the digital Society for Worldwide Interbank Financial Telecommunication (SWIFT) Alliance system. The current process is inefficient for both bank Tellers and Customers. The following steps further describe the current process:
 
    1. An ordering Customer arrives at a Pichincha Bank location and waits for an available Teller  
 
@@ -81,9 +81,9 @@ The process outlined above assumes no errors were made by either the Customer co
 In response to concerns about the efficiency of the current process, Pichincha Bank is seeking to enhance its international fund transfer process. The subsequent segments of Section 2 will further detail Pichincha Bank’s challenges, objectives, and the success metrics of a proposed solution. 
  
 ## 2.2 Business Opportunity  
-The current financial transaction system for international fund tranfers is inefficient and affects both customers and bank tellers.  
+The current financial transaction system for international fund tranfers is inefficient and affects both Customers and bank Tellers.  
 
-* Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, tellers spend time walking clients through the physical forms and verifying that they contain the correct and appropriate information.
+* Customers often experience lengthy wait times at the bank and spend a significant amount of time filling out the physical forms. Simultaneously, Tellers spend time walking clients through the physical forms and verifying that they contain the correct and appropriate information.
 * The long duration of the transaction causes Customer dissatisfaction and frustration. The inefficiency of the international transfer process has a detrimental impact on the organization’s reputation, and profits.
   
 Our team proposes the implementation of a digital transaction system. This initiative aims to not only speed up the transaction process but also significantly improve accuracy and productivity. By reducing transaction time and minimizing errors, the new digital process will elevate the overall Customer experience and improve employee productivity.
@@ -91,13 +91,13 @@ Our team proposes the implementation of a digital transaction system. This initi
 ## 2.3 Business Objectives  
 The business objectives of Pichincha Bank are designed to improve the overall process of international transactions. The following are objectives that are designed to help improve Pichincha Bank’s success through the following means: 
 
-* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for customers to physically visit the bank to process an international transfer, Teller's can better allocate their time to resolving Customer inquiries that require an in-person visit. 
+* **Improve Staff Productivity by 25% in Six Months:** By eliminating the need for Customers to physically visit the bank to process an international transfer, Teller's can better allocate their time to resolving Customer inquiries that require an in-person visit. 
 
-* **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for customers to meet with a Teller, thus lowering the amount of customers requiring an in-person visit and reducing the wait time for customers to meet with a Teller. 
+* **Reduce Wait Times by 30% in Four Months:** Having a digital method of filling out the RTA form reduces the necessity for Customers to meet with a Teller, thus lowering the amount of Customers requiring an in-person visit and reducing the wait time for Customers to meet with a Teller. 
       
 * **Increase Customer and Employee Satisfaction by 50% in Eight Months:** Improving the accessibility and clarity of the international transfer system will reduce transaction processing time, and thus reduce complaints and improve employee and Customer satisfaction. 
       
-* **Reduce Bank Visits Per Customer to One in a Year :** Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides customers with information to address inquiries and reduce unnecessary visits.  
+* **Reduce Bank Visits Per Customer to One in a Year :** Introducing a user-friendly interface in the mobile app, coupled with straightforward instructions that provides Customers with information to address inquiries and reduce unnecessary visits.  
 
 ## 2.4 Success Metrics  
 The following success metrics are indicators that allow Pichincha Bank stakeholders to measure the overall success of the implemented solution: 
@@ -109,7 +109,7 @@ The following success metrics are indicators that allow Pichincha Bank stakehold
 * **Increase Customer Base by 20% in Eight Months:** Through increasing Customer and employee satisfaction by 50%, the Customer base of Pichincha Bank can be increased by 20% within eight months.    
 
 ## 2.5 **Product Vision Statement**  
-The International Bank Transfer System provides customers the ability to perform international transfers via the existing Pichincha Bank web and mobile applications without the need to meet with a bank employee in person. The system will provide customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing customers to submit the required information to complete an international transfer remotely. The functionality of the system also extends to bank employees, providing a review and processing portal for handling international transfer requests created by a Customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer Customer base to a Pichincha Bank application, thus freeing Teller resources for tasks requiring in person support.
+The International Bank Transfer System provides Customers the ability to perform international transfers via the existing Pichincha Bank web and mobile applications without the need to meet with a bank employee in person. The system will provide Customers the ability to add and store international contacts to which funds can be transferred, as well as provide a digital interface for completing the RTA form, allowing Customers to submit the required information to complete an international transfer remotely. The functionality of the system also extends to bank employees, providing a review and processing portal for handling international transfer requests created by a Customer. By providing an alternative to in person, paper form international transfers, the International Bank Transfer System aims to direct 80% of the international transfer Customer base to a Pichincha Bank application, thus freeing Teller resources for tasks requiring in person support.
 
 # 3.0 Scope and Limitations  
 
@@ -138,21 +138,21 @@ The major features for the Teller facing side are:
 * **Dealing with Rejected Transfers:** If a Customer contacts the bank to fix a rejected transfer, a Teller will claim the transfer and the system will move it to “in processing”.
          
 ## 3.2 Project Scope  
-The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank Teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for customers. 
+The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank Teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for Customers. 
 
 The final product will support the business goals described in Section 2.  
 
-* **Improve Staff Productivity:** The software will improve staff productivity by allowing customers to make international transfers without direct interaction with staff. The “Help Information” feature will provide additional helpful information to ordering customers. This will save the tellers' time to spend on other important tasks.
-* **Reduce Wait Times:** The software will eliminate wait times to fill out RTA forms for online international transfers by immediately providing online users with RTA forms. The in person wait time to fill out RTA forms will also be reduced as the majority of ordering customers will prefer the benefits that filling out the form online provides. 
-* **Customer Satisfaction:** The software will contain numerous features designed to improve Customer satisfaction. Ordering customers will not need to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online, saving customers valuble time and effort. The saved contacts feature the software provides will provide ordering customers with a more seamless experience when sending money to an international beneficiary repeatedly. Within the new system, customers will be able to save international beneficiary information. This will reduce the time required to fill out the form and thus, shorten the time until the transaction is complete.
-* **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, tellers will not need to worry about the confusion of misreading customers’ handwriting.    
+* **Improve Staff Productivity:** The software will improve staff productivity by allowing Customers to make international transfers without direct interaction with staff. The “Help Information” feature will provide additional helpful information to ordering Customers. This will save the Tellers' time to spend on other important tasks.
+* **Reduce Wait Times:** The software will eliminate wait times to fill out RTA forms for online international transfers by immediately providing online users with RTA forms. The in person wait time to fill out RTA forms will also be reduced as the majority of ordering Customers will prefer the benefits that filling out the form online provides. 
+* **Customer Satisfaction:** The software will contain numerous features designed to improve Customer satisfaction. Ordering Customers will not need to travel to the bank to make international transfers, as the software will allow all necessary tasks to be performed online, saving Customers valuble time and effort. The saved contacts feature the software provides will provide ordering Customers with a more seamless experience when sending money to an international beneficiary repeatedly. Within the new system, Customers will be able to save international beneficiary information. This will reduce the time required to fill out the form and thus, shorten the time until the transaction is complete.
+* **Employee Satisfaction:** Employee satisfaction will increase as they will not have to work with paper forms for the majority of international transfers. The employee portal will easily allow for information to be read and added to the SWIFT Alliance app, Tellers will not need to worry about the confusion of misreading customers’ handwriting.    
 
 ## 3.3 Limitations and Exclusions  
 The Pichincha Bank international transfer system aims to enhance the efficiency and user-friendliness of international transactions through its mobile and web applications. This initiative is driven by the need to improve Customer and staff satisfaction, reduce transaction times, and address the current system's inefficiencies. However, the project's scope is defined by certain limitations and exclusions that are essential to understand for setting realistic expectations and achieving the desired outcomes. Below is an expanded view of the limitations based on the detailed project document and the exclusions that extend beyond the project's scope.
 
 ### Limitations  
 
-* **Delayed Interactions with Real-World Bank Tellers:** The project is limited by the inherent delays in interactions with bank tellers, which can extend the processing time for international transfers. This limitation is a consequence of the current reliance on manual verification and data entry processes.
+* **Delayed Interactions with Real-World Bank Tellers:** The project is limited by the inherent delays in interactions with bank Tellers, which can extend the processing time for international transfers. This limitation is a consequence of the current reliance on manual verification and data entry processes.
 
 * **Interactions with the SWIFT System:** The efficiency of international transfers is limited by the interactions with the SWIFT system, which is an external dependency with its own processing times and operational constraints.
 
@@ -166,14 +166,14 @@ The Pichincha Bank international transfer system aims to enhance the efficiency 
 
 * **Legality and Regulatory Compliance:** Issues related to legality and regulatory compliance, while critical to the banking operations, are excluded from the project's direct scope. These areas are assumed to be addressed by other specialized teams within Pichincha Bank, ensuring compliance with relevant laws and regulations without burdening the project team with areas outside their expertise.
 
-* **Customer Education on Financial Regulations:** Educating customers on the complexities of international financial regulations is outside the scope of this project. While the app aims to simplify the transfer process, the responsibility for understanding the legal implications of international transfers remains with the customers.
+* **Customer Education on Financial Regulations:** Educating Customers on the complexities of international financial regulations is outside the scope of this project. While the app aims to simplify the transfer process, the responsibility for understanding the legal implications of international transfers remains with the Customers.
 
 By clearly defining these limitations and exclusions, Pichincha Bank sets a realistic framework for the international transfer project, ensuring that stakeholders have a clear understanding of what the project will deliver and the areas that are beyond its immediate scope. This clarity is essential for managing expectations and focusing efforts on achieving the project's primary objectives of improving Customer satisfaction, and staff productivity within the defined constraints.
 
 # 4.0 Context Description  
 
 ## 4.1 User Classes and Characteristics  
-The Pichincha Bank international transfer system is designed to cater to a diverse range of users, differentiated by their interaction frequency, technical expertise, security needs, and the specific functionalities they utilize. Given the system's dual focus on facilitating international transfers for both individual customers and businesses, as well as enabling administrative oversight and management, we have identified two primary user classes: the Customer Class and the Administrative Class. Each of these classes is further subdivided to address distinct user needs and priorities.
+The Pichincha Bank international transfer system is designed to cater to a diverse range of users, differentiated by their interaction frequency, technical expertise, security needs, and the specific functionalities they utilize. Given the system's dual focus on facilitating international transfers for both individual Customers and businesses, as well as enabling administrative oversight and management, we have identified two primary user classes: the Customer Class and the Administrative Class. Each of these classes is further subdivided to address distinct user needs and priorities.
 
 ### Customer Class  
 
@@ -197,13 +197,13 @@ The Pichincha Bank international transfer system is designed to cater to a diver
 
 > #### - Bank Tellers -
 >
-> **Characteristics:** Bank tellers are responsible for verifying international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the SWIFT System.
+> **Characteristics:** Bank Tellers are responsible for verifying international transfer requests. This subclass possesses a high level of technical expertise and understanding of banking regulations and the SWIFT System.
 >
 > **Privileges:** Bank Tellers can access and manage incoming transfer requests, verify transaction details, input information into the SWIFT System, and update the transaction status. They play a critical role in ensuring the accuracy and security of transfers.
 >
-> **Responsibilities:** Their primary responsibility includes inputting Customer data into the SWIFT system and providing support to customers as needed.
+> **Responsibilities:** Their primary responsibility includes inputting Customer data into the SWIFT system and providing support to Customers as needed.
 
-By distinguishing between these user classes and their respective characteristics, Pichincha Bank can tailor the international transfer system to meet the varied needs of its users effectively, ensuring a seamless and secure experience for both customers and administrative personnel.
+By distinguishing between these user classes and their respective characteristics, Pichincha Bank can tailor the international transfer system to meet the varied needs of its users effectively, ensuring a seamless and secure experience for both Customers and administrative personnel.
 
 ## 4.2 Operating Environment  
 
@@ -211,8 +211,8 @@ The following outlines the operating environment of the system, providing crucia
 
 ||||
 |-|-|-|
-|CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pichincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering customers accessing the application through the website utilize a laptop or desktop computer.|
-|CON~2|Operating Environment |The supported operating environments include operating systems iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering customers accessing the application through the website.|
+|CON~1|Hardware Platform|The operating environment for the system encompasses mobile devices and web browsers. For users accessing the Pichincha Bank mobile app, the platform includes mobile devices. Meanwhile, ordering Customers accessing the application through the website utilize a laptop or desktop computer.|
+|CON~2|Operating Environment |The supported operating environments include operating systems iOS and Android. Specifically, the system is designed to function seamlessly on the latest versions of both iOS and Android. Additionally, compatibility is maintained across various browsers such as Chrome, Microsoft Edge, Safari, and others for ordering Customers accessing the application through the website.|
 |CON~3|Software Applications|The system is integrated into an environment where it must integrate with the existing Pichincha Bank web and mobile app. The primary application is the Pichincha Bank mobile app, an existing app tailored for banking services. Additionally, the system interacts with the SWIFT Alliance system.|
 
 ## 4.3 Design and Implementation Constraints  
@@ -222,7 +222,7 @@ Design and implementation constraints delineate the parameters within which the 
 ||||
 |-|-|-|
 |CON~4|Existing System Integration|The designed system should conform and integrate seamlessly with the existing online banking application, as well as integrating with the current technology infrastructure and databases employed by Pichincha Bank. The responsibility for maintaining the app post-delivery will rest with the current app maintainers|
-|CON~5|Application Languages|The software is mandated to support both English and Spanish languages. This linguistic flexibility is essential to cater to a diverse user base and enhance accessibility for customers who communicate in either language.|
+|CON~5|Application Languages|The software is mandated to support both English and Spanish languages. This linguistic flexibility is essential to cater to a diverse user base and enhance accessibility for Customers who communicate in either language.|
 |CON~6|Parallel Operations|The system must be capable of executing international transfer transactions concurrently. This constraint emphasizes the need for efficient parallel processing, ensuring that multiple international transfer operations committed within the same time frame can be executed simultaneously.|
 |CON~7|Security Considerations|Security is a top priority, requiring robust measures to safeguard user data and financial transactions. The software must implement encryption protocols for secure data transmission, preventing unauthorized access. Additional security features include the introduction of a PIN for completing new forms related to international transfers, with provisions to change the PIN. Moreover, the use of Docusign for filling signatures on forms contributes to the overall security and authentication of transactions.|    
 
@@ -247,7 +247,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Claim a Transfer|The action taken by a Teller to indicate they are verifying the information for a transfer and will be processing it through the SWIFT system.|
 |Complete a Transfer|The marking of a transfer as finished by a Teller after successfully depositing the funds into the beneficiary account.|
 |Contact| Beneficiary which the ordering Customer has previously created an international transfer request for. |
-|Customer Facing Side|The part of the app used by ordering customers to initiate and manage international transfers.|
+|Customer Facing Side|The part of the app used by ordering Customers to initiate and manage international transfers.|
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
 |Help Information|Text displayed within the app providing guidance on how to complete the digital RTA form and other related queries.|
@@ -259,7 +259,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |SWIFT|(*Society for Worldwide Interbank Financial Telecommunication*) A global member-owned cooperative providing secure messaging services and interface software for financial transactions among its members.|
 |SWIFT Alliance System|The digital platform used by Pichincha Bank to process international money transfers through the SWIFT network.|
 |Teller|A Customer facing bank employee that helps Customer issues and requests in person.|  
-|Teller Facing Side|The interface used by bank tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
+|Teller Facing Side|The interface used by bank Tellers to process requested international transfers, including verifying information and entering it into the SWIFT Alliance system.|
 
 
 ## 4.6 References  
@@ -283,7 +283,7 @@ This section of the requirements document outlines the system features of the In
 ## 1. International Money Transfer Request
 
 #### **Description**
-This feature allows customers to request an international transfer and allows tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
+This feature allows Customers to request an international transfer and allows Tellers to manage and process international transfer requests. Customers shall be able to specify an amount of money to transfer to a contact with an international transfer pin. Tellers shall be able to claim a transfer to review and process a transfer through the SWIFT alliance system with a SWIFT code.
 
 **Priority**: High
     
@@ -302,7 +302,7 @@ This feature allows customers to request an international transfer and allows te
 ## 2. Manage Contacts  
 
 #### **Description**  
-This feature allows customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a Customer, they shall be able to transfer money to specified contacts.
+This feature allows Customers to organize their contacts within the system. Customers shall be able to perform actions such as creating, sorting, viewing, editing, and deleting contacts. Furthermore, as a Customer, they shall be able to transfer money to specified contacts.
 
 **Priority**: Medium
  
@@ -378,7 +378,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |**Alternative Flow:**|**1.1 Teller reviews an invalid international transfer request** <br> 1. System displays transfer request for Teller to review. <br> 2. Teller finds an issue with the transfer request. <br> 3. System give Teller the option to reject the transfer request or accept the transfer request (see 1.0). <br> 4. Teller selects the reject option. <br> 5. Teller enters a justification message for the transfer being rejected (see 4.1.E1). <br> 6. System changes the state of the transfer request to rejected.|
 |**Exceptions:**|**1.1.E1 No transfer rejection reason entered** <br> 1. System displays message: Missing transfer rejection message entered. <br> 2. System prompts Teller to enter a message (3a) or to cancel the transfer review (4a). <br> 3a. Teller enters a justification message. <br> 3b. System saves the justification message. <br> 3c. System continues previous flow. <br> 4a. System closes the transfer request. <br> 4b. System returns transfer request to list of open international transfer requests.|
 |**Priority:**|high|
-|**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of customers.|
+|**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of Customers.|
 |**Other Information:**|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case.|
 |**Assumptions:**|- The International Transfer Request has not already been rejected by the system itself.|  
 
@@ -463,13 +463,13 @@ The International Bank Transfer System does not generate reports as a part of it
 ## 6.4 Data acquisition, integrity, retention, and diposal
 
 #### Data Acquisition   
-The International Bank Transfer System acquires data directly from customers when they submit an International Transfer Request. This data is collected when a Customer completes an RTA Form and when a Customer creates a new international contact. 
+The International Bank Transfer System acquires data directly from Customers when they submit an International Transfer Request. This data is collected when a Customer completes an RTA Form and when a Customer creates a new international contact. 
 
 #### Data Integrity  
 A Teller reviews and verifies the data provided by a Customer through a Submitted International Transfer Request before inputting the data into the SWIFT Alliance system for further processing. If a Customer provides incorrect or incomplete data, the International Transfer Request is rejected by either the assigned Teller, or the SWIFT Alliance system. The system automatically rejects the transfer upon RTA Form submission if the Customer has insufficient funds for the transfer.
 
 #### Data Retention  
-Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a Teller or the ordering Customer. 
+Data critical to the facilitation of future International Transfer Requests such as details from the Ordering Customer RTA Form Section and International Contact Profiles are stored in the system. This data retention strategy is designed to streamline the international transfer process for repeat Customers by reducing re-entry of data. Additionally, once an international transfer is successfully completed, the details and status of the request are saved for future review by either a Teller or the ordering Customer. 
 
 #### Data Disposal  
 Data disposal is carried out in accordance with legal and regulatory requirements - the details of which are out of the scope of this project as indicated in Section 3.3 (Limitations and Exclusions). 
@@ -559,8 +559,8 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~2||The System shall process all transactions within 3 seconds under typical load conditions.|
 |QA~3||Under peak load conditions, the System shall not exceed a 3-second response time for transactions and user interactions.|
 |QA~4|Security|The System shall encrypt Customer data, including financial information and personal identifiers, using AES-256 encryption both in transit and at rest.|
-|QA~5||The System shall require customers to authenticate using a 4-digit PIN.|
-|QA~6||The System shall require bank tellers to use multi-factor authentication for system access.|
+|QA~5||The System shall require Customers to authenticate using a 4-digit PIN.|
+|QA~6||The System shall require bank Tellers to use multi-factor authentication for system access.|
 |QA~7||The System shall log all user transactions and activities with timestamps and user identifiers, storing logs securely for a minimum of five years to support auditing and compliance.|
 |QA~8|Reusability|The System shall provide a modular implementation for the digital RTA form.|
 |QA~9||The System shall provide a modular implementation for international contact management.|
@@ -568,7 +568,7 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~11||The System APIs must provide documentation that is clear and detailed for developer use.|
 |QA~12|Maintainability|The System's source code shall adhere to ISO 20022, and all integrations, especially with SWIFT Alliance and banking platforms, shall be fully documented.|
 |QA~13||The System shall have an automated update process in place for applying security patches and functional improvements, designed to minimize system downtime.|
-|QA~14|Usability|The System shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring customers can easily understand how to complete the form online.|
+|QA~14|Usability|The System shall present digital RTA forms with clearly labeled sections and fields that match the paper form layout, ensuring Customers can easily understand how to complete the form online.|
 |QA~15||The System shall include a searchable FAQ section and context-sensitive help that provides guidance on completing forms and transactions, accessible at all times during the process.|
 |QA~16|Availability|The System shall maintain an operational uptime of 99.9% annually to ensure constant availability for international transfers, aiming to minimize downtime during maintenance windows.|
 |QA~17|Interoperability|The System shall integrate with the bank's existing mobile and web platforms and the SWIFT Alliance using RESTful APIs, ensuring data consistency and real-time transaction processing.|
