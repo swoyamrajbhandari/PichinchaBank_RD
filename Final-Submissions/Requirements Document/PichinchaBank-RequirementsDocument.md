@@ -384,18 +384,19 @@ This feature involves managing the status of the transfer. It allows a customer 
 
 ### 4. Customer Profile  
 
-> #### **Description**  
-> This feature allows the customer to manage their personal details related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
->    
-> **Priority**: Low
-> 
-> #### **Functional Requirements**  
-> |||
-> |-|-|
-> |FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their customer profile.|
-> |FR~23|The Customer shall be able to edit the personal information stored to their customer profile.|
-> |FR~24|The Customer shall be able to change their international transfer verification PIN through their customer profile.|
-> |FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
+#### **Description**  
+This feature allows the customer to manage their personal details related to international transfers. This information includes the ordering customer data found on the RTA form, such as name, identification, address, phone number, email, and account number to debit, as well as the verification PIN.
+    
+**Priority**: Low
+ 
+#### **Functional Requirements**  
+
+|||
+|-|-|
+|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their customer profile.|
+|FR~23|The Customer shall be able to edit the personal information stored to their customer profile.|
+|FR~24|The Customer shall be able to change their international transfer verification PIN through their customer profile.|
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|  
 
 # 6.0 Data Requirements   
       
