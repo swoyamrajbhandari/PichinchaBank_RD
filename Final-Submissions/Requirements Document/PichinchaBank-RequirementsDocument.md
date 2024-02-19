@@ -326,7 +326,7 @@ This feature allows a Customer to organize their contacts within the system. A C
 
 |||
 |-|-|
-| **ID and Name:** | UC-2 Create a Contact |
+| **ID and Name:** | UC-1 Create a Contact |
 | **Created By:**  | Matt                |
 | **Date Created:**| Feb-17-2024              |
 | **Primary Actor:** | Customer                |
@@ -365,7 +365,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 
 |||
 |-|-|
-|**ID and Name:**|UC-1 Review of an international transfer request by a Teller|
+|**ID and Name:**|UC-2 Review of an international transfer request by a Teller|
 |**Created By:**|Brayden|
 |**Date Created:**|Feb-16-2024|
 |**Primary Actor:**|Teller|
@@ -380,7 +380,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |**Priority:**|high|
 |**Frequency of Use:**|Approximately 10 to 100 times per week depending on the volume of Customers.|
 |**Other Information:**|A Teller is the main user performing this use case, however, any Administrative user has the capability to perform this use case.|
-|**Assumptions:**|- The International Transfer Request has not already been rejected by the system itself.|  
+|**Assumptions:**|- The international transfer request has not already been rejected by the system itself.|  
 
 ### 4. Customer Profile  
 
