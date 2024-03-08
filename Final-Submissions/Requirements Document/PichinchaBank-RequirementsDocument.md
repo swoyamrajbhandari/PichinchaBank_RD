@@ -251,6 +251,7 @@ These assumptions should be regularly reviewed to ensure they remain valid throu
 |Digital Transaction Platform|The proposed solution for improving the international money transfer process, involving a digital feature integrated into Pichincha Bank's existing mobile and web applications to facilitate faster and more accurate transactions.|
 |Docusign|A document signing software that you can use to legally—and securely—collect approvals online in minutes.|
 |Help Information|Text displayed within the app providing guidance on how to complete the digital RTA form and other related queries.|
+|ITR|(*International Transfer Request*) An International Transfer Request made by a Customer.|
 |Ordering Customer|The individual or entity initiating an international money transfer. This party is responsible for providing the necessary information and funds for the transfer. Refering to Customer.|
 |Pichincha Bank|A private banking institution based in Ecuador, offering a range of services including investments, account management, and money transfers.|
 |Reject Transfer|The action taken by a Teller when a transfer cannot be processed due to issues with the information provided, leading to its cancellation.|
@@ -289,15 +290,15 @@ This feature allows a Customer to request an international transfer and a Teller
     
 #### **Functional Requirements**
 
-|||
-|-|-|
-|FR~1|The Customer shall be able to specify the amount of money to transfer.|
-|FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|
-|FR~3|As a Customer, I want to choose an international contact to transfer money to.|
-|FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.|
-|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|
-|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|
-|FR~7|The Customer shall be able to review the status of their transfer request.| 
+|||Acceptance Criteria|
+|-|-|-|
+|FR~1|The Customer shall be able to specify the amount of money to transfer.||
+|FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.||
+|FR~3|As a Customer, I want to choose an international contact to transfer money to.||
+|FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.||
+|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.||
+|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.||
+|FR~7|The Customer shall be able to review the status of their transfer request.||  
 
 ## 2. Manage Contacts  
 
@@ -308,19 +309,19 @@ This feature allows a Customer to organize their contacts within the system. A C
  
 #### **Functional Requirements**  
 
-|||
-|-|-|
-|FR~8|The Customer shall be able to create a new contact.|
-|FR~9.1|The Customer shall be able to sort their contacts by date added.|
-|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|
-|FR~10|The  Customer shall be able to search for a contact from their contact list.|
-|FR~11|The Customer shall be able to view the contact details of a contact.| 
-|FR~12|The Customer shall be able to edit a contact.|
-|FR~13|The Customer shall be able to delete a contact.|
-|FR~14|The Customer shall be able to transfer money to a contact.|
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|
-|FR~16|The Customer shall be able to view the transfer history of a contact.|
-|FR~17|The Customer shall be able to view the transfer status of a contact.|
+|||Acceptance Criteria|
+|-|-|-|
+|FR~8|The Customer shall be able to create a new contact.||
+|FR~9.1|The Customer shall be able to sort their contacts by date added.||
+|FR~9.2|The Customer shall be able to sort their contacts alphabetically.||
+|FR~10|The  Customer shall be able to search for a contact from their contact list.||
+|FR~11|The Customer shall be able to view the contact details of a contact.||
+|FR~12|The Customer shall be able to edit a contact.||
+|FR~13|The Customer shall be able to delete a contact.||
+|FR~14|The Customer shall be able to transfer money to a contact.||
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.||
+|FR~16|The Customer shall be able to view the transfer history of a contact.||
+|FR~17|The Customer shall be able to view the transfer status of a contact.||  
 
 #### Use Case Description  
 
@@ -352,14 +353,14 @@ This feature involves managing the status of the transfer. It allows a Customer 
  
 #### **Functional Requirements**  
 
-|||
-|-|-|
-|FR~18|The System shall allow a Customer to cancel a transfer.|
-|FR~19|The System shall enable a Teller to change the transfer request status.|
-|FR~19.1|A Teller shall be able to change the transfer request status to completed.|
-|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|
-|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.|
-|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|  
+|||Acceptance Criteria|
+|-|-|-|
+|FR~18|The System shall allow a Customer to cancel a transfer.||
+|FR~19|The System shall enable a Teller to change the transfer request status.||
+|FR~19.1|A Teller shall be able to change the transfer request status to completed.||
+|FR~19.2|A Teller shall be able to change the transfer request status to rejected.||
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.||
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.||  
 
 #### Use Case Description  
 
@@ -391,12 +392,12 @@ This feature allows the Customer to manage their personal details related to int
  
 #### **Functional Requirements**  
 
-|||
-|-|-|
-|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.|
-|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.|
-|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.|
-|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|
+|||Acceptance Criteria|
+|-|-|-|
+|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.||
+|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.||
+|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.||
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.||  
 
 # 6.0 Data Requirements   
       
