@@ -294,9 +294,9 @@ This feature allows a Customer to request an international transfer and a Teller
 |-|-|-|
 |FR~1|The Customer shall be able to specify the amount of money to transfer.||
 |FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.||
-|FR~3|As a Customer, I want to choose an international contact to transfer money to.||
+|FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the customer chooses a contact to send money to, when the customer selects a contact, they can send money to them.|
 |FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.||
-|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.||
+|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that the customer inputs their Account Verification PIN, when they  want to submit the RTA Form, they are able to.|
 |FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.||
 |FR~7|The Customer shall be able to review the status of their transfer request.||  
 
