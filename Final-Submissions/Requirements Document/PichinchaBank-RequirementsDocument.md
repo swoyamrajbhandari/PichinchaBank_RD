@@ -605,7 +605,7 @@ Below is a storyboard that depicts a visual representation of what specific situ
 > ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
 
 The storyboard below displays how the status of the transfer is managed.
->![Storyboard](./images/Feature3_Storyboard.png)
+>![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
 
 ## 9.4 Sequence Diagrams
 The sequence diagram below demonstrates the transfer process between the teller and customer.
