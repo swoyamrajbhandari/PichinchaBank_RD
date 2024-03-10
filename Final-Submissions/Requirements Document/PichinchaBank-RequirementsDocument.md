@@ -319,7 +319,7 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~12|The Customer shall be able to edit a contact.||
 |FR~13|The Customer shall be able to delete a contact.||
 |FR~14|The Customer shall be able to transfer money to a contact.||
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.||
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the customer sets a notification preference for a contact, when the customer receives transfer funds from the contact, the customer recieves a notification.|
 |FR~16|The Customer shall be able to view the transfer history of a contact.||
 |FR~17|The Customer shall be able to view the transfer status of a contact.||  
 
@@ -604,10 +604,19 @@ Below is a storyboard that depicts a visual representation of what specific situ
 
 > ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
 
+The storyboard below displays how a user can edit contact details.
+>![Storyboard](./images/Systemfeature2_storyboard.jpg)
+>"Storyboard for System feature 2"
+
 The storyboard below displays how the status of the transfer is managed.
 >![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
 
 ## 9.4 Sequence Diagrams
+
+The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
+>![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)
+>"Sequence diagram for Storyboard of System feature 2"
+
 The sequence diagram below demonstrates the transfer process between the teller and customer.
 >![Storyboard](./images/Feature3_SequenceDiagram.png)
 
