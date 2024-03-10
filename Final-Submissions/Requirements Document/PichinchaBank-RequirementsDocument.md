@@ -594,7 +594,13 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 
 ## 9.2 Data Flow Diagrams 
 
-Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of how data is handled for this feature.
+> ![Level 0 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD0.jpg)
+> *Context Level DFD*
+
+>![Level 1 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD1.jpg)
+> *Level 1 Data Flow Diagram*
+
+Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pichincha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
 > ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)\
 > "Level 2 DFD for proposed Create Contact feature"
