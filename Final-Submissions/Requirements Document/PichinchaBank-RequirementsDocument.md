@@ -596,7 +596,7 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 
 Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)\
 > "Level 2 DFD for proposed Create Contact feature"
 
 ## 9.3 Storyboards
@@ -615,7 +615,7 @@ The storyboard below displays how the status of the transfer is managed.
 ## 9.4 Sequence Diagrams
 
 The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
->![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)
+>![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)\
 > "Sequence diagram for Storyboard of System feature 2"
 
 The sequence diagram below demonstrates the transfer process between the teller and customer.
@@ -626,7 +626,7 @@ The sequence diagram below demonstrates the transfer process between the teller 
 Below is a dialog map that represents the proposed International Transfer Request feature for Pichincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
 navigation pathways.
 
-> ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
+> ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)\
 > *Dialog Map for System feature 1*
 
 
@@ -634,7 +634,7 @@ navigation pathways.
 
 Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)\
 > "Swim Lane Diagram for proposed Create Contact feature"
 
 # 10.0 Appendix
