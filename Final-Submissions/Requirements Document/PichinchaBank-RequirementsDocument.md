@@ -298,9 +298,9 @@ This feature allows a Customer to request an international transfer and a Teller
 |-|-|-|
 |FR~1|The Customer shall be able to specify the amount of money to transfer.||
 |FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.||
-|FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the customer chooses a contact to send money to, when the customer selects a contact, they can send money to them.|
+|FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the Customer chooses a contact to send money to, when the International Transfer Request is completed, the contact receives the money sent to them.|
 |FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.||
-|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that the customer inputs their Account Verification PIN, when they  want to submit the RTA Form, they are able to.|
+|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that the Customer wants to submit their RTA Form, when the Customer inputs their Account Verification PIN, they are allowed to submit their form.|
 |FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.||
 |FR~7|The Customer shall be able to review the status of their transfer request.||  
 
@@ -590,9 +590,71 @@ The communication interfaces for the International Bank Transfer System must be 
 
 # 9.0 Analysis Models  
 
+## 9.1 Use Case Diagram  
+
 The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.  
 
 > ![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)   
 > *Use Case Diagram for Pichincha Bank International Transfer System* 
+
+## 9.2 Data Flow Diagrams  
+
+> ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
+> *Context Level DFD for International Bank Transfer System*  
+
+>![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
+> *Level 1 DFD for International Bank Transfer System*    
+
+Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pichincha Bank. The diagram provides a high-level overview of how data is handled for this feature.
+
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)  
+> *Level 2 DFD for proposed Create Contact use case*  
+
+> ![Level 2 Data Flow Diagram](./images/UC-2-dataflow.jpg)  
+> *Level 2 DFD for Teller reviewing a transfer request use case*
+
+## 9.3 Storyboards  
+
+Below is a storyboard that depicts a visual representation of what specific situations might look like throughout an International Transfer Request.
+
+> ![Feature 1 Storyboard](./images/Feature%201%20Storyboard.jpg)
+> *Storyboard for System Feature 1*
+
+The storyboard below displays how a user can edit contact details.
+> ![Storyboard](./images/Systemfeature2_storyboard.jpg)  
+> *Storyboard for System Feature 2*
+
+The storyboard below displays how the status of the transfer is managed.
+> ![Feature 3 Storyboard](./images/Feature3_Storyboard.png)  
+> *Storyboard for System Feature 3*
+
+## 9.4 Sequence Diagrams  
+
+The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
+> ![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)  
+> *Sequence diagram for Storyboard of System Feature 2*
+
+The sequence diagram below demonstrates the transfer process between the teller and customer.
+> ![Sequence Diagram](./images/Feature3_SequenceDiagram.png)  
+> *Sequence diagram for Storyboard of System Feature 3*
+
+## 9.5 Dialog Maps  
+
+Below is a dialog map that represents the proposed International Transfer Request feature for Pichincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
+navigation pathways.
+
+> ![Feature 1 Dialog Map](./images/Feature%201%20Dialog%20Map.jpg)   
+> *Dialog Map for System Feature 1*
+
+
+## 9.6 Swim Lane Diagrams
+
+Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
+
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)  
+> *Swim Lane Diagram for Create Contact use case*  
+
+> ![UC-2 Swimlane](./images/UC-2_Swimlane.jpg)  
+> *Swimlane diagram for use case 2, Teller reviewing a transfer request* 
 
 # 10.0 Appendix

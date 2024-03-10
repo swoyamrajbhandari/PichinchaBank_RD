@@ -5,7 +5,7 @@ This repository contains the documents and information pertaining to the develop
 ### Final-Submissions  
 
 * Requirements Document markdown file  
-*  [Figma System Prototype](https://www.figma.com/file/U34cPL80iqvL6Oqv4ha5qC/Pichincha-Bank?type=design&node-id=0%3A1&mode=design&t=kDF8ze31stBbHTfA-1)
+*  [Figma System Prototype](https://www.figma.com/proto/U34cPL80iqvL6Oqv4ha5qC/Pichincha-Bank?type=design&node-id=0-1&viewport=2728%2C426%2C2.37&t=NCw6MHpDWubsUIOn-0&scaling=min-zoom&starting-point-node-id=62%3A122)
 
 ### wiki  
 
