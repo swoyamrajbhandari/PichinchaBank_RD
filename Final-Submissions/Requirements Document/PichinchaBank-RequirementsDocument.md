@@ -618,6 +618,10 @@ The storyboard below displays how a user can edit contact details.
 The storyboard below displays how the status of the transfer is managed.
 >![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
 
+The storyboard below displays how a customer can edit their personal details under their customer profile.
+>![Feature 4 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/7205e01469a9f3cda81713c2b5556a866afd6456/Final-Submissions/Requirements%20Document/images/Feature%204%20storyboard.jpg)
+> *Storyboard for System feature 4*
+
 ## 9.4 Sequence Diagrams
 
 The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
