@@ -586,9 +586,19 @@ The communication interfaces for the International Bank Transfer System must be 
 
 # 9.0 Analysis Models  
 
+## 9.1 Use Case Diagram
 The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.  
 
 > ![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)   
 > *Use Case Diagram for Pichincha Bank International Transfer System* 
 
+## 9.2 Data Flow Diagrams 
+
+## 9.3 Storyboards
+
+## 9.4 Sequence Diagrams
+
+## 9.5 Dialog Maps
+
+## 9.6 Swim Lane Diagrams
 # 10.0 Appendix
