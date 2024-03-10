@@ -600,10 +600,13 @@ Below is a level 2 data flow diagram that represents the proposed Create Contact
 > "Level 2 DFD for proposed Create Contact feature"
 
 ## 9.3 Storyboards
-![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
-![Storyboard](./Final-Submissions/Requirements Document/images/Feature3_Storyboard.png)
+The storyboard below displays how the status of the transfer is managed.
+>![Storyboard](./images/Feature3_Storyboard.png)
 
 ## 9.4 Sequence Diagrams
+The sequence diagram below demonstrates the transfer process between the teller and customer.
+>![Storyboard](./images/Feature3_SequenceDiagram.png)
+
 
 ## 9.5 Dialog Maps
 ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
