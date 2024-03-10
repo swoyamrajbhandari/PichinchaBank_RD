@@ -14,6 +14,10 @@
 | Cache Money Inc | Feb-17-24 | Addition of iteration 2 sections | 2.1.0 |  
 | Cache Money Inc | Feb-18-24 | Revisions and changes to iter 2 | 2.1.1 |  
 | Cache Money Inc | Feb-18-24 | Iteration 2 RD submission | 3.0.0 |  
+| Cache Money Inc | Mar-09-24 | Revisions and changes from iter 2 feedback | 3.0.1 |
+| Cache Money Inc | Mar-10-24 | Adding analysis model diagrams and storyboards | 3.1.0 |
+| Cache Money Inc | Mar-10-24 | Iteration 3 RD - Final submission | 4.0.0 |
+
 
 ## Table Of Contents  
 
@@ -319,7 +323,7 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~12|The Customer shall be able to edit a contact.||
 |FR~13|The Customer shall be able to delete a contact.||
 |FR~14|The Customer shall be able to transfer money to a contact.||
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the customer sets a notification preference for a contact, when the customer receives transfer funds from the contact, the customer recieves a notification.|
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|
 |FR~16|The Customer shall be able to view the transfer history of a contact.||
 |FR~17|The Customer shall be able to view the transfer status of a contact.||  
 
@@ -360,7 +364,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |FR~19.1|A Teller shall be able to change the transfer request status to completed.||
 |FR~19.2|A Teller shall be able to change the transfer request status to rejected.||
 |FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.||
-|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.||  
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|  
 
 #### Use Case Description  
 
@@ -397,7 +401,7 @@ This feature allows the Customer to manage their personal details related to int
 |FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.||
 |FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.||
 |FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.||
-|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.||  
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.|  
 
 # 6.0 Data Requirements   
       
@@ -586,58 +590,65 @@ The communication interfaces for the International Bank Transfer System must be 
 
 # 9.0 Analysis Models  
 
-## 9.1 Use Case Diagram
+## 9.1 Use Case Diagram  
+
 The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.  
 
 > ![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)   
 > *Use Case Diagram for Pichincha Bank International Transfer System* 
 
-## 9.2 Data Flow Diagrams 
+## 9.2 Data Flow Diagrams  
 
-> ![Level 0 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD0.jpg)
-> *Context Level DFD*
+> ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
+> *Context Level DFD for International Bank Transfer System*  
 
->![Level 1 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD1.jpg)
-> *Level 1 Data Flow Diagram*
+>![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
+> *Level 1 DFD for International Bank Transfer System*    
 
 Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pichincha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)\
-> "Level 2 DFD for proposed Create Contact feature"
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)  
+> *Level 2 DFD for proposed Create Contact use case*  
 
-## 9.3 Storyboards
+> ![Level 2 Data Flow Diagram](./images/UC-2-dataflow.jpg)  
+> *Level 2 DFD for Teller reviewing a transfer request use case*
+
+## 9.3 Storyboards  
+
 Below is a storyboard that depicts a visual representation of what specific situations might look like throughout an International Transfer Request.
 
-> ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
-> *Storyboard for System feature 1*
+> ![Feature 1 Storyboard](./images/Feature%201%20Storyboard.jpg)
+> *Storyboard for System Feature 1*
 
 The storyboard below displays how a user can edit contact details.
->![Storyboard](./images/Systemfeature2_storyboard.jpg)
-> *Storyboard for System feature 2*
+> ![Storyboard](./images/Systemfeature2_storyboard.jpg)  
+> *Storyboard for System Feature 2*
 
 The storyboard below displays how the status of the transfer is managed.
->![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
+> ![Feature 3 Storyboard](./images/Feature3_Storyboard.png)  
+> *Storyboard for System Feature 3*  
 
 The storyboard below displays how a customer can edit their personal details under their customer profile.
->![Feature 4 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/7205e01469a9f3cda81713c2b5556a866afd6456/Final-Submissions/Requirements%20Document/images/Feature%204%20storyboard.jpg)
-> *Storyboard for System feature 4*
+> ![Feature 4 storyboard](./images/Feature%204%20storyboard.jpg)  
+> *Storyboard for System Feature 4*  
 
-## 9.4 Sequence Diagrams
+## 9.4 Sequence Diagrams  
 
 The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
->![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)\
-> "Sequence diagram for Storyboard of System feature 2"
+> ![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)  
+> *Sequence diagram for Storyboard of System Feature 2*
 
 The sequence diagram below demonstrates the transfer process between the teller and customer.
->![Storyboard](./images/Feature3_SequenceDiagram.png)
+> ![Sequence Diagram](./images/Feature3_SequenceDiagram.png)  
+> *Sequence diagram for Storyboard of System Feature 3*
 
+## 9.5 Dialog Maps  
 
-## 9.5 Dialog Maps
 Below is a dialog map that represents the proposed International Transfer Request feature for Pichincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
 navigation pathways.
 
-> ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)\
-> *Dialog Map for System feature 1*
+> ![Feature 1 Dialog Map](./images/Feature%201%20Dialog%20Map.jpg)   
+> *Dialog Map for System Feature 1*
 
 The dialog map below represents the Customer Profile management feature.
 >![Feature 4 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/7205e01469a9f3cda81713c2b5556a866afd6456/Final-Submissions/Requirements%20Document/images/Feature%204%20dialog%20map.jpg)
@@ -647,7 +658,10 @@ The dialog map below represents the Customer Profile management feature.
 
 Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)\
-> "Swim Lane Diagram for proposed Create Contact feature"
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)  
+> *Swim Lane Diagram for Create Contact use case*  
+
+> ![UC-2 Swimlane](./images/UC-2_Swimlane.jpg)  
+> *Swimlane diagram for use case 2, Teller reviewing a transfer request* 
 
 # 10.0 Appendix
