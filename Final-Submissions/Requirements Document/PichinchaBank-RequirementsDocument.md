@@ -613,7 +613,7 @@ The sequence diagram below demonstrates the transfer process between the teller 
 
 
 ## 9.5 Dialog Maps
-Below is a dialog map that represents the proposed International Transfer Request feature for PIchincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
+Below is a dialog map that represents the proposed International Transfer Request feature for Pichincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
 navigation pathways.
 
 > ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
