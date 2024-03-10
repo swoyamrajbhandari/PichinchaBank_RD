@@ -594,7 +594,7 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 
 ## 9.2 Data Flow Diagrams 
 
-Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram illustrates how data is handled for this feature.
+Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
 > ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)
 > "Level 2 DFD for proposed Create Contact feature"
@@ -606,4 +606,10 @@ Below is a level 2 data flow diagram that represents the proposed Create Contact
 ## 9.5 Dialog Maps
 
 ## 9.6 Swim Lane Diagrams
+
+Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
+
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)
+> "Swim Lane Diagram for proposed Create Contact feature"
+
 # 10.0 Appendix
