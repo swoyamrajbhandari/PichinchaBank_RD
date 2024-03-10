@@ -600,10 +600,13 @@ Below is a level 2 data flow diagram that represents the proposed Create Contact
 > "Level 2 DFD for proposed Create Contact feature"
 
 ## 9.3 Storyboards
+![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
 ![Storyboard](./Final-Submissions/Requirements Document/images/Feature3_Storyboard.png)
+
 ## 9.4 Sequence Diagrams
 
 ## 9.5 Dialog Maps
+![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
 
 ## 9.6 Swim Lane Diagrams
 
