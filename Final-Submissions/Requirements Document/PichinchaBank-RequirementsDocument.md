@@ -603,10 +603,11 @@ Below is a level 2 data flow diagram that represents the proposed Create Contact
 Below is a storyboard that depicts a visual representation of what specific situations might look like throughout an International Transfer Request.
 
 > ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
+> "Storyboard for System feature 1"
 
 The storyboard below displays how a user can edit contact details.
 >![Storyboard](./images/Systemfeature2_storyboard.jpg)
->"Storyboard for System feature 2"
+> "Storyboard for System feature 2"
 
 The storyboard below displays how the status of the transfer is managed.
 >![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
@@ -615,7 +616,7 @@ The storyboard below displays how the status of the transfer is managed.
 
 The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
 >![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)
->"Sequence diagram for Storyboard of System feature 2"
+> "Sequence diagram for Storyboard of System feature 2"
 
 The sequence diagram below demonstrates the transfer process between the teller and customer.
 >![Storyboard](./images/Feature3_SequenceDiagram.png)
@@ -626,6 +627,7 @@ Below is a dialog map that represents the proposed International Transfer Reques
 navigation pathways.
 
 > ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
+> "Dialog Map for System feature 1"
 
 
 ## 9.6 Swim Lane Diagrams
