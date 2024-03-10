@@ -639,6 +639,9 @@ navigation pathways.
 > ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)\
 > *Dialog Map for System feature 1*
 
+The dialog map below represents the Customer Profile management feature.
+>![Feature 4 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/7205e01469a9f3cda81713c2b5556a866afd6456/Final-Submissions/Requirements%20Document/images/Feature%204%20dialog%20map.jpg)
+>*Dialog Map for System feature 4*
 
 ## 9.6 Swim Lane Diagrams
 
