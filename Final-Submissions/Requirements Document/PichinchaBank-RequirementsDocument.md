@@ -594,15 +594,28 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 
 ## 9.2 Data Flow Diagrams 
 
+Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of how data is handled for this feature.
+
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)
+> "Level 2 DFD for proposed Create Contact feature"
+
 ## 9.3 Storyboards
 The storyboard below displays how the status of the transfer is managed.
 >![Storyboard](./images/Feature3_Storyboard.png)
+
 ## 9.4 Sequence Diagrams
 The sequence diagram below demonstrates the transfer process between the teller and customer.
 >![Storyboard](./images/Feature3_SequenceDiagram.png)
 
 
 ## 9.5 Dialog Maps
+![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
 
 ## 9.6 Swim Lane Diagrams
+
+Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
+
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)
+> "Swim Lane Diagram for proposed Create Contact feature"
+
 # 10.0 Appendix
