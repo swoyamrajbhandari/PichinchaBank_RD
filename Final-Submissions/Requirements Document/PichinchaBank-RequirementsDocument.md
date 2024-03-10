@@ -600,6 +600,10 @@ Below is a level 2 data flow diagram that represents the proposed Create Contact
 > "Level 2 DFD for proposed Create Contact feature"
 
 ## 9.3 Storyboards
+Below is a storyboard that depicts a visual representation of what specific situations might look like throughout an International Transfer Request.
+
+> ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
+
 The storyboard below displays how the status of the transfer is managed.
 >![Storyboard](./images/Feature3_Storyboard.png)
 
@@ -609,7 +613,11 @@ The sequence diagram below demonstrates the transfer process between the teller 
 
 
 ## 9.5 Dialog Maps
-![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
+Below is a dialog map that represents the proposed International Transfer Request feature for PIchincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
+navigation pathways.
+
+> ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)
+
 
 ## 9.6 Swim Lane Diagrams
 
