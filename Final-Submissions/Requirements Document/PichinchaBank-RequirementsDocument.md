@@ -626,7 +626,10 @@ The storyboard below displays how a user can edit contact details.
 
 The storyboard below displays how the status of the transfer is managed.
 > ![Feature 3 Storyboard](./images/Feature3_Storyboard.png)  
-> *Storyboard for System Feature 3*
+> *Storyboard for System Feature 3*  
+
+> ![Feature 4 storyboard](./images/Feature%204%20storyboard.jpg)  
+> *Storyboard for System Feature 4*  
 
 ## 9.4 Sequence Diagrams  
 
