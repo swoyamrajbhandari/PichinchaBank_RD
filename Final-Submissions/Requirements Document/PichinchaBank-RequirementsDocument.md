@@ -595,8 +595,12 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 ## 9.2 Data Flow Diagrams 
 
 ## 9.3 Storyboards
-![Storyboard](./Final-Submissions/Requirements Document/images/Feature3_Storyboard.png)
+The storyboard below displays how the status of the transfer is managed.
+>![Storyboard](./images/Feature3_Storyboard.png)
 ## 9.4 Sequence Diagrams
+The sequence diagram below demonstrates the transfer process between the teller and customer.
+>![Storyboard](./images/Feature3_SequenceDiagram.png)
+
 
 ## 9.5 Dialog Maps
 
