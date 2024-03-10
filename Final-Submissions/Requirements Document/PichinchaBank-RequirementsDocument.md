@@ -14,6 +14,10 @@
 | Cache Money Inc | Feb-17-24 | Addition of iteration 2 sections | 2.1.0 |  
 | Cache Money Inc | Feb-18-24 | Revisions and changes to iter 2 | 2.1.1 |  
 | Cache Money Inc | Feb-18-24 | Iteration 2 RD submission | 3.0.0 |  
+| Cache Money Inc | Mar-09-24 | Revisions and changes from iter 2 feedback| 3.0.1|
+| Cache Money Inc ||||
+| Cache Money Inc ||||
+
 
 ## Table Of Contents  
 
@@ -319,7 +323,7 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~12|The Customer shall be able to edit a contact.||
 |FR~13|The Customer shall be able to delete a contact.||
 |FR~14|The Customer shall be able to transfer money to a contact.||
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the customer sets a notification preference for a contact, when the customer receives transfer funds from the contact, the customer recieves a notification.|
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|
 |FR~16|The Customer shall be able to view the transfer history of a contact.||
 |FR~17|The Customer shall be able to view the transfer status of a contact.||  
 
@@ -360,7 +364,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |FR~19.1|A Teller shall be able to change the transfer request status to completed.||
 |FR~19.2|A Teller shall be able to change the transfer request status to rejected.||
 |FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.||
-|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.||  
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|  
 
 #### Use Case Description  
 
@@ -397,7 +401,7 @@ This feature allows the Customer to manage their personal details related to int
 |FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.||
 |FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.||
 |FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.||
-|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.||  
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.|  
 
 # 6.0 Data Requirements   
       
