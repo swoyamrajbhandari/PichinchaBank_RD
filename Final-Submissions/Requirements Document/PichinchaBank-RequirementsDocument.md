@@ -586,61 +586,71 @@ The communication interfaces for the International Bank Transfer System must be 
 
 # 9.0 Analysis Models  
 
-## 9.1 Use Case Diagram
+## 9.1 Use Case Diagram  
+
 The use case diagram, as seen below, displays the proposed International Bank Transfer System functionalities in order to meet the requirements of the client, Pichincha Bank. The use cases specify what actions the various users of the system may take and how those use cases interact with other functionalities and users.  
 
 > ![Use Case Diagram](./images/PichinchaBankUseCaseDiagram.png)   
 > *Use Case Diagram for Pichincha Bank International Transfer System* 
 
-## 9.2 Data Flow Diagrams 
+## 9.2 Data Flow Diagrams  
 
-> ![Level 0 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD0.jpg)
-> *Context Level DFD*
+> ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
+> *Context Level DFD for International Bank Transfer System*  
 
->![Level 1 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/81e23822bba1d24287387e9e634a1b9b792d6887/Final-Submissions/Requirements%20Document/images/DFD1.jpg)
-> *Level 1 Data Flow Diagram*
+>![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
+> *Level 1 DFD for International Bank Transfer System*    
 
 Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pichincha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)\
-> "Level 2 DFD for proposed Create Contact feature"
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)  
+> *Level 2 DFD for proposed Create Contact use case*  
 
-## 9.3 Storyboards
+> ![Level 2 Data Flow Diagram](./images/UC-2-dataflow.jpg)  
+> *Level 2 DFD for Teller reviewing a transfer request use case*
+
+## 9.3 Storyboards  
+
 Below is a storyboard that depicts a visual representation of what specific situations might look like throughout an International Transfer Request.
 
-> ![Feature 1 Storyboard](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/53ab2881-3388-4161-a56f-09706d203fc7)
-> *Storyboard for System feature 1*
+> ![Feature 1 Storyboard](./images/Feature%201%20Storyboard.jpg)
+> *Storyboard for System Feature 1*
 
 The storyboard below displays how a user can edit contact details.
->![Storyboard](./images/Systemfeature2_storyboard.jpg)
-> *Storyboard for System feature 2*
+> ![Storyboard](./images/Systemfeature2_storyboard.jpg)  
+> *Storyboard for System Feature 2*
 
 The storyboard below displays how the status of the transfer is managed.
->![Feature 3 Storyboard](./images/Feature3_Storyboard.png)
+> ![Feature 3 Storyboard](./images/Feature3_Storyboard.png)  
+> *Storyboard for System Feature 3*
 
-## 9.4 Sequence Diagrams
+## 9.4 Sequence Diagrams  
 
 The sequence diagram below demonstrates the process of editing a contact detail (name) of a contact.
->![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)\
-> "Sequence diagram for Storyboard of System feature 2"
+> ![Sequence Diagram](./images/Feature2_SequenceDiagram.drawio.jpg)  
+> *Sequence diagram for Storyboard of System Feature 2*
 
 The sequence diagram below demonstrates the transfer process between the teller and customer.
->![Storyboard](./images/Feature3_SequenceDiagram.png)
+> ![Sequence Diagram](./images/Feature3_SequenceDiagram.png)  
+> *Sequence diagram for Storyboard of System Feature 3*
 
+## 9.5 Dialog Maps  
 
-## 9.5 Dialog Maps
 Below is a dialog map that represents the proposed International Transfer Request feature for Pichincha Bank. The dialog map provides a high level view of the user interface through various display elements and possible
 navigation pathways.
 
-> ![Feature 1 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/assets/98367955/5eaf4fd9-4423-4698-944a-1afe6c50f9f9)\
-> *Dialog Map for System feature 1*
+> ![Feature 1 Dialog Map](./images/Feature%201%20Dialog%20Map.jpg)   
+> *Dialog Map for System Feature 1*
 
 
 ## 9.6 Swim Lane Diagrams
 
 Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
 
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)\
-> "Swim Lane Diagram for proposed Create Contact feature"
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)  
+> *Swim Lane Diagram for Create Contact use case*  
+
+> ![UC-2 Swimlane](./images/UC-2_Swimlane.jpg)  
+> *Swimlane diagram for use case 2, Teller reviewing a transfer request* 
 
 # 10.0 Appendix
