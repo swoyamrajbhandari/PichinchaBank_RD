@@ -628,6 +628,7 @@ The storyboard below displays how the status of the transfer is managed.
 > ![Feature 3 Storyboard](./images/Feature3_Storyboard.png)  
 > *Storyboard for System Feature 3*  
 
+The storyboard below displays how a customer can edit their personal details under their customer profile.
 > ![Feature 4 storyboard](./images/Feature%204%20storyboard.jpg)  
 > *Storyboard for System Feature 4*  
 
@@ -649,6 +650,9 @@ navigation pathways.
 > ![Feature 1 Dialog Map](./images/Feature%201%20Dialog%20Map.jpg)   
 > *Dialog Map for System Feature 1*
 
+The dialog map below represents the Customer Profile management feature.
+>![Feature 4 Dialog Map](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/7205e01469a9f3cda81713c2b5556a866afd6456/Final-Submissions/Requirements%20Document/images/Feature%204%20dialog%20map.jpg)
+>*Dialog Map for System feature 4*
 
 ## 9.6 Swim Lane Diagrams
 
