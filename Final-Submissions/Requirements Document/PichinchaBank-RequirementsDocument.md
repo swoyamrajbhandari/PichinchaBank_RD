@@ -669,4 +669,8 @@ Below is a Swim Lane diagram that represents the Create Contact feature of the I
 > ![UC-2 Swimlane](./images/UC-2_Swimlane.jpg)  
 > *Swimlane diagram for use case 2, Teller reviewing a transfer request* 
 
-# 10.0 Appendix
+# 10.0 Appendix  
+
+|||
+|-|-|
+|The following is a link to the International Bank Transfer System prototype|[\[ IBTS Link \]](https://www.figma.com/proto/U34cPL80iqvL6Oqv4ha5qC/Pichincha-Bank?type=design&node-id=0-1&viewport=2728%2C426%2C2.37&t=NCw6MHpDWubsUIOn-0&scaling=min-zoom&starting-point-node-id=62%3A122)|
