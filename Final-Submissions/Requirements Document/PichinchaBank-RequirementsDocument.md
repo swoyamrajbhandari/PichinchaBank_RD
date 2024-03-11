@@ -56,6 +56,12 @@
    * [7.4 Communication Interfaces](#74-communication-interfaces)
 * [8.0 Software Quality Attributes](#80-software-quality-attributes)
 * [9.0 Analysis Models](#90-analysis-models)
+    * [9.1 Use Case Diagram](#91-use-case-diagram)
+    * [9.2 Data Flow Diagrams](#92-data-flow-diagrams)
+    * [9.3 Storyboards](#93-storyboards)
+    * [9.4 Sequence Diagrams](#94-sequence-diagrams)
+    * [9.5 Dialog Maps](#95-dialog-maps)
+    * [9.6 Swim Lane Diagrams](#96-swim-lane-diagrams)
 * [10.0 Appendix](#100-appendix)
 
 # 1.0 Overview  
