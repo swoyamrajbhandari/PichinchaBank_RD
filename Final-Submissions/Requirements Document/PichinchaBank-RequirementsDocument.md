@@ -605,13 +605,12 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 
 ## 9.2 Data Flow Diagrams  
 
+This section contains a system level, process level, and two sub-process level Data Flow Diagrams (DFD) depicting the flow and interactions of data, data stores, and entities within the International Bank Transfer System. 
 > ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
 > *Context Level DFD for International Bank Transfer System*  
 
 >![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
 > *Level 1 DFD for International Bank Transfer System*    
-
-Below is a level 2 data flow diagram that represents the proposed Create Contact feature for Pichincha Bank. The diagram provides a high-level overview of how data is handled for this feature.
 
 > ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)  
 > *Level 2 DFD for proposed Create Contact use case*  
@@ -662,10 +661,10 @@ The dialog map below represents the Customer Profile management feature.
 
 ## 9.6 Swim Lane Diagrams
 
-Below is a Swim Lane diagram that represents the proposed Create Contact feature for Pinacha Bank. The diagram provides a high-level overview of all the component interactions for this feature.
+Below is a Swim Lane diagram that represents the Create Contact feature of the International Bank Transfer System. The diagram provides a high-level overview of all the component interactions for this feature.
 
 > ![Level 2 Data Flow Diagram](./images/Create_Contact_Swim.drawio.png)  
-> *Swim Lane Diagram for Create Contact use case*  
+> *Swim Lane Diagram for use case 1, Create Contact*  
 
 > ![UC-2 Swimlane](./images/UC-2_Swimlane.jpg)  
 > *Swimlane diagram for use case 2, Teller reviewing a transfer request* 
