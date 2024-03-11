@@ -62,7 +62,8 @@
     * [9.4 Sequence Diagrams](#94-sequence-diagrams)
     * [9.5 Dialog Maps](#95-dialog-maps)
     * [9.6 Swim Lane Diagrams](#96-swim-lane-diagrams)
-* [10.0 Appendix](#100-appendix)
+* [10.0 Appendix](#100-appendix)  
+   * [System Prototype](#system-prototype)  
 
 # 1.0 Overview  
 The following requirements document contains the complete set of requirements pertaining to the development of a solution for Pichincha Banks inefficient paper method for performing international fund transfers.  
@@ -671,6 +672,6 @@ Below is a Swim Lane diagram that represents the Create Contact feature of the I
 
 # 10.0 Appendix  
 
-|||
-|-|-|
-|The following is a link to the International Bank Transfer System prototype|[\[ IBTS Link \]](https://www.figma.com/proto/U34cPL80iqvL6Oqv4ha5qC/Pichincha-Bank?type=design&node-id=0-1&viewport=2728%2C426%2C2.37&t=NCw6MHpDWubsUIOn-0&scaling=min-zoom&starting-point-node-id=62%3A122)|
+### System Prototype
+
+The following is a link to the International Bank Transfer System prototype: [\[ IBTS Link \]](https://www.figma.com/proto/U34cPL80iqvL6Oqv4ha5qC/Pichincha-Bank?type=design&node-id=0-1&viewport=2728%2C426%2C2.37&t=NCw6MHpDWubsUIOn-0&scaling=min-zoom&starting-point-node-id=62%3A122)
