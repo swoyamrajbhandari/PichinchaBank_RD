@@ -370,7 +370,7 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |FR~19|The System shall enable a Teller to change the transfer request status.||
 |FR~19.1|A Teller shall be able to change the transfer request status to completed.||
 |FR~19.2|A Teller shall be able to change the transfer request status to rejected.||
-|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.||
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system should archive the completed the transfer into a database||
 |FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|  
 
 #### Use Case Description  
