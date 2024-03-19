@@ -428,8 +428,8 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Accepted_Declarations"></a> Accepted Declarations | If the Ordering Customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
 | <a name="Account_Verification_PIN"></a> Account Verification PIN| The PIN used to verify that the submitter of an international transfer request is the Ordering Customer. | Numeric characters | 4 |  |
 | <a name="Beneficiary_Account_Number"></a>Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
-| <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
-| <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 |  |
+| <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_City"></a>Beneficiary Bank City | City the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_Country"></a>Beneficiary Bank Country | Country the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_Name"></a>Beneficiary Bank Name | Name of the beneficiary bank. | Alphabetic characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
@@ -452,7 +452,7 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Ordering_Bank_SWIFT_Code"></a>Ordering Bank SWIFT Code | SWIFT code belonging to the ordering bank. | Alphanumeric characters | 11 |  |
 | <a name="Ordering_Customer"></a>Ordering Customer | Information regarding the Ordering Customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ 1:n{[Ordering Customer Account Number](#Ordering_Customer_Account_Number)} |  |  |
 | <a name="Ordering_Customer_Account_Number"></a>Ordering Customer Account Number | Ordering Customer’s account number to be debited. | Numeric characters  | 17 |  |
-| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the Ordering Customer. | Alphanumeric characters | 100 |  |
+| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the Ordering Customer. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Ordering_Customer_Email"></a>Ordering Customer Email | Email of the Ordering Customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
 | <a name="Ordering_Customer_Identification"></a>Ordering Customer Identification | Identification number from Ordering Customer’s  C.I., C.C., Passport, or RUC. | Numeric characters  | 11 |  |
 | <a name="Ordering_Customer_Name"></a>Ordering Customer Name | First and last name or company name of the Ordering Customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
