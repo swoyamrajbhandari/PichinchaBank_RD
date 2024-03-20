@@ -311,6 +311,13 @@ This feature allows a Customer to request an international transfer and a Teller
 |FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.||
 |FR~7|The Customer shall be able to review the status of their transfer request.||  
 
+#### **Acceptance Tests**  
+
+||Acceptance Tests|
+|-|-|
+|AT~1||
+|AT~2||  
+
 ## 2. Manage Contacts  
 
 #### **Description**  
@@ -333,6 +340,13 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|
 |FR~16|The Customer shall be able to view the transfer history of a contact.||
 |FR~17|The Customer shall be able to view the transfer status of a contact.||  
+
+#### **Acceptance Tests**  
+
+||Acceptance Tests|
+|-|-|
+|AT~1||
+|AT~2||  
 
 #### Use Case Description  
 
@@ -373,6 +387,13 @@ This feature involves managing the status of the transfer. It allows a Customer 
 |FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database||
 |FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|  
 
+#### **Acceptance Tests**  
+
+||Acceptance Tests|
+|-|-|
+|AT~1||
+|AT~2||  
+
 #### Use Case Description  
 
 |||
@@ -409,6 +430,13 @@ This feature allows the Customer to manage their personal details related to int
 |FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.||
 |FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.||
 |FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.|  
+
+#### **Acceptance Tests**  
+
+||Acceptance Tests|
+|-|-|
+|AT~1||
+|AT~2||  
 
 # 6.0 Data Requirements   
       
