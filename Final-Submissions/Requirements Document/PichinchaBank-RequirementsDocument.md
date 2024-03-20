@@ -605,7 +605,7 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 ## 9.2 Data Flow Diagrams  
 
 This section contains a system level, process level, and two sub-process level Data Flow Diagrams (DFD) depicting the flow and interactions of data, data stores, and entities within the International Bank Transfer System. 
-> ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
+> ![Level 0 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/80b34b45329c381a3835e452f8d063f9e5e67c7c/Final-Submissions/Requirements%20Document/images/DFD0%20(1).jpg)  
 > *Context Level DFD for International Bank Transfer System*  
 
 >![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
