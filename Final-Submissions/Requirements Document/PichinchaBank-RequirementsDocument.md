@@ -588,12 +588,12 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~19|Supportability|The System shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.|
 |QA~20||The System shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.|
 |QA~21||The System shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.|
-|QA~22|Testability|The System shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.|
-|QA~23||The System shall be designed to allow components to be independently testable to facilitate quick issue identification and resolution.|
+|QA~22|Testability|The System shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions (around 1000 users per second).|
+|QA~23||The System shall be designed to allow components to be independently testable to facilitate issue identification and rectification never taking more than %0.001 of the program's annual run time.|
 |QA~24||The System shall undergo User Acceptance Testing (UAT) with participation from all user classes to validate the System against real-world requirements and expectations.|
 |QA~25|Scalability|The System shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.|
 |QA~26||The System shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.|
-|QA~27||The System design shall allow for the integration of new banking services and expansion to additional markets without significant redesign or downtime.|
+|QA~27||The System design shall allow for the integration of new banking services and expansion to additional markets without more than %0.0001 of annual program run time allocated for significant redesign or downtime.|
 
 # 9.0 Analysis Models  
 
