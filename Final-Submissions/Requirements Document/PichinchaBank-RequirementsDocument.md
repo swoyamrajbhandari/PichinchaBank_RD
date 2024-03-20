@@ -546,13 +546,11 @@ The International Bank Transfer System will be integrated into the existing Pich
 |-|-|
 |EIR~7.1|The System shall be integrated into the existing Pichincha Bank web application.|
 |EIR~7.2|The System shall be integrated into the existing Pichincha Bank mobile application.|
-|EIR~8.1|The System shall give a Teller the ability to interact with the SWIFT Alliance System.|
-|EIR~8.2|(**TBD**) The System shall give a Teller the ability to input *\<data-type\>* into the SWIFT Alliance System.|
-|EIR~9|The System shall store International Transfer Contact data to the existing Pichincha Bank database.|
-|EIR~10|The System shall store International Transfer Customer data to the existing Pichincha Bank database.|
-|EIR~11.1|When a Customer submits an RTA form, the System shall send an e-mail notification to the Customer notifying them that the System has received their transfer request form.|
-|EIR~11.2|When a Teller sets the status of an International Bank Transfer request to approved, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been approved.|
-|EIR~11.3|When a Teller sets the status of an International Bank Transfer request to rejected, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been rejected.|  
+|EIR~8|The System shall store International Transfer Contact data to the existing Pichincha Bank database.|
+|EIR~9|The System shall store International Transfer Customer data to the existing Pichincha Bank database.|
+|EIR~10.1|When a Customer submits an RTA form, the System shall send an e-mail notification to the Customer notifying them that the System has received their transfer request form.|
+|EIR~10.2|When a Teller sets the status of an International Bank Transfer request to approved, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been approved.|
+|EIR~10.3|When a Teller sets the status of an International Bank Transfer request to rejected, the System shall send an e-mail notification to the Customer notifying them that the transfer request has been rejected.|  
        
 ## 7.4 Communication Interfaces  
 
@@ -560,8 +558,8 @@ The communication interfaces for the International Bank Transfer System must be 
 
 |||
 |-|-|
-|EIR~12|The System must be able to send e-mail notifications to a Customer.|
-|EIR~13|(**TBD**) The System must communicate with the SWIFT Alliance System via \<communication-type\>.|  
+|EIR~11|The System shall be able to send e-mail notifications to a Customer.|
+|EIR~12|(**TBD**) The System must communicate with the SWIFT Alliance System via \<communication-type\>.|  
 
 # 8.0 Software Quality Attributes
 
