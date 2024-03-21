@@ -330,8 +330,8 @@ This feature allows a Customer to organize their contacts within the system. A C
 |||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
 |FR~8|The Customer shall be able to create a new contact.|Given that the customer wants to create a new contact, when the customer enters the new contact details and adds the contact to the contact list, they will create a new contact.||
-|FR~9.1|The Customer shall be able to sort their contacts by date added.|Given that the customer wants to sort their contacts by date added, when the customer chooses the option  to sort by "date added" on the contact list page, they will sort their contacts by date added.||
-|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|Given that the customer wants to sort their contacts alphabetically, when the customer chooses the option to sort by "name" on the contact list page, they will sort their contacts alphabetically.||
+|FR~9.1|The Customer shall be able to sort their contacts by date added.|Given that the customer wants to sort their contacts by date added, when the customer chooses the option  to sort by date added on the contact list page, they will sort their contacts by date added.||
+|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|Given that the customer wants to sort their contacts alphabetically, when the customer chooses the option to sort by name on the contact list page, they will sort their contacts alphabetically.||
 |FR~10|The  Customer shall be able to search for a contact from their contact list.|Given that the customer wants to search for a contact from their contact list, when the customer inputs their choice of contact on the search bar in the contact list page, they will be able to search for a contact from their contact list.||
 |FR~11|The Customer shall be able to view the contact details of a contact.|||
 |FR~12|The Customer shall be able to edit a contact.|||
