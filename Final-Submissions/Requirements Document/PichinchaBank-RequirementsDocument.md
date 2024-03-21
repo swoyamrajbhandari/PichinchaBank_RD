@@ -308,8 +308,8 @@ This feature allows a Customer to request an international transfer and a Teller
 |FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the Customer chooses a contact to send money to, when the International Transfer Request is completed, the contact receives the money sent to them.|
 |FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.||
 |FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that the Customer wants to submit their RTA Form, when the Customer inputs their Account Verification PIN, they are allowed to submit their form.|
-|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.||
-|FR~7|The Customer shall be able to review the status of their transfer request.||  
+|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|Given that the Customer wants to transfer money to a contact, if the Customer has insufficient funds, the System shall automatically reject the transfer request.|
+|FR~7|The Customer shall be able to review the status of their transfer request.|Given that the Customer wants to review the status of their transfer request, when the Customer attempts to review their request's status through the app, they are allowed to.|  
 
 #### **Acceptance Tests**  
 
