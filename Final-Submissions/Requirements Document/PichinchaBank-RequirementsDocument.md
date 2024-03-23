@@ -391,8 +391,8 @@ This feature involves managing the status of the transfer. It allows a Customer 
 
 ||Acceptance Tests|
 |-|-|
-|AT~1||
-|AT~2||  
+|Customer Transfer Request|A customer initiates a transfer request from their account to another account. The system shall update the transfer request status to "pending".The system shall notify both the sender and the recipient about the successful transfer.|
+|Insufficient Funds Rejection|A customer initiates a transfer request from their account to another account. The customer's account balance is insufficient to cover the transfer amount. The system shall reject the transfer and notify the client.|  
 
 #### Use Case Description  
 
