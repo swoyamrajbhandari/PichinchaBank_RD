@@ -327,7 +327,6 @@ This feature allows a Customer to organize their contacts within the system. A C
  
 #### **Functional Requirements**  
 
-
 |||Acceptance Criteria|Acceptance Tests|
 |-|-|-|-|
 
@@ -339,9 +338,9 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~12|The Customer shall be able to edit a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the edit button, then the Customer will be able to modify and save that contact's details.|Verify that when a Customer selects the edit button on a contact from their contact list and modifies the address field, the updated contact details are displayed.|
 |FR~13|The Customer shall be able to delete a contact.|Given that the Customer has at least one saved contact, when the Customer selects the delete contact button, then the contact will be deleted from the Customer's contact list.|Verify that when the Customer selects the delete contact button, the contact is no longer visible in their contact list.|
 |FR~14|The Customer shall be able to transfer money to a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the "Send New Transfer" button, then the customer is able to complete the RTA form.|Verify that when the customer selects a contact from their contact list and selects the "Send New Transfer" button, then an RTA form is auto-filled with the selected contact's details and the Customer is able to complete the rest of the form.|
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|
-|FR~16|The Customer shall be able to view the transfer history of a contact.||
-|FR~17|The Customer shall be able to view the transfer status of a contact.||  
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|Verify that a notification is received with the preferred method once a contact receives the transfer funds|
+|FR~16|The Customer shall be able to view the transfer history of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see a list of all past transfers to that contact.|Verify that after a Customer makes a transfer to a contact that transfer appears on the contact page under transfer history.|
+|FR~17|The Customer shall be able to view the transfer status of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see the status of all transfers made to that contact. | Verify that after a Customer makes a transfer to a contact at each stage in the process (Unprocessed, In Process, Completed, and Rejected) the correct status appears on the contact page.| 
 
 
 #### **Acceptance Tests**  
