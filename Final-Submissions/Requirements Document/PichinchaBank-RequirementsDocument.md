@@ -327,19 +327,22 @@ This feature allows a Customer to organize their contacts within the system. A C
  
 #### **Functional Requirements**  
 
-|||Acceptance Criteria|Acceptance Test|
+
+|||Acceptance Criteria|Acceptance Tests|
 |-|-|-|-|
+
 |FR~8|The Customer shall be able to create a new contact.|Given that the customer wants to create a new contact, when the customer enters the new contact details and adds the contact to the contact list, they will create a new contact.|Verify that when a customer wants to create a new contact, the new contact is added to the contact list.|
 |FR~9.1|The Customer shall be able to sort their contacts by date added.|Given that the customer wants to sort their contacts by date added, when the customer chooses the option  to sort by date added on the contact list page, they will sort their contacts by date added.|Verify that when a customer wants to sort their contacts by date added, the contacts in the contact list are displayed in date added to order.|
 |FR~9.2|The Customer shall be able to sort their contacts alphabetically.|Given that the customer wants to sort their contacts alphabetically, when the customer chooses the option to sort by name on the contact list page, they will sort their contacts alphabetically.|Verify that when a customer wants to sort their contacts by name, the contacts in the contact list are displayed in alphabetical order.|
 |FR~10|The  Customer shall be able to search for a contact from their contact list.|Given that the customer wants to search for a contact from their contact list, when the customer inputs their choice of contact on the search bar in the contact list page, they will be able to search for a contact from their contact list.|Verify that when a customer wants to search for a contact from the contact list and inputs the name, the contact is displayed.|
-|FR~11|The Customer shall be able to view the contact details of a contact.|||
-|FR~12|The Customer shall be able to edit a contact.|||
-|FR~13|The Customer shall be able to delete a contact.|||
-|FR~14|The Customer shall be able to transfer money to a contact.|||
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.||
-|FR~16|The Customer shall be able to view the transfer history of a contact.|||
-|FR~17|The Customer shall be able to view the transfer status of a contact.|||
+|FR~11|The Customer shall be able to view the contact details of a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list, then the contact's details will be displayed.|Verify that when a Customer selects a contact from their contact list, the correct contact details are displayed.|
+|FR~12|The Customer shall be able to edit a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the edit button, then the Customer will be able to modify and save that contact's details.|Verify that when a Customer selects the edit button on a contact from their contact list and modifies the address field, the updated contact details are displayed.|
+|FR~13|The Customer shall be able to delete a contact.|Given that the Customer has at least one saved contact, when the Customer selects the delete contact button, then the contact will be deleted from the Customer's contact list.|Verify that when the Customer selects the delete contact button, the contact is no longer visible in their contact list.|
+|FR~14|The Customer shall be able to transfer money to a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the "Send New Transfer" button, then the customer is able to complete the RTA form.|Verify that when the customer selects a contact from their contact list and selects the "Send New Transfer" button, then an RTA form is auto-filled with the selected contact's details and the Customer is able to complete the rest of the form.|
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|
+|FR~16|The Customer shall be able to view the transfer history of a contact.||
+|FR~17|The Customer shall be able to view the transfer status of a contact.||  
+
 
 #### **Acceptance Tests**  
 
