@@ -301,22 +301,15 @@ This feature allows a Customer to request an international transfer and a Teller
     
 #### **Functional Requirements**
 
-|||Acceptance Criteria|Acceptance Tests|
+|||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-|FR~1|The Customer shall be able to specify the amount of money to transfer.|||
-|FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|||
-|FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that a Customer chooses a contact to send money to, when the International Transfer Request is completed, the contact receives the money sent to them.||
-|FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.|||
+|FR~1|The Customer shall be able to specify the amount of money to transfer.|Given that the Customer creates a transfer request, when the form is presented to the Customer, then an input box is presented to enter the amount of money to transfer.|Verify that a customer can enter into the RTA Form an amount of money to be transfered.|
+|FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|Given that a customer completes a valid transfer request, when the Teller accesses the transfer request, they are able to view the information to input into the SWIFT Alliance System.|Verify that the teller has access to the RTA Form completed by the Customer.|
+|FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the Customer chooses a contact to send money to, when the International Transfer Request is completed, the contact receives the money sent to them.|Verify that the contact chosen by the customer is the contact who recieves the money transfer.|
+|FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.|Given that the Customer wants to complete an international transfer request, when the Customer seeks a method to complete the transfer request, a digital method is accessible to the customer.|Verify that a Customer has access and interact with a fillable digital RTA Form.|
 |FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that a Customer wants to submit their RTA Form, when a Customer inputs their Account Verification PIN, they are allowed to submit their form.|Verify that when a Customer inputs their Account Verification PIN, they are allowed to submit their RTA Form.|
 |FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|Given that a Customer wants to transfer money to a contact, if a Customer has insufficient funds, the System shall automatically reject the transfer request.|Verify that when a Customer has insufficient funds, the System automatically rejects the transfer request.|
-|FR~7|The Customer shall be able to review the status of their transfer request.|Given that a Customer wants to review the status of their transfer request, when a Customer attempts to review their request's status through the app, they are allowed to.|Verify that when a Customer wants to review the status of their transfer request, they are allowed to.|
-
-#### **Acceptance Tests**  
-
-||Acceptance Tests|
-|-|-|
-|AT~1||
-|AT~2||  
+|FR~7|The Customer shall be able to review the status of their transfer request.|Given that a Customer wants to review the status of their transfer request, when a Customer attempts to review their request's status through the app, they are allowed to.|Verify that when a Customer wants to review the status of their transfer request, they are allowed to.|  
 
 ## 2. Manage Contacts  
 
@@ -327,9 +320,8 @@ This feature allows a Customer to organize their contacts within the system. A C
  
 #### **Functional Requirements**  
 
-|||Acceptance Criteria|Acceptance Tests|
+|||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-
 |FR~8|The Customer shall be able to create a new contact.|Given that the customer wants to create a new contact, when the customer enters the new contact details and adds the contact to the contact list, they will create a new contact.|Verify that when a customer wants to create a new contact, the new contact is added to the contact list.|
 |FR~9.1|The Customer shall be able to sort their contacts by date added.|Given that the customer wants to sort their contacts by date added, when the customer chooses the option  to sort by date added on the contact list page, they will sort their contacts by date added.|Verify that when a customer wants to sort their contacts by date added, the contacts in the contact list are displayed in date added to order.|
 |FR~9.2|The Customer shall be able to sort their contacts alphabetically.|Given that the customer wants to sort their contacts alphabetically, when the customer chooses the option to sort by name on the contact list page, they will sort their contacts alphabetically.|Verify that when a customer wants to sort their contacts by name, the contacts in the contact list are displayed in alphabetical order.|
@@ -340,15 +332,7 @@ This feature allows a Customer to organize their contacts within the system. A C
 |FR~14|The Customer shall be able to transfer money to a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the "Send New Transfer" button, then the customer is able to complete the RTA form.|Verify that when the customer selects a contact from their contact list and selects the "Send New Transfer" button, then an RTA form is auto-filled with the selected contact's details and the Customer is able to complete the rest of the form.|
 |FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|Verify that a notification is received with the preferred method once a contact receives the transfer funds|
 |FR~16|The Customer shall be able to view the transfer history of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see a list of all past transfers to that contact.|Verify that after a Customer makes a transfer to a contact that transfer appears on the contact page under transfer history.|
-|FR~17|The Customer shall be able to view the transfer status of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see the status of all transfers made to that contact. | Verify that after a Customer makes a transfer to a contact at each stage in the process (Unprocessed, In Process, Completed, and Rejected) the correct status appears on the contact page.| 
-
-
-#### **Acceptance Tests**  
-
-||Acceptance Tests|
-|-|-|
-|AT~1||
-|AT~2||  
+|FR~17|The Customer shall be able to view the transfer status of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see the status of all transfers made to that contact. | Verify that after a Customer makes a transfer to a contact at each stage in the process (Unprocessed, In Process, Completed, and Rejected) the correct status appears on the contact page.|  
 
 #### Use Case Description  
 
@@ -380,21 +364,21 @@ This feature involves managing the status of the transfer. It allows a Customer 
  
 #### **Functional Requirements**  
 
-|||Acceptance Criteria|
-|-|-|-|
-|FR~18|The System shall allow a Customer to cancel a transfer.|Given that the Customer wishes to cancel a transfer, the System shall provide the Customer with an option to initiate cancellation through the user interface|
-|FR~19|The System shall enable a Teller to change the transfer request status.|Given that a Teller needs to change the transfer request status, the System shall provide appropriate functionalities within the Teller's interface.|
-|FR~19.1|A Teller shall be able to change the transfer request status to completed.|Given that a Teller needs to change the transfer request status to "completed", the system should allow the Teller to complete the request|
-|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|Given that a Teller needs to change the transfer request status to "rejected", the system should allow the Teller to cancel the request|
-|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database|Given that System needs to automatically reject a transfer, it should monitor the Client's account balance and reject the transfer when there is not enough efficient funds|
-|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|  
+|||Acceptance Criteria|Acceptance Test|
+|-|-|-|-|
+|FR~18|The System shall allow a Customer to cancel a transfer.|Given that the Customer wishes to cancel a transfer, the System shall provide the Customer with an option to initiate cancellation through the user interface||
+|FR~19|The System shall enable a Teller to change the transfer request status.|Given that a Teller needs to change the transfer request status, the System shall provide appropriate functionalities within the Teller's interface.||
+|FR~19.1|A Teller shall be able to change the transfer request status to completed.|Given that a Teller needs to change the transfer request status to "completed", the system should allow the Teller to complete the request||
+|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|Given that a Teller needs to change the transfer request status to "rejected", the system should allow the Teller to cancel the request||
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database|Given that System needs to automatically reject a transfer, it should monitor the Client's account balance and reject the transfer when there is not enough efficient funds||
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.||   
 
 #### **Acceptance Tests**  
 
 ||Acceptance Tests|
 |-|-|
 |Customer Transfer Request|A customer initiates a transfer request from their account to another account. The system shall update the transfer request status to "pending".The system shall notify both the sender and the recipient about the successful transfer.|
-|Insufficient Funds Rejection|A customer initiates a transfer request from their account to another account. The customer's account balance is insufficient to cover the transfer amount. The system shall reject the transfer and notify the client.|  
+|Insufficient Funds Rejection|A customer initiates a transfer request from their account to another account. The customer's account balance is insufficient to cover the transfer amount. The system shall reject the transfer and notify the client.|   
 
 #### Use Case Description  
 
@@ -426,19 +410,12 @@ This feature allows the Customer to manage their personal details related to int
  
 #### **Functional Requirements**  
 
-|||Acceptance Criteria|
-|-|-|-|
-|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.||
-|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.||
-|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.||
-|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.|  
-
-#### **Acceptance Tests**  
-
-||Acceptance Tests|
-|-|-|
-|AT~1||
-|AT~2||  
+|||Acceptance Criteria|Acceptance Test|
+|-|-|-|-|
+|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.|||
+|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.|||
+|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.|||
+|FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.||  
 
 # 6.0 Data Requirements   
       
