@@ -141,12 +141,12 @@ The major features of the Customer facing side are:
       
 The major features for the Teller facing side are:  
 
-* **International Transfer Processing Portal:** An interface in which a bank Teller will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In processing, Completed, and Rejected.
-* **Claim a Transfer:** A Teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in processing” category.
+* **International Transfer Processing Portal:** An interface in which a bank Teller will view all requested international transfers and the RTA form corresponding to the transfer. The portal must sort all requested transfers into four categories: Unprocessed (new beneficiary), Unprocessed (existing beneficiary), In Process, Completed, and Rejected.
+* **Claim a Transfer:** A Teller claims a transfer from the unprocessed transfers to show that they will be verifying the information in the transfer form and entering the information into the SWIFT alliance system to send a transfer. Once a transfer is claimed the software will sort it into the “in process” category.
 * **Complete a Transfer:** After an international transfer is successfully deposited to the beneficiary the Teller processing that transfer will manually mark the transfer as complete. The software then sorts the transfer into the “completed” category.
 * **Reject Transfer:** If there is an issue with the transfer which prevents it from being deposited the Teller will manually reject the transfer. The software then sorts the transfer into the “rejected” category.
 * **Auto-Reject Transfer:** Whenever a new transfer is requested the software will automatically check if there is an insufficient balance in the account for the transfer, then if there is insufficient balance label the transfer as rejected and sort it into “rejected”. If there is sufficient balance the system will sort the transfer into the correct “unprocessed" category.
-* **Dealing with Rejected Transfers:** If a Customer contacts the bank to fix a rejected transfer, a Teller will claim the transfer and the system will move it to “in processing”.
+* **Dealing with Rejected Transfers:** If a Customer contacts the bank to fix a rejected transfer, a Teller will claim the transfer and the system will move it to “in process”.
          
 ## 3.2 Project Scope  
 The project should deliver an addition to the current Pichincha Bank app which facilitates international transfers. Customer and bank Teller interfaces must be created to allow for the various tasks undertaken by different user groups. The purpose of the software is to allow for international transfers to be made digitally, lowering strain on the brick and mortar bank while increasing ease of use for Customers. 
@@ -307,9 +307,9 @@ This feature allows a Customer to request an international transfer and a Teller
 |FR~2|The Teller shall be able to input a Customers data into the SWIFT Alliance System.|Given that a customer completes a valid transfer request, when the Teller accesses the transfer request, they are able to view the information to input into the SWIFT Alliance System.|Verify that the teller has access to the RTA Form completed by the Customer.|
 |FR~3|As a Customer, I want to choose an international contact to transfer money to.|Given that the Customer chooses a contact to send money to, when the International Transfer Request is completed, the contact receives the money sent to them.|Verify that the contact chosen by the customer is the contact who recieves the money transfer.|
 |FR~4|The System shall provide a Customer with a digital method to complete a RTA Form.|Given that the Customer wants to complete an international transfer request, when the Customer seeks a method to complete the transfer request, a digital method is accessible to the customer.|Verify that a Customer has access and interact with a fillable digital RTA Form.|
-|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that the Customer wants to submit their RTA Form, when the Customer inputs their Account Verification PIN, they are allowed to submit their form.||
-|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|||
-|FR~7|The Customer shall be able to review the status of their transfer request.|||   
+|FR~5|As a Customer, I want to input my Account Verification PIN so that I can submit the RTA Form.|Given that a Customer wants to submit their RTA Form, when a Customer inputs their Account Verification PIN, they are allowed to submit their form.|Verify that when a Customer inputs their Account Verification PIN, they are allowed to submit their RTA Form.|
+|FR~6|The System shall automatically reject a transfer request if the Customer has insufficient funds.|Given that a Customer wants to transfer money to a contact, if a Customer has insufficient funds, the System shall automatically reject the transfer request.|Verify that when a Customer has insufficient funds, the System automatically rejects the transfer request.|
+|FR~7|The Customer shall be able to review the status of their transfer request.|Given that a Customer wants to review the status of their transfer request, when a Customer attempts to review their request's status through the app, they are allowed to.|Verify that when a Customer wants to review the status of their transfer request, they are allowed to.|  
 
 ## 2. Manage Contacts  
 
@@ -322,17 +322,17 @@ This feature allows a Customer to organize their contacts within the system. A C
 
 |||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-|FR~8|The Customer shall be able to create a new contact.|||
-|FR~9.1|The Customer shall be able to sort their contacts by date added.|||
-|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|||
-|FR~10|The  Customer shall be able to search for a contact from their contact list.|||
-|FR~11|The Customer shall be able to view the contact details of a contact.|||
-|FR~12|The Customer shall be able to edit a contact.|||
-|FR~13|The Customer shall be able to delete a contact.|||
-|FR~14|The Customer shall be able to transfer money to a contact.|||
-|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.||
-|FR~16|The Customer shall be able to view the transfer history of a contact.|||
-|FR~17|The Customer shall be able to view the transfer status of a contact.|||   
+|FR~8|The Customer shall be able to create a new contact.|Given that the customer wants to create a new contact, when the customer enters the new contact details and adds the contact to the contact list, they will create a new contact.|Verify that when a customer wants to create a new contact, the new contact is added to the contact list.|
+|FR~9.1|The Customer shall be able to sort their contacts by date added.|Given that the customer wants to sort their contacts by date added, when the customer chooses the option  to sort by date added on the contact list page, they will sort their contacts by date added.|Verify that when a customer wants to sort their contacts by date added, the contacts in the contact list are displayed in date added to order.|
+|FR~9.2|The Customer shall be able to sort their contacts alphabetically.|Given that the customer wants to sort their contacts alphabetically, when the customer chooses the option to sort by name on the contact list page, they will sort their contacts alphabetically.|Verify that when a customer wants to sort their contacts by name, the contacts in the contact list are displayed in alphabetical order.|
+|FR~10|The  Customer shall be able to search for a contact from their contact list.|Given that the customer wants to search for a contact from their contact list, when the customer inputs their choice of contact on the search bar in the contact list page, they will be able to search for a contact from their contact list.|Verify that when a customer wants to search for a contact from the contact list and inputs the name, the contact is displayed.|
+|FR~11|The Customer shall be able to view the contact details of a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list, then the contact's details will be displayed.|Verify that when a Customer selects a contact from their contact list, the correct contact details are displayed.|
+|FR~12|The Customer shall be able to edit a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the edit button, then the Customer will be able to modify and save that contact's details.|Verify that when a Customer selects the edit button on a contact from their contact list and modifies the address field, the updated contact details are displayed.|
+|FR~13|The Customer shall be able to delete a contact.|Given that the Customer has at least one saved contact, when the Customer selects the delete contact button, then the contact will be deleted from the Customer's contact list.|Verify that when the Customer selects the delete contact button, the contact is no longer visible in their contact list.|
+|FR~14|The Customer shall be able to transfer money to a contact.|Given that the Customer has at least one saved contact, when the Customer selects a contact from their contact list and selects the "Send New Transfer" button, then the customer is able to complete the RTA form.|Verify that when the customer selects a contact from their contact list and selects the "Send New Transfer" button, then an RTA form is auto-filled with the selected contact's details and the Customer is able to complete the rest of the form.|
+|FR~15|As a Customer, I want to set my notification preference for a contact so that I can receive a notification when the transfer funds are received by the contact.|Given that the Customer sets their notification preferences, when the chosen contact receives the transfer funds, then the Customer will receive a notification via the chosen preference.|Verify that a notification is received with the preferred method once a contact receives the transfer funds|
+|FR~16|The Customer shall be able to view the transfer history of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see a list of all past transfers to that contact.|Verify that after a Customer makes a transfer to a contact that transfer appears on the contact page under transfer history.|
+|FR~17|The Customer shall be able to view the transfer status of a contact.|Given that a Customer has made a transfer to a contact, when the Customer navigates to the contact information page, then the Customer is able to see the status of all transfers made to that contact. | Verify that after a Customer makes a transfer to a contact at each stage in the process (Unprocessed, In Process, Completed, and Rejected) the correct status appears on the contact page.|  
 
 #### Use Case Description  
 
@@ -366,12 +366,19 @@ This feature involves managing the status of the transfer. It allows a Customer 
 
 |||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-|FR~18|The System shall allow a Customer to cancel a transfer.|||
-|FR~19|The System shall enable a Teller to change the transfer request status.|||
-|FR~19.1|A Teller shall be able to change the transfer request status to completed.|||
-|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|||
-|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account.|||
+|FR~18|The System shall allow a Customer to cancel a transfer.|Given that the Customer wishes to cancel a transfer, the System shall provide the Customer with an option to initiate cancellation through the user interface||
+|FR~19|The System shall enable a Teller to change the transfer request status.|Given that a Teller needs to change the transfer request status, the System shall provide appropriate functionalities within the Teller's interface.||
+|FR~19.1|A Teller shall be able to change the transfer request status to completed.|Given that a Teller needs to change the transfer request status to "completed", the system should allow the Teller to complete the request||
+|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|Given that a Teller needs to change the transfer request status to "rejected", the system should allow the Teller to cancel the request||
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database|Given that System needs to automatically reject a transfer, it should monitor the Client's account balance and reject the transfer when there is not enough efficient funds||
 |FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.||   
+
+#### **Acceptance Tests**  
+
+||Acceptance Tests|
+|-|-|
+|Customer Transfer Request|A customer initiates a transfer request from their account to another account. The system shall update the transfer request status to "pending".The system shall notify both the sender and the recipient about the successful transfer.|
+|Insufficient Funds Rejection|A customer initiates a transfer request from their account to another account. The customer's account balance is insufficient to cover the transfer amount. The system shall reject the transfer and notify the client.|   
 
 #### Use Case Description  
 
@@ -428,8 +435,8 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Accepted_Declarations"></a> Accepted Declarations | If the Ordering Customer accepted the declarations required to transfer money internationally. | Boolean | 1 | 0 for false, 1 for true |
 | <a name="Account_Verification_PIN"></a> Account Verification PIN| The PIN used to verify that the submitter of an international transfer request is the Ordering Customer. | Numeric characters | 4 |  |
 | <a name="Beneficiary_Account_Number"></a>Beneficiary Account Number | Beneficiary account number to be credited. | Numeric characters  | 17 |  |
-| <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 |  |
-| <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 |  |
+| <a name="Beneficiary_Address"></a>Beneficiary Address | Address of the beneficiary. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
+| <a name="Beneficiary_Bank_Address"></a>Beneficiary Bank Address | Address of the beneficiary bank. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_City"></a>Beneficiary Bank City | City the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_Country"></a>Beneficiary Bank Country | Country the beneficiary bank is located in. | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Beneficiary_Bank_Name"></a>Beneficiary Bank Name | Name of the beneficiary bank. | Alphabetic characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
@@ -448,11 +455,11 @@ The data dictionary below defines the composition of data structures and their c
 | <a name="Form_Completion_Date"></a>Form Completion Date | Date RTA form was submitted by Ordering Customer on. | Numeric Date | 10 | dd/mm/yyyy format in numbers |
 | <a name="International_Contact_Profile"></a>International Contact Profile | Profile of a contact who has been a beneficiary to a international transfer from the Ordering Customer. | [Beneficiary Name](#Beneficiary_Name) <br>+ [Beneficiary Account Number](#Beneficiary_Account_Number) <br>+ [Beneficiary Address](#Beneficiary_Address) <br>+ [Beneficiary City](#Beneficiary_City) <br>+ [Beneficiary Country](#Beneficiary_Country) <br>+ [Beneficiary Bank Name](#Beneficiary_Bank_Name) <br>+ [Beneficiary Bank SWIFT Code](#Beneficiary_Bank_SWIFT_Code) <br>+ [Beneficiary Bank Address](#Beneficiary_Bank_Address) <br>+ [Beneficiary Bank Transit Number](#Beneficiary_Bank_Transit_Number) <br>+ [Beneficiary Bank City](#Beneficiary_Bank_City) <br>+ [Beneficiary Bank Country](#Beneficiary_Bank_Country) <br>+ [Contact Transfer History](#Contact_Transfer_History) |  |  |
 | <a name="International_Transfer_Instance_RTA_Form_Section"></a>International Transfer Instance RTA Form Section | The section of the digital RTA Form containing data regarding a specific international transfer request. | [Transfer Currency](#Transfer_Currency) <br>+ [Transfer Value](#Transfer_Value) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transaction Reason Code](#Transaction_Reason_Code) <br>+ [Transfer Reference](#Transfer_Reference) |  |  |
-| <a name="International_Transfer_Status"></a>International Transfer Status | The status of an international transfer request. | Alphabetic characters, spaces, parentheses | 15 | Can be: “Unprocessed (new beneficiary)”, “Unprocessed (existing beneficiary)”, “In processing”, “Completed”, and “Rejected” |
+| <a name="International_Transfer_Status"></a>International Transfer Status | The status of an international transfer request. | Alphabetic characters, spaces, parentheses | 15 | Can be: “Unprocessed (new beneficiary)”, “Unprocessed (existing beneficiary)”, “In Process”, “Completed”, and “Rejected” |
 | <a name="Ordering_Bank_SWIFT_Code"></a>Ordering Bank SWIFT Code | SWIFT code belonging to the ordering bank. | Alphanumeric characters | 11 |  |
 | <a name="Ordering_Customer"></a>Ordering Customer | Information regarding the Ordering Customer. | [Ordering Customer Name](#Ordering_Customer_Name) <br>+ 1:n{[Ordering Customer Account Number](#Ordering_Customer_Account_Number)} |  |  |
 | <a name="Ordering_Customer_Account_Number"></a>Ordering Customer Account Number | Ordering Customer’s account number to be debited. | Numeric characters  | 17 |  |
-| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the Ordering Customer. | Alphanumeric characters | 100 |  |
+| <a name="Ordering_Customer_Address"></a>Ordering Customer Address | Address of the Ordering Customer. | Alphanumeric characters | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
 | <a name="Ordering_Customer_Email"></a>Ordering Customer Email | Email of the Ordering Customer. | Alphanumeric characters  | 254 | Can contain certain special characters: !, #, $, %, &, ', *, +, -, /, =, ?, ^, _, {, \|, }, ~, .  |
 | <a name="Ordering_Customer_Identification"></a>Ordering Customer Identification | Identification number from Ordering Customer’s  C.I., C.C., Passport, or RUC. | Numeric characters  | 11 |  |
 | <a name="Ordering_Customer_Name"></a>Ordering Customer Name | First and last name or company name of the Ordering Customer.  | Alphabetic characters  | 100 | can contain blanks, hyphens, apostrophes, accented alphabetic characters |
@@ -586,12 +593,12 @@ The communication interfaces for the International Bank Transfer System must be 
 |QA~19|Supportability|The System shall come with a digital operational manual detailing routine operations, troubleshooting steps, and escalation procedures for bank staff.|
 |QA~20||The System shall allow for the remote deployment of updates and feature enhancements, with capabilities for rollback in case of issues.|
 |QA~21||The System shall offer a built-in chatbot for immediate user support, capable of handling common queries and troubleshooting issues, with an escalation path for complex problems.|
-|QA~22|Testability|The System shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions.|
-|QA~23||The System shall be designed to allow components to be independently testable to facilitate quick issue identification and resolution.|
+|QA~22|Testability|The System shall include an automated testing suite capable of executing comprehensive test cases covering all functionalities, simulating both typical and peak load conditions (around 1000 users per second).|
+|QA~23||The System shall be designed to allow components to be independently testable to facilitate issue identification and rectification never taking more than %0.001 of the program's annual run time.|
 |QA~24||The System shall undergo User Acceptance Testing (UAT) with participation from all user classes to validate the System against real-world requirements and expectations.|
 |QA~25|Scalability|The System shall automatically scale resources to maintain performance levels for up to a 50% increase in transaction volume over the projected peak periods.|
 |QA~26||The System shall employ a cloud-based infrastructure capable of elastic scaling to meet demand fluctuations without manual intervention.|
-|QA~27||The System design shall allow for the integration of new banking services and expansion to additional markets without significant redesign or downtime.|
+|QA~27||The System design shall allow for the integration of new banking services and expansion to additional markets without more than %0.0001 of annual program run time allocated for significant redesign or downtime.|
 
 # 9.0 Analysis Models  
 
@@ -605,13 +612,12 @@ The use case diagram, as seen below, displays the proposed International Bank Tr
 ## 9.2 Data Flow Diagrams  
 
 This section contains a system level, process level, and two sub-process level Data Flow Diagrams (DFD) depicting the flow and interactions of data, data stores, and entities within the International Bank Transfer System. 
-> ![Level 0 Data Flow Diagram](./images/DFD0.jpg)  
+> ![Level 0 Data Flow Diagram](https://github.com/Uvic-SENG321Spring2024/team2-developer/blob/80b34b45329c381a3835e452f8d063f9e5e67c7c/Final-Submissions/Requirements%20Document/images/DFD0%20(1).jpg)  
 > *Context Level DFD for International Bank Transfer System*  
 
 >![Level 1 Data Flow Diagram](./images/DFD1.jpg)  
 > *Level 1 DFD for International Bank Transfer System*    
-
-> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio.png)  
+> ![Level 2 Data Flow Diagram](./images/Create_Contact_DFD.drawio1.png)  
 > *Level 2 DFD for proposed Create Contact use case*  
 
 > ![Level 2 Data Flow Diagram](./images/UC-2-dataflow.jpg)  
