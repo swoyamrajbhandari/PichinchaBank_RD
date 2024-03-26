@@ -366,19 +366,13 @@ This feature involves managing the status of the transfer. It allows a Customer 
 
 |||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-|FR~18|The System shall allow a Customer to cancel a transfer.|Given that the Customer wishes to cancel a transfer, the System shall provide the Customer with an option to initiate cancellation through the user interface||
-|FR~19|The System shall enable a Teller to change the transfer request status.|Given that a Teller needs to change the transfer request status, the System shall provide appropriate functionalities within the Teller's interface.||
-|FR~19.1|A Teller shall be able to change the transfer request status to completed.|Given that a Teller needs to change the transfer request status to "completed", the system should allow the Teller to complete the request||
-|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|Given that a Teller needs to change the transfer request status to "rejected", the system should allow the Teller to cancel the request||
-|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database|Given that System needs to automatically reject a transfer, it should monitor the Client's account balance and reject the transfer when there is not enough efficient funds||
-|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.||   
+|FR~18|The System shall allow a Customer to cancel a transfer.|Given that the Customer wishes to cancel a transfer, the System shall provide the Customer with an option to initiate cancellation through the user interface|Verify that the system allows a Customer to cancel a transfer by providing a user interface option for initiation of cancellation.|
+|FR~19|The System shall enable a Teller to change the transfer request status.|Given that a Teller needs to change the transfer request status, the System shall provide appropriate functionalities within the Teller's interface.|Verify that the system enables a Teller to change the transfer request status by providing appropriate functionalities within the Teller's interface.|
+|FR~19.1|A Teller shall be able to change the transfer request status to completed.|Given that a Teller needs to change the transfer request status to "completed", the system should allow the Teller to complete the request|Verify that the system allows a Teller to change the transfer request status to "Completed" as required.|
+|FR~19.2|A Teller shall be able to change the transfer request status to rejected.|Given that a Teller needs to change the transfer request status to "rejected", the system should allow the Teller to cancel the request|Verify that the system allows a Teller to change the transfer request status to "Rejected" as required.|
+|FR~20|The System shall be able to automatically reject a transfer in the event of insufficient funds within a Customer account. After a week, the system shall be able to archive the completed the transfer into a database|Given that System needs to automatically reject a transfer, it should monitor the Client's account balance and reject the transfer when there is not enough efficient funds|Verify that the system automatically rejects a transfer when there are insufficient funds within a Customer's account.|
+|FR~21|As a Customer, I want to be able to cancel a transfer before it is sent, so I can rectify any inaccurate information.|Given that the Customer discovers an error in their transfer request, when the Customer selects to cancel a transfer request, then the RTA Form is returned to the customer to edit.|Verify that a Customer can cancel a transfer before it is sent and rectify any inaccurate information by form.|   
 
-#### **Acceptance Tests**  
-
-||Acceptance Tests|
-|-|-|
-|Customer Transfer Request|A customer initiates a transfer request from their account to another account. The system shall update the transfer request status to "pending".The system shall notify both the sender and the recipient about the successful transfer.|
-|Insufficient Funds Rejection|A customer initiates a transfer request from their account to another account. The customer's account balance is insufficient to cover the transfer amount. The system shall reject the transfer and notify the client.|   
 
 #### Use Case Description  
 
