@@ -412,9 +412,9 @@ This feature allows the Customer to manage their personal details related to int
 
 |||Acceptance Criteria|Acceptance Test|
 |-|-|-|-|
-|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.|||
-|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.|||
-|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.|||
+|FR~22|The Customer shall be able to add their personal information (see sec 6.2 Data Dictionary) to their Customer profile.|Given that the Customer is logged in, when the Customer enters their information into their Customer profile, then their information is stored to their Customer profile.||
+|FR~23|The Customer shall be able to edit the personal information stored to their Customer profile.|Given that the Customer previously added their information to their Customer profile, when the Customer updates their information, then their updated infromation is stored to their Customer profile.||
+|FR~24|The Customer shall be able to change their international transfer verification PIN through their Customer profile.|Given that the Customer previously chose a verification PIN, when the Customer updates their PIN, then the new PIN is used for international transfers.||
 |FR~25|As a Customer, I want to save my personal information for international transfers in my profile so that I do not have to re-enter the information each time.|Given that the Customer saves their information to their Customer Profile, when the Customer creates a new International Transfer Request, then their information is automatically entered into the RTA Form.||  
 
 # 6.0 Data Requirements   
